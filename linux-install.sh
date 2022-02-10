@@ -13,6 +13,10 @@ then
     if [[ $(command -v yum) ]]; 
     then
         cmd="yum"
+        systemctl stop firewalld
+        yum install supervisor
+    else
+        ufw disable
     fi
 else
     echo "软件不支持此系统"
