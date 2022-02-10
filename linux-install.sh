@@ -28,8 +28,8 @@ install() {
     chmod 777 /root/kt_proxy
 
     wget https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@latest/Linux/ktproxy-linux.tar.gz -O /root/kt_proxy/ktproxy-linux.tar.gz --no-check-certificate
-    tar -zxvf /root/kt_proxy/kt-proxy.tar.gz -C /root/kt_proxy/
-    rm /root/kt_proxy/kt-proxy.tar.gz
+    tar -zxvf /root/kt_proxy/kt-proxy-linux.tar.gz -C /root/kt_proxy/
+    rm /root/kt_proxy/kt-proxy-linux.tar.gz
     supervisord -c /root/kt_proxy/supervisor/supervisord.conf
     supervisorctl status
 }
