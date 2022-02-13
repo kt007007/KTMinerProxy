@@ -6,12 +6,28 @@ then
         exit 1
 fi
 
+
+VERSION="0.0.1"
+EXE_URL="https://github.com/kt007007/KTMinerProxy/blob/main/Linux-64/ktproxy_${VERSION}_linux?raw=true"
+SUPERVISORD_CONFIG_RUL="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/Linux-64/supervisor/supervisord.conf"
+SUPERVISORD_INI_URL="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/Linux-64/supervisor/supervisord.d/kt_proxy.ini"
+
 cmd="apt-get"
 uncmd="apt-get -purge remove"
 
 message() {
     echo "====================${1}"
     echo -e 
+}
+
+filterResult() {
+    if [ $1 -eq 0 ]; then
+        echo "【${2}】成功。"
+    else
+        echo "【${2}】失败。"
+    fi
+
+    echo -e
 }
 
 unistall() {
@@ -43,16 +59,6 @@ else
     echo "软件不支持此系统"
 fi
 
-filterResult() {
-    if [ $1 -eq 0 ]; then
-        echo "【${2}】成功。"
-    else
-        echo "【${2}】失败。"
-    fi
-
-    echo -e
-}
-
 install() {
     echo "开始安装"
     
@@ -82,22 +88,19 @@ install() {
     $cmd install supervisor -y 1>/dev/null
     filterResult $?  "安装supervisor"
 
-    message "设置目录权限"
+    message "创建目录"
     mkdir /root/kt_proxy 1>/dev/null
+    mkdir /root/kt_proxy/supervisor 1>/dev/null
+    mkdir /root/kt_proxy/supervisor/supervisord.d 1>/dev/null
     chmod 777 /root/kt_proxy 1>/dev/null
-    filterResult $?  "设置目录权限"
+    filterResult $?  "创建目录"
 
     message "拉取文件"
-    wget https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@0.0.12/Linux/ktproxy-linux.tar.gz -O /root/kt_proxy/ktproxy-linux.tar.gz --no-check-certificate 1>/dev/null
+    wget $EXE_URL -O /root/kt_proxy/ktproxy --no-check-certificate 1>/dev/null
+    chmod 777 /root/kt_proxy/ktproxy 1>/dev/null
+    wget $SUPERVISORD_CONFIG_RUL -O /root/kt_proxy/supervisor/supervisord.conf 1>/dev/null
+    wget $SUPERVISORD_INI_URL -O /root/kt_proxy/supervisor/supervisord.d/kt_proxy.ini 1>/dev/null
     filterResult $?  "拉取文件"
-    
-    message "解压文件"
-    tar -zxvf /root/kt_proxy/ktproxy-linux.tar.gz -C /root/kt_proxy/ 1>/dev/null
-    filterResult $?  "解压文件"
-
-    message "删除多余文件"
-    rm /root/kt_proxy/ktproxy-linux.tar.gz 1>/dev/null
-    filterResult $?  "删除多余文件"
 
     message "关闭supervisord进程"
     killall supervisord 1>/dev/null
