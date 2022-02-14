@@ -59,13 +59,25 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## 截图预览
 
 ![预览图片](./image/jt1.png)
-![预览图片](./image/jt2.png)
 ![预览图片](./image/jt3.png)
-![预览图片](./image/jt4.png)
-![预览图片](./image/jt5.png)
+
+<table>
+    <tr>
+        <td>
+            <center>
+                <img src="./image/jt5.png" alt="Logo">
+            </center>
+        </td>
+        <td>
+            <center>
+                <img src="./image/jt2.png" alt="Logo">
+            </center>
+        </td>
+    </tr>
+</table>
 
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
