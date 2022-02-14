@@ -28,37 +28,32 @@
   </p>
 </div>
 
-
+<hr>
 
 <!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+<summary>导航菜单</summary>
+<ol>
+<li>
+    <a href="#about-the-project">简介</a>
+</li>
+<li>
+    <a href="#preview">软件预览</a>
+</li>
+<li>
+    <a href="#install">部署软件</a>
+    <ul>
+    <li><a href="#linux">Linux</a></li>
+    <li><a href="#windows">Windows</a></li>
+    </ul>
+</li>
+<li><a href="#about">联系我们</a></li>
+</ol>
 
 
 
 <!-- ABOUT THE PROJECT -->
+<p id="preview"></p>
+
 ## 软件预览
 
 ![预览图片](./image/jt1.png)
@@ -80,7 +75,7 @@
 </table>
 
 
-KTProxy是一款功能强大的矿池加速程序，目前程序处于内侧阶段，意见和建议请提交至issue、qq群或电报，我们会及时处理。
+<p id="about-the-project">KTProxy是一款功能强大的矿池加速程序，目前程序处于内侧阶段，意见和建议请提交至issue、qq群或电报，我们会及时处理。</p>
 
 支持的功能:
 * 数据统计分析
@@ -97,6 +92,7 @@ KTProxy是一款功能强大的矿池加速程序，目前程序处于内侧阶�
 * 矿池模式
 * 端口备注
 * 在线更新
+* ...
 
 支持的币种：
 * ETH
@@ -124,12 +120,16 @@ KTProxy是一款功能强大的矿池加速程序，目前程序处于内侧阶�
 
 
 <!-- GETTING STARTED -->
+<p id="install"></p>
+
 ## 开始使用
 
 部署之前，您需要有一台自己的云服务器来部署此软件，服务器选择方案点击此处查看帮助。<br>
 云服务器请打开6001端口, 默认web访问地址为此端口。
 
 <hr>
+
+<p id="linux"></p>
 
 ### Linux环境安装
 
@@ -163,6 +163,8 @@ KTProxy是一款功能强大的矿池加速程序，目前程序处于内侧阶�
 
 <hr>
 
+<p id="windows"></p>
+
 ### Windows环境安装
 
 1. 前往 [https://github.com/kt007007/KTMinerProxy/blob/main/Windows-64](https://github.com/kt007007/KTMinerProxy/blob/main/Windows-64) 下载windows下的执行程序
@@ -186,7 +188,9 @@ KTProxy是一款功能强大的矿池加速程序，目前程序处于内侧阶�
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
-## Contact
+<p id="about"></p>
+
+## 联系我们
 
 QQ群: [978113445](https://qm.qq.com/cgi-bin/qm/qr?k=2qOW3S0PnHGL_30AmNmLLRDp2bhwIi3M&jump_from=webapi)
 
