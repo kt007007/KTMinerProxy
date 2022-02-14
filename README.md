@@ -78,48 +78,59 @@
 <p id="about-the-project">KTProxy是一款功能强大的矿池加速程序，目前程序处于内侧阶段，意见和建议请提交至issue、qq群或电报，我们会及时处理。</p>
 <hr>
 
+<table>
+    <tr>
+        <td>
+            支持的功能<br><br>
+            * 数据统计分析<br>
+            * TLS/SSL加密<br>
+            * 矿池转发<br>
+            * 预置各币种的矿池（随时更新）<br>
+            * 自定义矿池<br>
+            * 备用矿池<br>
+            * 自定义端口<br>
+            * 端口连接数限制<br>
+            * 自定义抽水比例<br>
+            * 自定义抽水钱包、矿池<br>
+            * 统一钱包<br>
+            * 矿池模式<br>
+            * 端口备注<br>
+            * 在线更新<br>
+            * ...<br>
+        </td>
+        <td>
+            支持的币种 <br> <br>
+            * ETH<br>
+            * ETC<br>
+            * BTC<br>
+            * KDA<br>
+            * ZEC<br>
+            * BEAM<br>
+            * RVN<br>
+            * ERG<br>
+            * ZEN<br>
+            * LTC<br>
+            * DCR<br>
+            * DASH<br>
+            * CKB<br>
+            * BCH<br>
+            * HNS<br>
+            * STC<br>
+            * 陆续添加中......<br>
+        </td>
+    </tr>
+</table>
+
 <div style="display:flex;justify-content: space-around;">
 <div style="">
-
-支持的功能:
-* 数据统计分析
-* TLS/SSL加密
-* 矿池转发
-* 预置各币种的矿池（随时更新）
-* 自定义矿池
-* 备用矿池
-* 自定义端口
-* 端口连接数限制
-* 自定义抽水比例
-* 自定义抽水钱包、矿池
-* 统一钱包
-* 矿池模式
-* 端口备注
-* 在线更新
-* ...
 
 </div>
 
 <div style="">
 
-支持的币种：
-* ETH
-* ETC
-* BTC
-* KDA
-* ZEC
-* BEAM
-* RVN
-* ERG
-* ZEN
-* LTC
-* DCR
-* DASH
-* CKB
-* BCH
-* HNS
-* STC
-* 陆续添加中......
+### 支持的币种：
+
+
 
 </div>
 </div>
