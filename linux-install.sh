@@ -22,6 +22,17 @@ filterResult() {
     echo -e
 }
 
+if [[ $(command -v apt-get) || $(command -v yum) ]] && [[ $(command -v systemctl) ]];
+then
+    if [[ $(command -v yum) ]]; 
+    then
+        cmd="yum"
+	uncmd="yum remove"
+    fi
+else
+    echo "软件不支持此系统"
+fi
+
 uninstall() {
     echo "开始卸载KTPROXY"
     message "关闭SUPERVISORD进程"
@@ -40,16 +51,11 @@ uninstall() {
     echo "卸载完成"
 }
 
-if [[ $(command -v apt-get) || $(command -v yum) ]] && [[ $(command -v systemctl) ]];
-then
-    if [[ $(command -v yum) ]]; 
-    then
-        cmd="yum"
-	uncmd="yum remove"
-    fi
-else
-    echo "软件不支持此系统"
-fi
+restartSupervisor() {
+    message "重启supervisor"
+    supervisorctl -c /root/kt_proxy/supervisor/supervisord.conf restart ktproxy 1>/dev/null
+    filterResult $? "重启supervisor"
+}
 
 update() {
     echo "开始更新"
@@ -70,6 +76,7 @@ update() {
     supervisord -c /root/kt_proxy/supervisor/supervisord.conf 1>/dev/null
     filterResult $?  "配置启动supervisord"
 
+    sleep 1
     supervisorctl -c /root/kt_proxy/supervisor/supervisord.conf status
 }
 
@@ -133,6 +140,8 @@ if [ $1 ];then
         uninstall
     elif [ $1 == '-update' ];then
         update
+    elif [ $1 == 'restartSupervisor' ];then
+        restartSupervisor
     fi
 else
     install
