@@ -19,7 +19,7 @@
   <p align="center">
     一款免费且功能强大的矿池加速软件，现已开启内侧。
     <br />
-    <a href="https://github.com/kt007007/KTMinerProxy"><strong>帮助文档 »</strong></a>
+    <a href="https://www.kdocs.cn/l/slPG1q488Trc"><strong>帮助文档 »</strong></a>
     <br />
     <br />
     <a href="https://qm.qq.com/cgi-bin/qm/qr?k=2qOW3S0PnHGL_30AmNmLLRDp2bhwIi3M&jump_from=webapi">QQ群: 978113445</a>

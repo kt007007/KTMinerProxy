@@ -1,0 +1,5 @@
+{
+    "version": "0.0.1",
+    "windows_exec": "https://github.com/kt007007/KTMinerProxy/blob/main/Windows-64/ktproxy_v0.0.1_win.exe",
+    "linux_exec": "https://github.com/kt007007/KTMinerProxy/blob/main/Linux-64/ktproxy_v0.0.1_linux"
+}
