@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="0.0.2"
+VERSION="0.0.1"
 EXE_URL="https://github.com/kt007007/KTMinerProxy/blob/main/Linux-64/ktproxy_v${VERSION}_linux?raw=true"
 SUPERVISORD_CONFIG_RUL="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/Linux-64/supervisor/supervisord.conf"
 SUPERVISORD_INI_URL="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/Linux-64/supervisor/supervisord.d/kt_proxy.ini"
