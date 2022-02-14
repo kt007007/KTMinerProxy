@@ -1,12 +1,4 @@
 #!/bin/bash
-
-if [[ $(id -u) != 0 ]];
-then
-        echo "请使用ROOT权限安装, 请切换至root用户后再次执行安装程序。"
-        exit 1
-fi
-
-
 VERSION="0.0.2"
 EXE_URL="https://github.com/kt007007/KTMinerProxy/blob/main/Linux-64/ktproxy_${VERSION}_linux?raw=true"
 SUPERVISORD_CONFIG_RUL="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/Linux-64/supervisor/supervisord.conf"
@@ -30,7 +22,7 @@ filterResult() {
     echo -e
 }
 
-unistall() {
+uninstall() {
     echo "开始卸载KTPROXY"
     message "关闭SUPERVISORD进程"
     killall supervisord 1>/dev/null
@@ -134,11 +126,12 @@ install() {
     supervisorctl -c /root/kt_proxy/supervisor/supervisord.conf status
 }
 
-if [ $1 ] && [ $1 == '-uninstall' ];then
-    unistall
-else if [ $1 ] && [ $1 == '-update' ]; then
-    update
+if [ $1 ];then
+    if [ $1 == "-uninstall" ];then
+        uninstall
+    elif [ $1 == '-update' ];then
+        update
+    fi
 else
     install
 fi
-
