@@ -78,7 +78,7 @@
 <p id="about-the-project">KTProxy是一款功能强大的矿池加速程序，目前程序处于内侧阶段，意见和建议请提交至issue、qq群或电报，我们会及时处理。</p>
 <hr>
 
-<center>
+<div align="center">
 <table>
     <tr>
         <td>支持的功能</td>
@@ -124,6 +124,7 @@
     </tr>
 </table>
 </center>
+</div>
 
 上述币种皆可支持转发，部分币种暂不支持配置抽水，后续会陆续更新。
 
