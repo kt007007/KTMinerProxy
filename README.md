@@ -19,7 +19,7 @@
   <p align="center">
     一款免费且功能强大的矿池加速软件，现已开启内侧。
     <br />
-    <a href="https://www.kdocs.cn/l/slPG1q488Trc"><strong>帮助文档 »</strong></a>
+    <a href="https://kdocs.cn/l/slPG1q488Trc"><strong>帮助文档 »</strong></a>
     <br />
     <br />
     <a href="https://qm.qq.com/cgi-bin/qm/qr?k=2qOW3S0PnHGL_30AmNmLLRDp2bhwIi3M&jump_from=webapi">QQ群: 978113445</a>
@@ -76,6 +76,10 @@
 
 
 <p id="about-the-project">KTProxy是一款功能强大的矿池加速程序，目前程序处于内侧阶段，意见和建议请提交至issue、qq群或电报，我们会及时处理。</p>
+<hr>
+
+<div style="display:flex;justify-content: space-around;">
+<div style="">
 
 支持的功能:
 * 数据统计分析
@@ -93,6 +97,10 @@
 * 端口备注
 * 在线更新
 * ...
+
+</div>
+
+<div style="">
 
 支持的币种：
 * ETH
@@ -113,6 +121,9 @@
 * STC
 * 陆续添加中......
 
+</div>
+</div>
+
 上述币种皆可支持转发，部分币种暂不支持配置抽水，后续会陆续更新。
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -125,7 +136,8 @@
 ## 开始使用
 
 部署之前，您需要有一台自己的云服务器来部署此软件，服务器选择方案点击此处查看帮助。<br>
-云服务器请打开6001端口, 默认web访问地址为此端口。
+云服务器请打开6001端口, 默认web访问地址为此端口。<br>
+国内服务器节点可能无法成功安装，请部署在非国内服务器。
 
 <hr>
 
@@ -148,6 +160,10 @@
 安装完毕后，在任何设备下的的浏览器访问您的服务器【IP:6001】即可访问后台， 例如 http://118.126.1.5:6001, url里面的118.126.1.5替换为您的服务器ip即可，登陆后请尽快在设置页修改默认密码。
 
 #### 更新
+
+自动更新：设置页面内, 点击检查更新即可自动更新。
+
+手动更新：执行以下指令进行更新。
 
 ```
 bash <(curl -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -update
