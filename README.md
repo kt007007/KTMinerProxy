@@ -81,8 +81,11 @@
 <center>
 <table>
     <tr>
+        <td>支持的功能</td>
+        <td>支持的币种</td>
+    </tr>
+    <tr>
         <td>
-            支持的功能<br><br>
             * 数据统计分析<br>
             * TLS/SSL加密<br>
             * 矿池转发<br>
@@ -100,7 +103,6 @@
             * ...<br><br><br>
         </td>
         <td>
-            支持的币种 <br> <br>
             * ETH<br>
             * ETC<br>
             * BTC<br>
