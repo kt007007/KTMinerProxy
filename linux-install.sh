@@ -51,7 +51,7 @@ uninstall() {
     echo "卸载完成"
 }
 
-restartSupervisor() {
+restart() {
     message "重启supervisor"
     supervisorctl -c /root/kt_proxy/supervisor/supervisord.conf restart ktproxy 1>/dev/null
     filterResult $? "重启supervisor"
@@ -140,8 +140,8 @@ if [ $1 ];then
         uninstall
     elif [ $1 == '-update' ];then
         update
-    elif [ $1 == 'restartSupervisor' ];then
-        restartSupervisor
+    elif [ $1 == '-restart' ];then
+        restart
     fi
 else
     install
