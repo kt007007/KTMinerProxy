@@ -52,6 +52,8 @@ else
 fi
 
 update() {
+    echo "开始更新"
+
     message "关闭supervisord进程"
     killall supervisord 1>/dev/null
     filterResult $?  "关闭supervisord进程"
