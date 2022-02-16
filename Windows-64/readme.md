@@ -1,0 +1,1 @@
+https://github.com/kt007007/KTMinerProxy-Windows
