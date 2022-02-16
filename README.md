@@ -158,7 +158,12 @@
 #### 安装
 先切换至root账户，然后执行以下代码
   ```
+  通过github安装:
+
   bash <(curl -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh)
+
+  如果无法访问github，可通过CDN安装
+  bash <(curl -L https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@main/linux-install.sh) -cn
   ```
 安装完毕后，在任何设备下的的浏览器访问您的服务器【IP:6001】即可访问后台， 例如 http://118.126.1.5:6001, url里面的118.126.1.5替换为您的服务器ip即可，登陆后请尽快在设置页修改默认密码。
 
