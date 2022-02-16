@@ -200,8 +200,8 @@ if [ $1 ];then
     elif [ $1 == '-start' ];then
         start
     elif [ $1 == '-cn' ];then
-        TAR_URL="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy-Linux@latest/KT-v${VERSION}-LINUX.tar.gz"
-        DEFEND_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@latest/defend.sh"
+        TAR_URL="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy-Linux@master/KT-v${VERSION}-LINUX.tar.gz"
+        DEFEND_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@main/defend.sh"
         install
     fi
 else
