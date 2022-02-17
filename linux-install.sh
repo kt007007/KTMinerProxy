@@ -10,7 +10,7 @@ cmd="apt-get"
 uncmd="apt-get purge"
 
 message() {
-    echo "====================${1}"
+    echo "===================${1}"
     echo -e 
 }
 
