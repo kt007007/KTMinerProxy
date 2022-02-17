@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="0.0.496"
+VERSION="0.0.497"
 TAR_URL="https://github.com/kt007007/KTMinerProxy-Linux/blob/master/KT-v${VERSION}-LINUX.tar.gz"
 SUPERVISOR_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/supervisord.conf"
 SUPERVISOR_D_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/ktproxy.conf"
@@ -38,7 +38,10 @@ then
     if [[ $(command -v yum) ]]; 
     then
         cmd="yum"
-	uncmd="yum remove"
+	    uncmd="yum remove"
+
+        message "安装epel"
+        $cmd install epel-release
     fi
 else
     echo "软件不支持此系统"
@@ -124,13 +127,17 @@ uninstall() {
     message "处理旧版本"
 
     stop
+
+    message "卸载supervisor"
+    $uncmd supervisor -y
+    filterResult $? "卸载supervisor" 1
     
     if screen -list | grep -q "KTProxy"; then
         screen -X -S KTProxy quit
     fi
     
     rm -rf $KT_PATH 1>/dev/null
-    filterResult $? "卸载"
+    filterResult $? "卸载" 1
     
 }
 
