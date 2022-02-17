@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="0.0.463"
+VERSION="0.0.47"
 TAR_URL="https://github.com/kt007007/KTMinerProxy-Linux/blob/master/KT-v${version}-LINUX.tar.gz"
 DEFEND_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/defend.sh"
 KT_PATH="/root/kt_proxy"
@@ -102,6 +102,16 @@ install() {
     wget -P $KT_PATH $DEFEND_PATH --no-check-certificate 1>/dev/null
     filterResult $? "拉取文件"
     chmod 777 ${KT_PATH}/defend.sh
+
+    message "设置开机启动"
+    chmod 777 /etc/rc.d/rc.local
+    chmod 777 /etc/rc.local
+    if [[ $(command grep "defend.sh" /etc/rc.d/rc.local) ]];then
+        echo "已设置, 无需重复设置"
+    else
+        echo "bash ${KT_PATH}/defend.sh" >> /etc/rc.d/rc.local
+        filterResult $? "设置开机启动"
+    fi
     
     echo "正在启动......"
     screen -dmS KTProxy
