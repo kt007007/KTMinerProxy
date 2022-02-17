@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="0.0.497"
+VERSION="0.0.498"
 TAR_URL="https://github.com/kt007007/KTMinerProxy-Linux/blob/master/KT-v${VERSION}-LINUX.tar.gz"
 SUPERVISOR_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/supervisord.conf"
 SUPERVISOR_D_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/ktproxy.conf"
@@ -76,10 +76,6 @@ install() {
     $cmd install python-setuptools -y 1>/dev/null
     filterResult $? "安装python-setuptools"
     
-    message "安装supervisor"
-    $cmd install supervisor -y 1>/dev/null
-    filterResult $? "安装supervisor"
-    
     message "创建目录"
     mkdir /root/kt_proxy 1>/dev/null
     chmod 777 /root/kt_proxy 1>/dev/null
@@ -113,8 +109,13 @@ install() {
     touch $KT_PATH/stderr.log
     touch $KT_PATH/stdout.log
 
+    message "安装supervisor"
+    $cmd install supervisor -y 1>/dev/null
+    filterResult $? "安装supervisor"
+
     message "启动中..."
-    
+    supervisord -c $SUPERVISOR_CONFIG
+    sleep 1
     supervisorctl -c $SUPERVISOR_CONFIG update
     sleep 1
     supervisorctl -c $SUPERVISOR_CONFIG start ktproxy
