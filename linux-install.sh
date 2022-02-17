@@ -10,7 +10,7 @@ cmd="apt-get"
 uncmd="apt-get purge"
 
 message() {
-    echo "===================${1}"
+    echo "====================${1}"
     echo -e 
 }
 
@@ -85,7 +85,7 @@ install() {
     cd ${KT_PATH}
     wget -P $KT_PATH $TAR_URL --no-check-certificate 1>/dev/null
     chmod 777 "${KT_PATH}/${KT_TAR_NAME}" 1>/dev/null
-    tar -zxvf "${KT_PATH}/${KT_TAR_NAME}" -C "${KT_PATH}" 1>/dev/null
+    tar -xf "${KT_PATH}/${KT_TAR_NAME}" -C "${KT_PATH}" 1>/dev/null
     chmod 777 "${KT_PATH}/${EXEC_NAME}" 1>/dev/null
     rm "${KT_PATH}/${KT_TAR_NAME}"
     if [ -f "${KT_PATH}/defend.sh" ];then
