@@ -1,10 +1,12 @@
 #!/bin/bash
-VERSION="0.0.49"
+VERSION="0.0.491"
 TAR_URL="https://github.com/kt007007/KTMinerProxy-Linux/blob/master/KT-v${version}-LINUX.tar.gz"
-DEFEND_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/defend.sh"
+SUPERVISOR_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/supervisord.conf"
+SUPERVISOR_D_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/ktproxy.conf"
 KT_PATH="/root/kt_proxy"
 KT_TAR_NAME="KT-v${VERSION}-LINUX.tar.gz"
 EXEC_NAME="ktproxy_v${VERSION}_linux"
+SUPERVISOR_CONFIG="/root/kt_proxy/supervisord.conf"
 
 cmd="apt-get"
 uncmd="apt-get purge"
@@ -46,10 +48,6 @@ message "VERSION-${VERSION}"
 install() {
     disOldVersion
     
-    if screen -list | grep -q "KTProxy"; then
-        screen -X -S KTProxy quit
-    fi
-    
     message "开始安装"
 
     if [ $cmd == 'yum' ];then
@@ -74,9 +72,9 @@ install() {
     $cmd install python-setuptools -y 1>/dev/null
     filterResult $? "安装python-setuptools"
     
-    message "安装SCREEN"
-    $cmd install screen -y
-    filterResult $? "安装SCREEN"
+    message "安装supervisor"
+    $cmd install supervisor -y
+    filterResult $? "安装supervisor"
     
     message "创建目录"
     mkdir /root/kt_proxy 1>/dev/null
@@ -99,31 +97,26 @@ install() {
     fi
 
     message "拉取文件"
-    wget -P $KT_PATH $DEFEND_PATH --no-check-certificate 1>/dev/null
-    filterResult $? "拉取文件"
-    chmod 777 ${KT_PATH}/defend.sh
-
-    # message "设置开机启动"
-    # chmod 777 /etc/rc.d/rc.local
-    # chmod 777 /etc/rc.local
-    # if [[ $(command grep "defend.sh" /etc/rc.d/rc.local) ]];then
-    #     echo "已设置, 无需重复设置"
-    # else
-    #     echo "bash ${KT_PATH}/defend.sh" >> /etc/rc.d/rc.local
-    #     filterResult $? "设置开机启动"
-    # fi
+    wget -P $KT_PATH $SUPERVISOR_PATH --no-check-certificate 1>/dev/null
+    filterResult $? "拉取supervisord.conf"
+    wget -P $KT_PATH $SUPERVISOR_D_PATH --no-check-certificate 1>/dev/null
+    filterResult $? "拉取ktproxy.conf"
+    chmod 777 ${KT_PATH}/ktproxy.conf
+    chmod 777 ${KT_PATH}/supervisord.conf
     
-    echo "正在启动......"
-    bash "${KT_PATH}/defend.sh"
-    screen -dmS KTProxy
-    sleep 0.2s
-    screen -r KTProxy -p 0 -X stuff "cd /root/kt_proxy"
-    screen -r KTProxy -p 0 -X stuff $'\n'
-    screen -r KTProxy -p 0 -X stuff "/root/kt_proxy/defend.sh"
-    screen -r KTProxy -p 0 -X stuff $'\n'
-    sleep 1
+    message "创建log"
+    if [ ! -e $KT_PATH/stderr.log ];then
+    	touch $KT_PATH/stderr.log
+    fi
+    
+    if [ ! -e $KT_PATH/stdout.log ];then
+    	touch $KT_PATH/stdout.log
+    fi
+    
+    message "启动中..."
+    supervisorctl -c $SUPERVISOR_CONFIG
+    
     echo "启动成功, web默认访问端口为6001，默认账号admin, 默认密码admin123"
-    echo "输入screen -r KTProxy查看程序输出"
 }
 
 uninstall() {
@@ -140,64 +133,28 @@ update() {
 }
 
 start() {
-    if screen -list | grep -q "KTProxy"; then
-        echo "服务已启动，请不要重复启动"
-        exit 1
-    fi
-    
-    echo "正在启动......"
-    screen -dmS KTProxy
-    sleep 0.2s
-    screen -r KTProxy -p 0 -X stuff "cd /root/kt_proxy"
-    screen -r KTProxy -p 0 -X stuff $'\n'
-    screen -r KTProxy -p 0 -X stuff "/root/kt_proxy/defend.sh"
-    screen -r KTProxy -p 0 -X stuff $'\n'
-    sleep 1
-    echo "启动成功, web默认访问端口为6001，默认账号admin, 默认密码admin123"
-    echo "输入screen -r KTProxy查看程序输出"
+    echo "启动服务"
+    supervisorctl -c $SUPERVISOR_CONFIG start ktproxy
 }
 
 stop() {
-    if screen -list | grep -q "KTProxy"; then
-        screen -X -S KTProxy quit
-    fi
-    
-    echo "已停止服务"
+    echo "停止服务"
+    supervisorctl -c $SUPERVISOR_CONFIG stop ktproxy
 }
 
 restart() {
-    if screen -list | grep -q "KTProxy"; then
-        screen -X -S KTProxy quit
-    fi
-    
-    echo "正在启动......"
-    screen -dmS KTProxy
-    sleep 0.2s
-    screen -r KTProxy -p 0 -X stuff "cd /root/kt_proxy"
-    screen -r KTProxy -p 0 -X stuff $'\n'
-    screen -r KTProxy -p 0 -X stuff "/root/kt_proxy/defend.sh"
-    screen -r KTProxy -p 0 -X stuff $'\n'
-    sleep 1
-    
-    echo "重启成功"
+    echo "重启服务"
+    supervisorctl -c $SUPERVISOR_CONFIG stop ktproxy
+    supervisorctl -c $SUPERVISOR_CONFIG start ktproxy
 }
 
 # 旧版本处理
 disOldVersion() {
     message "处理旧版本"
 
-    # 如果是存在superisor版本，删除对应的配置文件并禁止
+    # 如果是存在superisor版本，删除对应的配置文件, 新的版本配置文件换地方了
     if [ -d "/root/kt_proxy" -a -d "/root/kt_proxy/supervisor" ];then
-        echo "卸载旧版本"
-        
-    	message "关闭SUPERVISORD进程"
-    	killall supervisord 1>/dev/null
-    	filterResult $? "关闭SUPERVISORD进程" 1
-    	sleep 3
-
-    	message "卸载SUPERVISORD"
-    	$uncmd supervisor -y 1>/dev/null
-    	filterResult $? "卸载SUPERVISORD" 1
+        echo "清理旧版本"
 
     	message "删除目录"
     	rm -rf /root/kt_proxy/supervisor 1>/dev/null
@@ -218,9 +175,12 @@ if [ $1 ];then
         stop
     elif [ $1 == '-start' ];then
         start
+    elif [ $1 == '-status' ];then
+    	supervisorctl -c $SUPERVISOR_CONFIG status
     elif [ $1 == '-cn' ];then
         TAR_URL="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy-Linux@${VERSION}/KT-v${VERSION}-LINUX.tar.gz"
-        DEFEND_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@${VERSION}/defend.sh"
+        SUPERVISOR_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@${VERSION}/supervisord.conf"
+SUPERVISOR_D_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@${VERSION}/ktproxy.conf"
         install
     fi
 else
