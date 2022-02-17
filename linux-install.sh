@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="0.0.492"
+VERSION="0.0.493"
 TAR_URL="https://github.com/kt007007/KTMinerProxy-Linux/blob/master/KT-v${VERSION}-LINUX.tar.gz"
 SUPERVISOR_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/supervisord.conf"
 SUPERVISOR_D_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/ktproxy.conf"
@@ -173,8 +173,8 @@ if [ $1 ];then
         status
     elif [ $1 == '-cn' ];then
         TAR_URL="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy-Linux@${VERSION}/KT-v${VERSION}-LINUX.tar.gz"
-        SUPERVISOR_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@0.0.49/supervisord.conf"
-SUPERVISOR_D_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@0.0.49/ktproxy.conf"
+        SUPERVISOR_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@${VERSION}/supervisord.conf"
+SUPERVISOR_D_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@${VERSION}/ktproxy.conf"
         install
     fi
 else
