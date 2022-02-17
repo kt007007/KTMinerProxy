@@ -165,7 +165,7 @@
 
   无法访问github请通过以下命令安装:
 
-  bash <(curl -L https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@main/linux-install.sh) -cn
+  bash <(curl -L https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@0.0.463/linux-install.sh) -cn
   ```
 安装完毕后，在任何设备下的的浏览器访问您的服务器【IP:6001】即可访问后台， 例如 http://118.126.1.5:6001, url里面的118.126.1.5替换为您的服务器ip即可，登陆后请尽快在设置页修改默认密码。
 
@@ -182,7 +182,7 @@ bash <(curl -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linu
 
 或
 
-bash <(curl -L https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@main/linux-install.sh) -update
+bash <(curl -L https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@0.0.463/linux-install.sh) -update
 ```
 
 #### 卸载
@@ -192,7 +192,7 @@ bash <(curl -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linu
 
 或
 
-bash <(curl -L https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@main/linux-install.sh) -uninstall
+bash <(curl -L https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@0.0.463/linux-install.sh) -uninstall
 ````
 
 <table>

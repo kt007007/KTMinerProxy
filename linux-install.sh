@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="0.0.462"
+VERSION="0.0.463"
 TAR_URL="https://github.com/kt007007/KTMinerProxy-Linux/blob/master/KT-v${version}-LINUX.tar.gz"
 DEFEND_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/defend.sh"
 KT_PATH="/root/kt_proxy"
@@ -86,7 +86,9 @@ install() {
     message "拉取文件"
     cd ${KT_PATH}
     wget -P $KT_PATH $TAR_URL --no-check-certificate 1>/dev/null
+    filterResult $? "拉取文件"
     chmod 777 "${KT_PATH}/${KT_TAR_NAME}" 1>/dev/null
+    
     message "解压文件"
     tar -xf "${KT_PATH}/${KT_TAR_NAME}" -C "${KT_PATH}" 1>/dev/null
     filterResult $? "解压文件"
@@ -95,9 +97,11 @@ install() {
     if [ -f "${KT_PATH}/defend.sh" ];then
     	rm ${KT_PATH}/defend.sh
     fi
+
+    message "拉取文件"
     wget -P $KT_PATH $DEFEND_PATH --no-check-certificate 1>/dev/null
-    chmod 777 ${KT_PATH}/defend.sh
     filterResult $? "拉取文件"
+    chmod 777 ${KT_PATH}/defend.sh
     
     echo "正在启动......"
     screen -dmS KTProxy
