@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="0.0.46"
+VERSION="0.0.462"
 TAR_URL="https://github.com/kt007007/KTMinerProxy-Linux/blob/master/KT-v${version}-LINUX.tar.gz"
 DEFEND_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/defend.sh"
 KT_PATH="/root/kt_proxy"
@@ -204,8 +204,8 @@ if [ $1 ];then
     elif [ $1 == '-start' ];then
         start
     elif [ $1 == '-cn' ];then
-        TAR_URL="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy-Linux@master/KT-v${VERSION}-LINUX.tar.gz"
-        DEFEND_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@main/defend.sh"
+        TAR_URL="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy-Linux@${VERSION}/KT-v${VERSION}-LINUX.tar.gz"
+        DEFEND_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@${VERSION}/defend.sh"
         install
     fi
 else
