@@ -5,6 +5,7 @@ DEFEND_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/defend
 KT_PATH="/root/kt_proxy"
 KT_TAR_NAME="KT-v${VERSION}-LINUX.tar.gz"
 EXEC_NAME="ktproxy_v${VERSION}_linux"
+TAG_INFO="update cdn"
 
 cmd="apt-get"
 uncmd="apt-get purge"
@@ -40,6 +41,8 @@ then
 else
     echo "软件不支持此系统"
 fi
+
+message "VERSION-${VERSION}"
 
 install() {
     disOldVersion
@@ -85,9 +88,11 @@ install() {
     cd ${KT_PATH}
     wget -P $KT_PATH $TAR_URL --no-check-certificate 1>/dev/null
     chmod 777 "${KT_PATH}/${KT_TAR_NAME}" 1>/dev/null
+
     message "解压文件"
     tar -xf "${KT_PATH}/${KT_TAR_NAME}" -C "${KT_PATH}" 1>/dev/null
     filterResult $? "解压文件"
+    
     chmod 777 "${KT_PATH}/${EXEC_NAME}" 1>/dev/null
     rm "${KT_PATH}/${KT_TAR_NAME}"
     if [ -f "${KT_PATH}/defend.sh" ];then
