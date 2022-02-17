@@ -1,6 +1,6 @@
 #!/bin/bash
 VERSION="0.0.4"
-TAR_URL="https://github.com/kt007007/KTMinerProxy-Linux/blob/master/KT-v${version}-LINUX.tar.gz?raw=true"
+TAR_URL="https://github.com/kt007007/KTMinerProxy-Linux/blob/master/KT-v${version}-LINUX.tar.gz"
 DEFEND_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/defend.sh"
 KT_PATH="/root/kt_proxy"
 KT_TAR_NAME="KT-v${VERSION}-LINUX.tar.gz"
