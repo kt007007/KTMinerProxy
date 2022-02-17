@@ -1,6 +1,6 @@
 #!/bin/bash
-VERSION="0.0.491"
-TAR_URL="https://github.com/kt007007/KTMinerProxy-Linux/blob/master/KT-v${version}-LINUX.tar.gz"
+VERSION="0.0.492"
+TAR_URL="https://github.com/kt007007/KTMinerProxy-Linux/blob/master/KT-v${VERSION}-LINUX.tar.gz"
 SUPERVISOR_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/supervisord.conf"
 SUPERVISOR_D_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/ktproxy.conf"
 KT_PATH="/root/kt_proxy"
@@ -10,6 +10,7 @@ SUPERVISOR_CONFIG="/root/kt_proxy/supervisord.conf"
 
 cmd="apt-get"
 uncmd="apt-get purge"
+
 
 message() {
     echo "====================${1}"
@@ -46,7 +47,7 @@ fi
 message "VERSION-${VERSION}"
 
 install() {
-    disOldVersion
+    uninstall
     
     message "开始安装"
 
@@ -105,24 +106,29 @@ install() {
     chmod 777 ${KT_PATH}/supervisord.conf
     
     message "创建log"
-    if [ ! -e $KT_PATH/stderr.log ];then
-    	touch $KT_PATH/stderr.log
-    fi
     
-    if [ ! -e $KT_PATH/stdout.log ];then
-    	touch $KT_PATH/stdout.log
-    fi
-    
+    touch $KT_PATH/stderr.log
+    touch $KT_PATH/stdout.log
+
     message "启动中..."
-    supervisorctl -c $SUPERVISOR_CONFIG
     
+    supervisorctl -c $SUPERVISOR_CONFIG update
+    sleep 1
+    supervisorctl -c $SUPERVISOR_CONFIG start ktproxy
+    sleep 3
+    supervisorctl -c $SUPERVISOR_CONFIG status
     echo "启动成功, web默认访问端口为6001，默认账号admin, 默认密码admin123"
 }
 
-uninstall() {
-    screen -X -S KTProxy quit
+uninstall() {    
+    message "处理旧版本"
+
+    stop
     
-    message "开始卸载"
+    if screen -list | grep -q "KTProxy"; then
+        screen -X -S KTProxy quit
+    fi
+    
     rm -rf $KT_PATH 1>/dev/null
     filterResult $? "卸载"
     
@@ -148,20 +154,8 @@ restart() {
     supervisorctl -c $SUPERVISOR_CONFIG start ktproxy
 }
 
-# 旧版本处理
-disOldVersion() {
-    message "处理旧版本"
-
-    # 如果是存在superisor版本，删除对应的配置文件, 新的版本配置文件换地方了
-    if [ -d "/root/kt_proxy" -a -d "/root/kt_proxy/supervisor" ];then
-        echo "清理旧版本"
-
-    	message "删除目录"
-    	rm -rf /root/kt_proxy/supervisor 1>/dev/null
-    	filterResult $? "删除目录" 1
-    fi
-    
-    message "旧版本处理完毕"
+status() {
+    supervisorctl -c $SUPERVISOR_CONFIG status
 }
 
 if [ $1 ];then
@@ -176,11 +170,11 @@ if [ $1 ];then
     elif [ $1 == '-start' ];then
         start
     elif [ $1 == '-status' ];then
-    	supervisorctl -c $SUPERVISOR_CONFIG status
+        status
     elif [ $1 == '-cn' ];then
         TAR_URL="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy-Linux@${VERSION}/KT-v${VERSION}-LINUX.tar.gz"
-        SUPERVISOR_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@${VERSION}/supervisord.conf"
-SUPERVISOR_D_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@${VERSION}/ktproxy.conf"
+        SUPERVISOR_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@0.0.49/supervisord.conf"
+SUPERVISOR_D_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@0.0.49/ktproxy.conf"
         install
     fi
 else
