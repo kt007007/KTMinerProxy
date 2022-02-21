@@ -164,50 +164,16 @@ KTMinerProxy采用GO语言原创编写，有着高并发性能优势的同时，
 * Ubuntu 64 18.04+
 * Centos 64 7+
 
-#### 安装
+# 安装
 
 # 暂时关闭安装，马上推出新的安装方式，可实现更多功能
 
-~~bash <(curl -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh)~~
-
-<table>
-    <tr>
-        <td>
-            <center>
-                <img src="./image/jt6.png" alt="Logo">
-            </center>
-        </td>
-        <td>
-            <center>
-                <img src="./image/jt7.png" alt="Logo">
-            </center>
-        </td>
-    </tr>
-</table>
-
-<hr>
-
 <p id="windows"></p>
 
-### Windows环境安装
+# Windows环境安装
 
-1. 前往 [https://github.com/kt007007/KTMinerProxy/blob/main/Windows-64](https://github.com/kt007007/KTMinerProxy/blob/main/Windows-64) 下载windows下的执行程序
-<table>
-    <tr>
-        <td>
-            <center>
-                <img src="./image/jt8.png" alt="Logo">
-            </center>
-        </td>
-        <td>
-            <center>
-                <img src="./image/jt9.png" alt="Logo">
-            </center>
-        </td>
-    </tr>
-</table>
-2. 将下载后的文件放至服务器内，双击运行即可。<br>
-3. 双击运行后, 在任何设备下的的浏览器访问您的服务器【IP:6001】即可访问后台， 例如 http://118.126.1.5:6001, url里面的118.126.1.5替换为您的服务器ip即可，登陆后请尽快在设置页修改默认密码。
+# Linux安装
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
