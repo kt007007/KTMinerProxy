@@ -1,20 +1,20 @@
 <div id="top"></div>
 
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+
+# KTMinerProxy
+
+  <a href="https://github.com/kt007007/KTMinerProxy">
+    <img src="./image/logo.png" alt="Logo" width="200" height="200">
+  </a>
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/kt007007/KTMinerProxy">
-    <img src="./image/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">KTMinerProxy</h3>
 
   <p align="center">
     一款免费且功能强大的矿池加速软件，现已开启内侧。
@@ -28,10 +28,21 @@
   </p>
 </div>
 
-<hr>
+
+## 简介
+
+<p id="about-the-project">KTMinerProxy是一款功能强大的矿池加速程序，目前程序处于内侧阶段，意见和建议请提交至issue、qq群或电报，我们会及时处理。
+
+## 功能
+
+KTMinerProxy采用GO语言原创编写，有着高并发性能优势的同时，还具备了强大的功能。
+编辑中...
+</p>
+
+****
 
 <!-- TABLE OF CONTENTS -->
-<summary>导航菜单</summary>
+## 导航
 <ol>
 <li>
     <a href="#about-the-project">简介</a>
@@ -74,8 +85,6 @@
     </tr>
 </table>
 
-
-<p id="about-the-project">KTProxy是一款功能强大的矿池加速程序，目前程序处于内侧阶段，意见和建议请提交至issue、qq群或电报，我们会及时处理。</p>
 <hr>
 
 <div align="center">
