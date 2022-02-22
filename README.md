@@ -31,7 +31,6 @@
 
 <p id="about-the-project">KTMinerProxy是一款功能强大的矿池加速程序, 目前程序处于内侧阶段, 意见和建议请提交至issue、qq群或电报, 我们会及时处理。
 
-<!-- TABLE OF CONTENTS -->
 # 导航
 <ol>
 <li>
@@ -50,6 +49,7 @@
     <li><a href="#windows">Windows</a></li>
     </ul>
 </li>
+<li><a href="#about">免责声明</a></li>
 <li><a href="#about">联系我们</a></li>
 </ol>
 
@@ -150,7 +150,6 @@ KTMinerProxy采用GO语言原创编写, 有着高并发性能优势的同时, �
 
 部署之前, 您需要有一台自己的云服务器来部署此软件, 服务器选择方案点击此处查看帮助。<br>
 云服务器请打开16777端口, 默认web访问地址为此端口。<br>
-不支持大陆地区安装，请遵守法律法规。<br>
 
 
 <p id="linux"></p>
@@ -199,6 +198,10 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 
 <!-- CONTACT -->
 <p id="about"></p>
+
+# 免责声明
+<p id="flsm">不支持大陆区域的安装，请遵守法当地律法规, 使用此软件造成的法律问题, 一概与软件作者无关。</p>
+
 
 # 联系我们
 
