@@ -1,189 +1,132 @@
 #!/bin/bash
+# Author: KT007007
+# github: https://github.com/kt007007
+
 VERSION="0.0.7"
-TAR_URL="https://github.com/kt007007/KTMinerProxy-Linux/blob/master/KT-v${VERSION}-LINUX.tar.gz"
-SUPERVISOR_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/supervisord.conf"
-SUPERVISOR_D_PATH="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/ktproxy.conf"
-KT_PATH="/root/kt_proxy"
-KT_TAR_NAME="KT-v${VERSION}-LINUX.tar.gz"
-EXEC_NAME="ktproxy_v${VERSION}_linux"
-SUPERVISOR_CONFIG="/root/kt_proxy/supervisord.conf"
 
-cmd="apt-get"
-uncmd="apt-get purge"
+DOWNLAOD_URL="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v0.0.7_linux"
 
+PATH_KT="/root/ktminerproxy"
 
-message() {
-    echo "====================${1}"
-    echo -e 
+PATH_EXEC="ktproxy"
+
+#######color code########
+RED="31m"
+GREEN="32m"
+YELLOW="33m"
+BLUE="36m"
+FUCHSIA="35m"
+
+colorEcho(){
+    COLOR=$1
+    echo -e "\033[${COLOR}${@:2}\033[0m"
 }
+
+#检查是否为Root
+[ $(id -u) != "0" ] && { colorEcho ${RED} "请使用root用户执行此脚本."; exit 1; }
+
+PACKAGE_MANAGER="apt-get"
+PACKAGE_PURGE="apt-get purge"
+
 
 filterResult() {
     if [ $1 -eq 0 ]; then
-        echo "【${2}】成功。"
+        echo ""
     else
-        echo "【${2}】失败。"
+        colorEcho ${RED} "【${2}】失败。"
 	
         if [ ! $3 ];then
-            echo "!!!!!!!!!!!!!!!安装失败!!!!!!!!!!!!!!!!"
+            colorEcho ${RED} "!!!!!!!!!!!!!!!安装失败!!!!!!!!!!!!!!!!"
             exit 1
         fi
     fi
-
     echo -e
 }
 
-
-if [[ $(command -v apt-get) || $(command -v yum) ]] && [[ $(command -v systemctl) ]];
-then
-    if [[ $(command -v yum) ]]; 
-    then
-        cmd="yum"
-	    uncmd="yum remove"
-
-        message "安装epel"
-        $cmd install epel-release
-    fi
+if [[ `command -v apt-get` ]];then
+    PACKAGE_MANAGER='apt-get'
+elif [[ `command -v dnf` ]];then
+    PACKAGE_MANAGER='dnf'
+elif [[ `command -v yum` ]];then
+    PACKAGE_MANAGER='yum'
+    PACKAGE_PURGE="yum remove"
 else
-    echo "软件不支持此系统"
+    colorEcho $RED "不支持的操作系统."
+    exit 1
 fi
 
-message "VERSION-${VERSION}"
-
 install() {
-    uninstall
-    
-    message "开始安装"
+    colorEcho ${GREEN} "开始安装KTPROXY-V-${VERSION}"
 
-    if [ $cmd == 'yum' ];then
-	message "禁用centos防火墙"	
-	systemctl stop firewalld
-        filterResult $? "禁用centos防火墙" 1
-
-        message "停止防火墙centos开机启动"
-	systemctl disable firewalld
-        filterResult $? "停止防火墙centos开机启动" 1
-    fi
+    colorEcho $BLUE "更新软件源."
     
-    message "开始更新软件源, 这个过程可能需要几分钟到十几分钟不等，如果太久没有完成，请更换国内源"
-    $cmd update -y
-    filterResult $? "更新软件源"
-
-    message "安装CURL WGET "
-    $cmd install curl wget -y 1>/dev/null
-    filterResult $? "安装CURL WGET"
-
-    message "安装python-setuptools"
-    $cmd install python-setuptools -y 1>/dev/null
-    filterResult $? "安装python-setuptools"
+    $PACKAGE_MANAGER update -y 1>/dev/null
     
-    message "创建目录"
-    mkdir /root/kt_proxy 1>/dev/null
-    chmod 777 /root/kt_proxy 1>/dev/null
-    filterResult $? "创建目录"
-    
-    message "拉取文件"
-    cd ${KT_PATH}
-    wget -P $KT_PATH $TAR_URL --no-check-certificate 1>/dev/null
-    filterResult $? "拉取文件"
-    chmod 777 "${KT_PATH}/${KT_TAR_NAME}" 1>/dev/null
-    
-    message "解压文件"
-    tar -xf "${KT_PATH}/${KT_TAR_NAME}" -C "${KT_PATH}" 1>/dev/null
-    filterResult $? "解压文件"
-    chmod 777 "${KT_PATH}/${EXEC_NAME}" 1>/dev/null
-    rm "${KT_PATH}/${KT_TAR_NAME}"
-    if [ -f "${KT_PATH}/defend.sh" ];then
-    	rm ${KT_PATH}/defend.sh
+    if [[ ! `command -v curl` ]];then
+        $PACKAGE_MANAGER install curl -y 1>/dev/null
     fi
 
-    message "拉取文件"
-    wget -P $KT_PATH $SUPERVISOR_PATH --no-check-certificate 1>/dev/null
-    filterResult $? "拉取supervisord.conf"
-    wget -P $KT_PATH $SUPERVISOR_D_PATH --no-check-certificate 1>/dev/null
-    filterResult $? "拉取ktproxy.conf"
-    chmod 777 ${KT_PATH}/ktproxy.conf
-    chmod 777 ${KT_PATH}/supervisord.conf
+    if [[ ! `command -v wget` ]];then
+        $cmd install wget -y 1>/dev/null
+    fi
+
+    colorEcho $BLUE "创建目录"
     
-    message "创建log"
-    
-    touch $KT_PATH/stderr.log
-    touch $KT_PATH/stdout.log
-
-    message "安装supervisor"
-    $cmd install supervisor -y 1>/dev/null
-    filterResult $? "安装supervisor"
-
-    message "启动中..."
-    supervisord -c $SUPERVISOR_CONFIG
-    sleep 1
-    supervisorctl -c $SUPERVISOR_CONFIG update
-    sleep 1
-    supervisorctl -c $SUPERVISOR_CONFIG start ktproxy
-    sleep 3
-    supervisorctl -c $SUPERVISOR_CONFIG status
-    echo "启动成功, web默认访问端口为6001，默认账号admin, 默认密码admin123"
-}
-
-uninstall() {    
-    message "处理旧版本"
+    if [[ ! -d $PATH_KT ]];then
+        mkdir $PATH_KT
+        chmod 777 $PATH_KT
+    else
+        colorEcho $YELLOW "目录已存在, 无需重复创建。"
+    fi
 
     stop
 
-    message "卸载supervisor"
-    $uncmd supervisor -y
-    filterResult $? "卸载supervisor" 1
-    
-    if screen -list | grep -q "KTProxy"; then
-        screen -X -S KTProxy quit
-    fi
-    
-    rm -rf $KT_PATH 1>/dev/null
-    filterResult $? "卸载" 1
-    
+    colorEcho $BLUE "拉取程序"
+    wget -P $PATH_KT $DOWNLAOD_URL -O "${PATH_KT}/${PATH_EXEC}" -q 1>/dev/null
+    filterResult $? "拉取程序"
+
+    chmod 777 "${PATH_KT}/${PATH_EXEC}"
+
+    start
 }
 
-update() {
-    install
+uninstall() {    
+    colorEcho $BLUE "终止进程"
+    killall ktproxy
+
+    rm -rf ${PATH_KT}
+    colorEcho $GREEN "卸载完成"
 }
 
 start() {
-    echo "启动服务"
-    supervisorctl -c $SUPERVISOR_CONFIG start ktproxy
+    colorEcho $BLUE "启动程序..."
+    nohup "${PATH_KT}/${PATH_EXEC}" 2> err.log &
+    filterResult $? "启动程序"
+
+    colorEcho $GREEN "程序启动成功, 默认WEB访问端口 16777, 默认账号admin, 默认密码admin123"
 }
 
 stop() {
-    echo "停止服务"
-    supervisorctl -c $SUPERVISOR_CONFIG stop ktproxy
+    colorEcho $BLUE "终止进程"
+    killall ktproxy
 }
 
 restart() {
-    echo "重启服务"
-    supervisorctl -c $SUPERVISOR_CONFIG stop ktproxy
-    supervisorctl -c $SUPERVISOR_CONFIG start ktproxy
-}
-
-status() {
-    supervisorctl -c $SUPERVISOR_CONFIG status
+    stop
+    start
 }
 
 if [ $1 ];then
     if [ $1 == "-uninstall" ];then
         uninstall
     elif [ $1 == '-update' ];then
-        update
+        install
     elif [ $1 == '-restart' ];then
         restart
     elif [ $1 == '-stop' ];then
         stop
     elif [ $1 == '-start' ];then
         start
-    elif [ $1 == '-status' ];then
-        status
-    elif [ $1 == '-cn' ];then
-        TAR_URL="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy-Linux@${VERSION}/KT-v${VERSION}-LINUX.tar.gz"
-        SUPERVISOR_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@${VERSION}/supervisord.conf"
-SUPERVISOR_D_PATH="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@${VERSION}/ktproxy.conf"
-        install
     fi
 else
     install
