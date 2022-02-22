@@ -100,7 +100,7 @@ uninstall() {
 
 start() {
     colorEcho $BLUE "启动程序..."
-    nohup "${PATH_KT}/${PATH_EXEC}" 2> err.log &
+    nohup "${PATH_KT}/${PATH_EXEC}" 2>err.log &
     filterResult $? "启动程序"
 
     colorEcho $GREEN "程序启动成功, 默认WEB访问端口 16777, 默认账号admin, 默认密码admin123"
