@@ -2,9 +2,9 @@
 # Author: KT007007
 # github: https://github.com/kt007007
 
-VERSION="0.0.7"
+VERSION="0.0.8"
 
-DOWNLAOD_URL="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v0.0.7_linux"
+DOWNLAOD_URL="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v0.0.8_linux"
 
 PATH_KT="/root/ktminerproxy"
 
