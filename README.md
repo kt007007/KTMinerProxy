@@ -83,7 +83,7 @@ KTMinerProxy采用GO语言原创编写, 有着高并发性能优势的同时, �
             * 自定义SSL密钥<br>
             * 多地区语言<br>
             * 矿池状态检查<br>
-            * .......<br><br><br>
+            * 自定义TLS证书<br><br><br>
         </td>
         <td>
             * ETH<br>
