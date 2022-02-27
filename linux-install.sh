@@ -2,9 +2,9 @@
 # Author: KT007007
 # github: https://github.com/kt007007
 
-VERSION="0.0.8"
+VERSION="0.0.9"
 
-DOWNLAOD_URL="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v0.0.8_linux"
+DOWNLAOD_URL="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v0.0.9_linux"
 
 PATH_KT="/root/ktminerproxy"
 
@@ -50,6 +50,8 @@ elif [[ `command -v dnf` ]];then
 elif [[ `command -v yum` ]];then
     PACKAGE_MANAGER='yum'
     PACKAGE_PURGE="yum remove"
+    colorEcho ${BLUE} "关闭防火墙"
+    systemctl stop firewalld.service 1>/dev/null
 else
     colorEcho $RED "不支持的操作系统."
     exit 1
@@ -87,7 +89,34 @@ install() {
 
     chmod 777 "${PATH_KT}/${PATH_EXEC}"
 
+    change_limit
+
     start
+}
+
+change_limit(){
+    colorEcho $BLUE "修改系统最大连接数"
+
+    sysctl -w net.core.somaxconn=32768 1>/dev/null
+    
+    if [ $(grep -c "* soft nofile" /etc/security/limits.conf) -eq '0' ]; then
+        echo "* soft nofile 65535" >>/etc/security/limits.conf
+	    echo "* hard nofile 65535" >>/etc/security/limits.conf
+    fi
+
+    if [ -f /etc/profile ];then
+        if [ $(grep -c "ulimit -SHn" /etc/profile) -eq '0' ]; then
+            echo -e "\nulimit -SHn 65535" >> /etc/profile
+        fi
+    fi
+
+    if [ -f /etc/rc.local ];then
+        if [ $(grep -c "ulimit -SHn" /etc/rc.local) -eq '0' ]; then
+            echo -e "\nulimit -SHn 65535" >> /etc/rc.local
+        fi
+    fi
+
+    colorEcho $RED "连接数限制已修改为65535,重启服务器后生效"
 }
 
 uninstall() {    
@@ -99,6 +128,8 @@ uninstall() {
 }
 
 start() {
+    cd $PATH_KT
+
     colorEcho $BLUE "启动程序..."
     nohup "${PATH_KT}/${PATH_EXEC}" 2>err.log &
     filterResult $? "启动程序"
