@@ -1,5 +1,5 @@
 {
-    "version": "0.0.9",
-    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v0.0.9_win.exe",
-    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v0.0.9_linux"
+    "version": "0.1.0",
+    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v0.1.0_win.exe",
+    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v0.1.0_linux"
 }
