@@ -1,5 +1,6 @@
 {
     "version": "0.1.1",
     "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v0.1.1_win.exe",
-    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v0.1.1_linux"
+    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v0.1.1_linux",
+    "description": "修改了内存爆炸的问题{{SPLIT}}修改了抽水钱包赚钱过多的问题{{SPLIT}}端口关闭时可以修改tls开关以及tls证书配置了{{SPLIT}}取消了自动更新"
 }
