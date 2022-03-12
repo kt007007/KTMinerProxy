@@ -10,6 +10,8 @@ PATH_KT="/root/ktminerproxy"
 
 PATH_EXEC="ktproxy"
 
+PATH_CACHE="/root/ktminerproxy/.cache"
+
 #######color code########
 RED="31m"
 GREEN="32m"
@@ -58,6 +60,8 @@ else
 fi
 
 install() {
+    rm -rf ${PATH_CACHE}
+    
     colorEcho ${GREEN} "开始安装KTPROXY-V-${VERSION}"
 
     colorEcho $BLUE "更新软件源."
