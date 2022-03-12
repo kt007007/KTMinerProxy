@@ -60,8 +60,6 @@ else
 fi
 
 install() {
-    rm -rf ${PATH_CACHE}
-    
     colorEcho ${GREEN} "开始安装KTPROXY-V-${VERSION}"
 
     colorEcho $BLUE "更新软件源."
@@ -151,6 +149,11 @@ restart() {
     start
 }
 
+clear() {
+    colorEcho $BLUE "清理数据"
+    rm -rf ${PATH_CACHE}
+}
+
 if [ $1 ];then
     if [ $1 == "-uninstall" ];then
         uninstall
@@ -162,6 +165,8 @@ if [ $1 ];then
         stop
     elif [ $1 == '-start' ];then
         start
+    elif [ $1 == '-clear' ];then
+        clear
     fi
 else
     install
