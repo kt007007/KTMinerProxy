@@ -4,7 +4,7 @@
 
 VERSION="0.9.9"
 
-DOWNLAOD_URL="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v0.9.9_linux"
+DOWNLAOD_URL="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v0.1.1_linux"
 
 PATH_KT="/root/ktminerproxy"
 
@@ -86,7 +86,7 @@ install() {
     stop
 
     colorEcho $BLUE "拉取程序"
-    wget -P $PATH_KT $DOWNLAOD_URL -O "${PATH_KT}/${PATH_EXEC}" -q 1>/dev/null
+    wget -P $PATH_KT $DOWNLAOD_URL -O "${PATH_KT}/${PATH_EXEC}" 1>/dev/null
     filterResult $? "拉取程序"
 
     chmod 777 "${PATH_KT}/${PATH_EXEC}"
