@@ -99,26 +99,23 @@ install() {
 change_limit(){
     colorEcho $BLUE "修改系统最大连接数"
 
-    sysctl -w net.core.somaxconn=32768 1>/dev/null
-    
-    if [ $(grep -c "* soft nofile" /etc/security/limits.conf) -eq '0' ]; then
-        echo "* soft nofile 65535" >>/etc/security/limits.conf
-	    echo "* hard nofile 65535" >>/etc/security/limits.conf
+    num="n"
+    if [ $(grep -c "root soft nofile" /etc/security/limits.conf) -eq '0' ]; then
+        echo "root soft nofile 102400" >>/etc/security/limits.conf
+        num="y"
     fi
 
-    if [ -f /etc/profile ];then
-        if [ $(grep -c "ulimit -SHn" /etc/profile) -eq '0' ]; then
-            echo -e "\nulimit -SHn 65535" >> /etc/profile
-        fi
+    if [[ "$num" = "y" ]]; then
+        echo "连接数限制已修改为102400,重启服务器后生效"
+    else
+        echo -n "当前连接数限制："
+        ulimit -n
     fi
+}
 
-    if [ -f /etc/rc.local ];then
-        if [ $(grep -c "ulimit -SHn" /etc/rc.local) -eq '0' ]; then
-            echo -e "\nulimit -SHn 65535" >> /etc/rc.local
-        fi
-    fi
-
-    colorEcho $RED "连接数限制已修改为65535,重启服务器后生效"
+check_limit(){
+    echo -n "当前连接数限制："
+    ulimit -n
 }
 
 uninstall() {    
@@ -167,6 +164,10 @@ if [ $1 ];then
         start
     elif [ $1 == '-clear' ];then
         clear
+    elif [ $1 == '-changelimit'];then
+        change_limit
+    elif [ $1 == '-checklimit'];then
+        check_limit
     fi
 else
     install
