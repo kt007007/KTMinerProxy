@@ -2,15 +2,15 @@
 # Author: KT007007
 # github: https://github.com/kt007007
 
-VERSION="0.1.1"
+VERSION="1.0.0"
 
-DOWNLAOD_URL="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v0.1.1_linux"
+DOWNLAOD_URL="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v1.0.0_linux"
 
-PATH_KT="/root/ktminerproxy"
+PATH_KT="/root/ktmproxy"
 
 PATH_EXEC="ktproxy"
 
-PATH_CACHE="/root/ktminerproxy/.cache"
+PATH_CACHE="/root/ktmproxy/.cache"
 
 #######color code########
 RED="31m"

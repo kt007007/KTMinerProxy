@@ -1,6 +1,6 @@
 {
-    "version": "0.9.9",
-    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v0.9.9_win.exe",
-    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v0.9.9_linux",
+    "version": "1.0.0",
+    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v1.0.0_win.exe",
+    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v1.0.0_linux",
     "description": "可配置多个钱包{{SPLIT}}修改了开启抽水导致的份额丢失问题{{SPLIT}}新的获取任务逻辑, 获取份额数量更快了一些{{SPLIT}}增加了常用自定义配置管理{{SPLIT}}可以单独导出某个端口的配置{{SPLIT}}优化页面细节{{SPLIT}}显示正常的区间内份额统计图表{{SPLIT}}机器增加了日志,点击机器查看详情可看到（持续更新）{{SPLIT}}增加了一键默认配置{{SPLIT}}修改了sn冲突导致的无法登录的问题"
 }
