@@ -16,11 +16,9 @@
 
 
   <p align="center">
-    一款免费且功能强大的矿池加速软件, 现已开启内侧。
-    <br />
-    <a href="https://kdocs.cn/l/slPG1q488Trc"><strong>帮助文档 »</strong></a>
-    <br />
-    <br />
+    <h2>原创GO语言编写，功能强大，性能强劲。</h2>
+    <!-- <a href="https://kdocs.cn/l/slPG1q488Trc"><strong>帮助文档 »</strong></a> -->
+    <a href="https://kdocs.cn/l/slPG1q488Trc"></a>
     <a href="https://qm.qq.com/cgi-bin/qm/qr?k=2qOW3S0PnHGL_30AmNmLLRDp2bhwIi3M&jump_from=webapi">QQ群: 978113445</a>
     ·
     <a href="https://t.me/+VK7ZOlKvcLljYjQ1"> 电报 https://t.me/+VK7ZOlKvcLljYjQ1</a>
@@ -30,9 +28,6 @@
 # 导航
 
 <ol>
-<li>
-    <a href="#about-the-project">简介</a>
-</li>
 <li>
     <a href="#gn">功能</a>
 </li>
@@ -75,6 +70,9 @@
     <ul>
         <li>
             <a href="#q1">算力呈现波浪状</a>
+        </li>
+        <li>
+            <a href="#q2">负载均衡</a>
         </li>
     </ul>
 </li>
@@ -259,6 +257,11 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 <img src="./image/t10.png" alt="Logo">
 <p>如果出现上图中的情况, 说明您开启了多个相同端口的KTMinerproxy, 关闭多余的进程即可。</p>
 
+<hr>
+
+<span id="q2"></span>
+## 负载均衡
+<p>等待更新</p>
 
 <span id="uplog"></span>
 # 更新日志
