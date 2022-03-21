@@ -16,7 +16,7 @@
 
 
   <p align="center">
-    <h2>原创GO语言编写，功能强大，性能强劲。</h2>
+    <h2>`:zap:`原创GO语言编写，功能强大，性能强劲。</h2>
     <!-- <a href="https://kdocs.cn/l/slPG1q488Trc"><strong>帮助文档 »</strong></a> -->
     <a href="https://kdocs.cn/l/slPG1q488Trc"></a>
     <a href="https://qm.qq.com/cgi-bin/qm/qr?k=2qOW3S0PnHGL_30AmNmLLRDp2bhwIi3M&jump_from=webapi">QQ群: 978113445</a>
