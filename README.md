@@ -16,7 +16,7 @@
 
 
   <p align="center">
-    <h2>`:zap:`原创GO语言编写，功能强大，性能强劲。</h2>
+    <h2>:zap: 原创GO语言编写，功能强大，性能强劲。</h2>
     <!-- <a href="https://kdocs.cn/l/slPG1q488Trc"><strong>帮助文档 »</strong></a> -->
     <a href="https://kdocs.cn/l/slPG1q488Trc"></a>
     <a href="https://qm.qq.com/cgi-bin/qm/qr?k=2qOW3S0PnHGL_30AmNmLLRDp2bhwIi3M&jump_from=webapi">QQ群: 978113445</a>
@@ -85,59 +85,27 @@
 
 # 功能
 
-<div align="center" id="gn">
-<table>
-    <tr>
-        <td>支持的功能</td>
-        <td>支持的币种</td>
-    </tr>
-    <tr>
-        <td>
-            * 数据统计分析<br>
-            * TLS/SSL加密<br>
-            * 矿池转发<br>
-            * 预置各币种的矿池（随时更新）<br>
-            * 自定义矿池<br>
-            * 备用矿池<br>
-            * 自定义端口<br>
-            * 端口连接数限制<br>
-            * 多钱包配置<br>
-            * 自定义抽水比例<br>
-            * 自定义抽水钱包、矿池、设备名称<br>
-            * 统一钱包<br>
-            * 矿池模式<br>
-            * 端口备注<br>
-            * 在线更新<br>
-            * 内置进程守护<br>
-            * 导入导出端口配置<br>
-            * 自定义SSL密钥<br>
-            * 多地区语言<br>
-            * 矿池状态检查<br>
-            * 自定义TLS证书
-        </td>
-        <td>
-            * ETH<br>
-            * ETC<br>
-            * BTC<br>
-            * KDA<br>
-            * ZEC<br>
-            * BEAM<br>
-            * RVN<br>
-            * ERG<br>
-            * ZEN<br>
-            * LTC<br>
-            * DCR<br>
-            * DASH<br>
-            * CKB<br>
-            * BCH<br>
-            * HNS<br>
-            * STC<br>
-            * 陆续添加中......<br><br><br><br><br>
-        </td>
-    </tr>
-</table>
-</center>
-</div>
+|支持的功能|支持的币种|
+|:-------:|:---:|
+|数据统计分析|ETH|
+|TLS/SSL加密|ETC|
+|矿池转发|BTC|
+|预置各币种的矿池（随时更新）|KDA|
+|自定义矿池|ZEC|
+|备用矿池|BEAM|
+|自定义端口|RVN|
+|端口连接数限制|ERG|
+|多钱包配置|ZEN|
+|自定义抽水比例|LTC|
+|自定义抽水钱包、矿池、设备名称|DCR|
+|统一钱包|DASH|
+|矿池模式|CKB|
+|端口备注|BCH|
+|在线更新|HNS|
+|导入导出端口配置|STC|
+|自定义SSL密钥||
+|矿池状态检查||
+|自定义TLS证书||
 
 </p>
 
