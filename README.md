@@ -6,9 +6,14 @@
 # KTMinerProxy
 
   <a href="https://github.com/kt007007/KTMinerProxy">
-    <img src="./image/slogo.png#gh-light-mode-only" alt="Logo" width="200" height="200">
-    <img src="./image/logo.png#gh-dark-mode-only" alt="Logo" width="200" height="200">
+    <img src="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/image/logo.png#gh-dark-mode-only" alt="Logo" width="200" height="200">
+    <img src="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/image/slogo.png#gh-light-mode-only" alt="Logo" width="200" height="200">
   </a>
+
+  <!-- ![GitHub Light](https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/image/logo.png#gh-dark-mode-only)
+
+  ![GitHub Dark](https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/image/slogo.png#gh-light-mode-only) -->
+
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
