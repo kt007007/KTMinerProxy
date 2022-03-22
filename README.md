@@ -13,13 +13,15 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+<!-- ![Github stars](https://img.shields.io/github/stars/kt007007/KTMinerProxy.svg) -->
 
 
   <p align="center">
     <h2>:zap: 原创GO语言编写，功能强大，性能强劲。</h2>
     <!-- <a href="https://kdocs.cn/l/slPG1q488Trc"><strong>帮助文档 »</strong></a> -->
     <a href="https://kdocs.cn/l/slPG1q488Trc"></a>
-    <a href="https://qm.qq.com/cgi-bin/qm/qr?k=2qOW3S0PnHGL_30AmNmLLRDp2bhwIi3M&jump_from=webapi">QQ群: 978113445</a>
+    <a href="https://qm.qq.com/cgi-bin/qm/qr?k=2qOW3S0PnHGL_30AmNmLLRDp2bhwIi3M&jump_from=webapi">QQ群: 978113445</a>sudo apt-get update
+sudo apt install curl
     ·
     <a href="https://t.me/+VK7ZOlKvcLljYjQ1"> 电报 https://t.me/+VK7ZOlKvcLljYjQ1</a>
   </p>
@@ -28,6 +30,9 @@
 # 导航
 
 <ol>
+<li>
+    <a href="#uplog">更新日志</a>
+</li>
 <li>
     <a href="#gn">功能</a>
 </li>
@@ -74,162 +79,20 @@
         <li>
             <a href="#q2">负载均衡</a>
         </li>
+        <li>
+            <a href="#q3">安装时提示 curl: command not found</a>
+        </li>
+        <li>
+            <a href="#q4">修改端口启动</a>
+        </li>
+        <li>
+            <a href="#q5">修改密码</a>
+        </li>
     </ul>
-</li>
-<li>
-    <a href="#uplog">更新日志</a>
 </li>
 <li><a href="#about">免责声明</a></li>
 <li><a href="#about">联系我们</a></li>
 </ol>
-
-# 功能
-
-|支持的功能|支持的币种|
-|:-------:|:---:|
-|数据统计分析|ETH|
-|TLS/SSL加密|ETC|
-|矿池转发|BTC|
-|预置各币种的矿池（随时更新）|KDA|
-|自定义矿池|ZEC|
-|备用矿池|BEAM|
-|自定义端口|RVN|
-|端口连接数限制|ERG|
-|多钱包配置|ZEN|
-|自定义抽水比例|LTC|
-|自定义抽水钱包、矿池、设备名称|DCR|
-|统一钱包|DASH|
-|矿池模式|CKB|
-|端口备注|BCH|
-|在线更新|HNS|
-|导入导出端口配置|STC|
-|自定义SSL密钥||
-|矿池状态检查||
-|自定义TLS证书||
-
-</p>
-
-<!-- ABOUT THE PROJECT -->
-<p id="preview"></p>
-
-# 软件预览
-
-<table>
-    <tr>
-        <td>
-            <center>
-                <img src="./image/jt1.png" alt="Logo">
-            </center>
-        </td>
-        <td>
-            <center>
-                <img src="./image/jt3.png" alt="Logo">
-            </center>
-        </td>
-        <td>
-            <center>
-                <img src="./image/jt2.png" alt="Logo">
-            </center>
-        </td>
-        <td>
-            <center>
-                <img src="./image/t5.png" alt="Logo">
-            </center>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <center>
-                <img src="./image/t6.png" alt="Logo">
-            </center>
-        </td>
-        <td>
-            <center>
-                <img src="./image/t7.png" alt="Logo">
-            </center>
-        </td>
-        <td>
-            <center>
-                <img src="./image/t8.png" alt="Logo">
-            </center>
-        </td>
-        <td>
-            <center>
-                <img src="./image/t9.png" alt="Logo">
-            </center>
-        </td>
-    </tr>
-</table>
-
-
-
-<!-- GETTING STARTED -->
-<p id="install"></p>
-
-
-<p id="linux"></p>
-
-# Linux
-
-### 安装:
-```
-bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh)
-```
-
-### 卸载:
-```
-bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -uninstall
-```
-
-### 停止服务:
-```
-bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -stop
-```
-
-### 启动服务:
-```
-bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -start
-```
-
-### 重启服务:
-```
-bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -restart
-```
-
-### 更新:
-```
-bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -update
-```
-
-支持的Linux
-
-* Ubuntu 64 18.04+
-* Centos 64 7+
-
-<p id="windows"></p>
-
-# Windows
-下载完后直接启动即可，程序自带进程守护
-
-<a href="https://github.com/kt007007/KTMinerProxy/tree/main/Windows-64">下载地址</a>
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-# 常见问题
-<p id="question"></p>
-
-<span id="q1"></span>
-## 算力呈现波浪状
-
-<img src="./image/t10.png" alt="Logo">
-<p>如果出现上图中的情况, 说明您开启了多个相同端口的KTMinerproxy, 关闭多余的进程即可。</p>
-
-<hr>
-
-<span id="q2"></span>
-## 负载均衡
-<p>等待更新</p>
 
 <span id="uplog"></span>
 # 更新日志
@@ -294,7 +157,160 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 修复了目标矿池为SSL连不上的问题
 ```
 
+# 功能
+
+|支持的功能|支持的币种|
+|:-------:|:---:|
+|数据统计分析|ETH|
+|TLS/SSL加密|ETC|
+|矿池转发|BTC|
+|预置各币种的矿池（随时更新）|KDA|
+|自定义矿池|ZEC|
+|备用矿池|BEAM|
+|自定义端口|RVN|
+|端口连接数限制|ERG|
+|多钱包配置|ZEN|
+|自定义抽水比例|LTC|
+|自定义抽水钱包、矿池、设备名称|DCR|
+|统一钱包|DASH|
+|矿池模式|CKB|
+|端口备注|BCH|
+|在线更新|HNS|
+|导入导出端口配置|STC|
+|自定义SSL密钥||
+|矿池状态检查||
+|自定义TLS证书||
+
+</p>
+
+# 软件预览
+
+<table>
+    <tr>
+        <td>
+            <center>
+                <img src="./image/jt1.png" alt="Logo">
+            </center>
+        </td>
+        <td>
+            <center>
+                <img src="./image/jt3.png" alt="Logo">
+            </center>
+        </td>
+        <td>
+            <center>
+                <img src="./image/jt2.png" alt="Logo">
+            </center>
+        </td>
+        <td>
+            <center>
+                <img src="./image/t5.png" alt="Logo">
+            </center>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <center>
+                <img src="./image/t6.png" alt="Logo">
+            </center>
+        </td>
+        <td>
+            <center>
+                <img src="./image/t7.png" alt="Logo">
+            </center>
+        </td>
+        <td>
+            <center>
+                <img src="./image/t8.png" alt="Logo">
+            </center>
+        </td>
+        <td>
+            <center>
+                <img src="./image/t9.png" alt="Logo">
+            </center>
+        </td>
+    </tr>
+</table>
+
+<!-- GETTING STARTED -->
+<p id="install"></p>
+
+
+<p id="linux"></p>
+
+# Linux
+
+### 安装:
+```
+bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh)
+```
+
+### 卸载:
+```
+bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -uninstall
+```
+
+### 停止服务:
+```
+bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -stop
+```
+
+### 启动服务:
+```
+bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -start
+```
+
+### 重启服务:
+```
+bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -restart
+```
+
+### 更新:
+```
+bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -update
+```
+
+支持的Linux
+
+* Ubuntu 64 18.04+
+* Centos 64 7+
+
+<p id="windows"></p>
+
+# Windows
+下载完后直接启动即可，程序自带进程守护
+
+<a href="https://github.com/kt007007/KTMinerProxy/tree/main/Windows-64">下载地址</a>
+
+
+<p id="question"></p>
 <p id="about"></p>
+
+# 常见问题
+
+<span id="q1"></span>
+## 算力呈现波浪状
+
+<img src="./image/t10.png" alt="Logo">
+
+```
+如果出现上图中的情况, 说明您开启了多个相同端口的KTMinerproxy, 关闭多余的进程即可。
+```
+
+<span id="q2"></span>
+## 负载均衡
+```
+等待更新
+```
+
+<span id="q3"></span>
+## 安装时提示 curl: command not found
+```
+安装时提示 curl: command not found， 说明你的linux没有安装curl
+先执行    apt-get update
+然后执行  apt install curl
+等待命令执行完毕，即可执行暗转脚本
+```
 
 # 免责声明
 <p id="flsm">
@@ -304,6 +320,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 
 使用此软件造成的法律问题, 一概与软件作者无关。
 </p>
+
 
 
 # 联系我们
