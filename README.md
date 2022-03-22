@@ -6,7 +6,8 @@
 # KTMinerProxy
 
   <a href="https://github.com/kt007007/KTMinerProxy">
-    <img src="./image/logo.png" alt="Logo" width="200" height="200">
+    <img src="./image/slogo.png#gh-light-mode-only" alt="Logo" width="200" height="200">
+    <img src="./image/logo.png#gh-dark-mode-only" alt="Logo" width="200" height="200">
   </a>
 
 [![Contributors][contributors-shield]][contributors-url]
