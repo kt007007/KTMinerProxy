@@ -105,6 +105,9 @@
         <li>
             <a href="#q7">关闭/删除端口</a>
         </li>
+        <li>
+            <a href="#q8">安装时提示：安装killall失败！！！！请手动安装psmisc后再执行安装程序。</a>
+        </li>
     </ul>
 </li>
 <li><a href="#about">免责声明</a></li>
@@ -259,8 +262,10 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 
 # 常见问题
 
+以下为常见问题解决方案
+
 <span id="q1"></span>
-## 算力呈现波浪状
+# 算力呈现波浪状
 
 <img src="./image/t10.png" alt="Logo">
 
@@ -269,13 +274,13 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 ```
 
 <span id="q2"></span>
-## 负载均衡
+# 负载均衡
 ```
 等待更新
 ```
 
 <span id="q3"></span>
-## 安装时提示 curl: command not found
+# 安装时提示 curl: command not found
 ```
 安装时提示 curl: command not found， 说明你的linux没有安装curl
 先执行    apt-get update
@@ -284,17 +289,24 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 ```
 
 <span id="q6"></span>
-## 启动时提示 dial tcp connection refused
+# 启动时提示 dial tcp connection refused
 ```
 请将ktproxy.com添加至防火墙白名单中，这个域名提供了图表服务及认证
 ```
 
 <span id="q7"></span>
-## 关闭/删除端口
+# 关闭/删除端口
 <img src="./image/t11.png" alt="Logo">
 
 ```
 点击图中指定位置即可删除/关闭端口
+```
+
+<span id="q8"></span>
+# 安装时提示：安装killall失败！！！！
+
+```
+检查服务器的镜像源并手动安装psmisc
 ```
 
 # 免责声明
