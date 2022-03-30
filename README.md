@@ -65,6 +65,15 @@
                 <li>
                     <a href="#linux">重启服务</a>
                 </li>
+                <li>
+                    <a href="#linux">开机启动</a>
+                </li>
+                <li>
+                    <a href="#linux">设置最大连接数</a>
+                </li>
+                <li>
+                    <a href="#linux">查看程序运行时日志</a>
+                </li>
             </ul>
         </li>
         <li>
@@ -226,7 +235,8 @@
 # Linux
 
 ```
-root用户直接执行
+root用户直接执行以下命令, 根据提示选择对应功能即可。
+
 bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh)
 ```
 <img src="./image/t12.png" alt="Logo">
