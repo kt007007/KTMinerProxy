@@ -2,9 +2,9 @@
 # Author: KT007007
 # github: https://github.com/kt007007
 
-VERSION="-v"
+VERSION="1.1.0"
 
-DOWNLOAD_HOST="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v-v_linux"
+DOWNLOAD_HOST="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v1.1.0_linux"
 
 PATH_KT="/root/ktmproxy"
 
@@ -155,7 +155,7 @@ start() {
 }
 
 update() {
-    install -v
+    install 1.1.0
 }
 
 turn_on() {
@@ -386,7 +386,7 @@ read -p "$(echo -e "请选择[1-14]：")" choose
 
 case $choose in
 1)
-    install -v
+    install 1.1.0
     ;;
 2)
     uninstall
