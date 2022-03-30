@@ -193,38 +193,17 @@ turn_off() {
 }
 
 installapp() {
-    checkProcess "ktproxy"
-    if [ $? -eq 1 ]; then
-        colorEcho ${RED} "发现正在运行的KTMinerProxy, 需要停止才可继续安装。"
-        colorEcho ${YELLOW} "输入1停止正在运行的KTMinerProxy并且继续安装, 输入2取消安装。"
-
-        read -p "$(echo -e "请选择[1-2]：")" choose
-        case $choose in
-        1)
-            stop
-            ;;
-        2)
-            echo "取消安装"
-            return
-            ;;
-        *)
-            echo "输入错误, 取消安装。"
-            return
-            ;;
-        esac
+    if [ -n "$1" ]; then
+        VERSION="$1"
     fi
+    
+    colorEcho ${GREEN} "开始安装KTPROXY-V-${VERSION}"
 
     if [[ `command -v yum` ]];then
         colorEcho ${BLUE} "关闭防火墙"
         systemctl stop firewalld.service 1>/dev/null
         systemctl disable firewalld.service 1>/dev/null
     fi
-
-    if [ -n "$1" ]; then
-        VERSION="$1"
-    fi
-
-    colorEcho ${GREEN} "开始安装KTPROXY-V-${VERSION}"
 
     colorEcho $BLUE "是否更新LINUX软件源？如果您的LINUX更新过可输入2跳过并继续安装，如果您不了解用途直接输入1。"
     read -p "$(echo -e "请选择[1-2]：")" choose
@@ -253,6 +232,27 @@ installapp() {
     if [[ ! `command -v killall` ]];then
         colorEcho ${RED} "安装killall失败！！！！请手动安装psmisc后再执行安装程序。"
         return
+    fi
+
+    checkProcess "ktproxy"
+    if [ $? -eq 1 ]; then
+        colorEcho ${RED} "发现正在运行的KTMinerProxy, 需要停止才可继续安装。"
+        colorEcho ${YELLOW} "输入1停止正在运行的KTMinerProxy并且继续安装, 输入2取消安装。"
+
+        read -p "$(echo -e "请选择[1-2]：")" choose
+        case $choose in
+        1)
+            stop
+            ;;
+        2)
+            echo "取消安装"
+            return
+            ;;
+        *)
+            echo "输入错误, 取消安装。"
+            return
+            ;;
+        esac
     fi
 
     colorEcho $BLUE "创建目录"
