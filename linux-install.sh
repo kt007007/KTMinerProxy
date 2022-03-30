@@ -242,12 +242,12 @@ installapp() {
 
     if [[ ! `command -v wget` ]];then
         echo "尚未安装wget, 开始安装"
-        $cmd install wget
+        $PACKAGE_MANAGER install wget
     fi
 
     if [[ ! `command -v killall` ]];then
         echo "尚未安装killall, 开始安装"
-        $cmd install psmisc -y
+        $PACKAGE_MANAGER install psmisc -y
     fi
 
     colorEcho $BLUE "创建目录"
