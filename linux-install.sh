@@ -23,7 +23,7 @@ PATH_TURN_ON_SH="/etc/profile.d/ktm.sh"
 
 ISSUE() {
     echo "1.0.0"
-    echo "1.1.1"
+    echo "1.1.0"
 }
 
 colorEcho(){
