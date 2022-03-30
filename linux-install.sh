@@ -155,7 +155,7 @@ start() {
 }
 
 update() {
-    install 1.1.0
+    installapp 1.1.0
 }
 
 turn_on() {
@@ -192,7 +192,7 @@ turn_off() {
     echo "已关闭开机启动"
 }
 
-install() {
+installapp() {
     checkProcess "ktproxy"
     if [ $? -eq 1 ]; then
         colorEcho ${RED} "发现正在运行的KTMinerProxy, 需要停止才可继续安装。"
@@ -228,7 +228,6 @@ install() {
 
     colorEcho $BLUE "是否更新LINUX软件源？如果您的LINUX更新过可输入2跳过并继续安装，如果您不了解用途直接输入1。"
     read -p "$(echo -e "请选择[1-2]：")" choose
-
     case $choose in
     1)
         colorEcho ${BLUE} "开始更新软件源..."
@@ -345,7 +344,7 @@ install_target() {
     echo ""
     read -p "$(echo -e "请输入版本号：")" choose
 
-    install $choose
+    installapp $choose
 }
 
 restart() {
@@ -391,7 +390,7 @@ read -p "$(echo -e "请选择[1-14]：")" choose
 
 case $choose in
 1)
-    install 1.1.0
+    installapp 1.1.0
     ;;
 2)
     uninstall
