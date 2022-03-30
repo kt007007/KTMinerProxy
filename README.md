@@ -25,9 +25,7 @@
     <h2>:zap: 原创GO语言编写，功能强大，性能强劲。</h2>
     <!-- <a href="https://kdocs.cn/l/slPG1q488Trc"><strong>帮助文档 »</strong></a> -->
     <a href="https://kdocs.cn/l/slPG1q488Trc"></a>
-    <a href="https://qm.qq.com/cgi-bin/qm/qr?k=2qOW3S0PnHGL_30AmNmLLRDp2bhwIi3M&jump_from=webapi">QQ群: 978113445</a>
-    ·
-    <a href="https://t.me/+VK7ZOlKvcLljYjQ1"> 电报 https://t.me/+VK7ZOlKvcLljYjQ1</a>
+    TG：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
   </p>
 </div>
 
@@ -91,6 +89,12 @@
         </li>
         <li>
             <a href="#q5">修改密码</a>
+        </li>
+        <li>
+            <a href="#q6">启动时提示 dial tcp connection refused</a>
+        </li>
+        <li>
+            <a href="#q7">关闭/删除端口</a>
         </li>
     </ul>
 </li>
@@ -189,52 +193,15 @@
 
 # 软件预览
 
-<table>
-    <tr>
-        <td>
-            <center>
-                <img src="./image/jt1.png" alt="Logo">
-            </center>
-        </td>
-        <td>
-            <center>
-                <img src="./image/jt3.png" alt="Logo">
-            </center>
-        </td>
-        <td>
-            <center>
-                <img src="./image/jt2.png" alt="Logo">
-            </center>
-        </td>
-        <td>
-            <center>
-                <img src="./image/t5.png" alt="Logo">
-            </center>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <center>
-                <img src="./image/t6.png" alt="Logo">
-            </center>
-        </td>
-        <td>
-            <center>
-                <img src="./image/t7.png" alt="Logo">
-            </center>
-        </td>
-        <td>
-            <center>
-                <img src="./image/t8.png" alt="Logo">
-            </center>
-        </td>
-        <td>
-            <center>
-                <img src="./image/t9.png" alt="Logo">
-            </center>
-        </td>
-    </tr>
-</table>
+<p id="preview"></p>
+<img src="./image/tinified/jt1.png" alt="Logo">
+<img src="./image/tinified/jt3.png" alt="Logo">
+<img src="./image/tinified/jt2.png" alt="Logo">
+<!-- <img src="./image/tinified/t5.png" alt="Logo"> -->
+<img src="./image/tinified/t6.png" alt="Logo">
+<img src="./image/tinified/t7.png" alt="Logo">
+<img src="./image/tinified/t8.png" alt="Logo">
+<img src="./image/tinified/t9.png" alt="Logo">
 
 <!-- GETTING STARTED -->
 <p id="install"></p>
@@ -316,6 +283,20 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 等待命令执行完毕，即可执行暗转脚本
 ```
 
+<span id="q6"></span>
+## 启动时提示 dial tcp connection refused
+```
+请将ktproxy.com添加至防火墙白名单中，这个域名提供了图表服务及认证
+```
+
+<span id="q7"></span>
+## 关闭/删除端口
+<img src="./image/t11.png" alt="Logo">
+
+```
+点击图中指定位置即可删除/关闭端口
+```
+
 # 免责声明
 <p id="flsm">
 开发者仅在技术及爱好的驱使下维护此软件，本软件仅验证技术过程。
@@ -328,8 +309,6 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 
 
 # 联系我们
-
-QQ群: [978113445](https://qm.qq.com/cgi-bin/qm/qr?k=2qOW3S0PnHGL_30AmNmLLRDp2bhwIi3M&jump_from=webapi)
 
 电报: [https://t.me/+VK7ZOlKvcLljYjQ1](https://t.me/+VK7ZOlKvcLljYjQ1)
 
