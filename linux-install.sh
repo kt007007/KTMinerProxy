@@ -218,8 +218,6 @@ install() {
         colorEcho ${BLUE} "关闭防火墙"
         systemctl stop firewalld.service 1>/dev/null
         systemctl disable firewalld.service 1>/dev/null
-
-        yum install psmisc -y
     fi
 
     if [ -n "$1" ]; then
@@ -246,6 +244,11 @@ install() {
     if [[ ! `command -v wget` ]];then
         echo "尚未安装wget, 开始安装"
         $cmd install wget
+    fi
+
+    if [[ ! `command -v killall` ]];then
+        echo "尚未安装killall, 开始安装"
+        $cmd install psmisc -y
     fi
 
     colorEcho $BLUE "创建目录"
