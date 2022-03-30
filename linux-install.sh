@@ -250,6 +250,11 @@ installapp() {
         $PACKAGE_MANAGER install psmisc
     fi
 
+    if [[ ! `command -v killall` ]];then
+        colorEcho ${RED} "安装killall失败！！！！请手动安装psmisc后再执行安装程序。"
+        return
+    fi
+
     colorEcho $BLUE "创建目录"
     
     if [[ ! -d $PATH_KT ]];then

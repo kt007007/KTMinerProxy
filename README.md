@@ -211,35 +211,11 @@
 
 # Linux
 
-### 安装:
 ```
+root用户直接执行
 bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh)
 ```
-
-### 卸载:
-```
-bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -uninstall
-```
-
-### 停止服务:
-```
-bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -stop
-```
-
-### 启动服务:
-```
-bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -start
-```
-
-### 重启服务:
-```
-bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -restart
-```
-
-### 更新:
-```
-bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh) -update
-```
+<img src="./image/t12.png" alt="Logo">
 
 支持的Linux
 
