@@ -4,7 +4,7 @@
 
 VERSION="1.1.0"
 
-DOWNLOAD_HOST="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v1.1.0_linux"
+DOWNLOAD_HOST="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64"
 
 PATH_KT="/root/ktmproxy"
 
