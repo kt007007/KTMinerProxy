@@ -247,7 +247,7 @@ installapp() {
 
     if [[ ! `command -v killall` ]];then
         echo "尚未安装killall, 开始安装"
-        $PACKAGE_MANAGER install psmisc -y
+        $PACKAGE_MANAGER install psmisc
     fi
 
     colorEcho $BLUE "创建目录"
