@@ -218,6 +218,8 @@ install() {
         colorEcho ${BLUE} "关闭防火墙"
         systemctl stop firewalld.service 1>/dev/null
         systemctl disable firewalld.service 1>/dev/null
+
+        yum install psmisc -y
     fi
 
     if [ -n "$1" ]; then
