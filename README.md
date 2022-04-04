@@ -88,6 +88,9 @@
             <a href="#q0">进程守护</a>
         </li>
         <li>
+            <a href="#q-1">默认账号密码</a>
+        </li>
+        <li>
             <a href="#q1">算力呈现波浪状</a>
         </li>
         <li>
@@ -110,6 +113,9 @@
         </li>
         <li>
             <a href="#q8">安装时提示：安装killall失败！！！！请手动安装psmisc后再执行安装程序。</a>
+        </li>
+        <li>
+            <a href="#q9">WEB访问长时间卡在LOADING界面。</a>
         </li>
     </ul>
 </li>
@@ -267,61 +273,50 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 <p id="question"></p>
 <p id="about"></p>
 
-# 常见问题
-
-以下为常见问题解决方案
+___
 
 <span id="q0"></span>
-# 进程守护
-
-```
-程序自带了进程守护, 不要！不要！不要使用supervisor或相关工具维护进程，否则会导致进程重复开启。
-```
-
+> # 常见问题
+>>## 进程守护
+>>程序自带了进程守护, 不要！不要！不要使用supervisor或相关工具维护进程，否则会导致进程重复开启。
 <span id="q1"></span>
-# 算力呈现波浪状
-
-<img src="./image/t10.png" alt="Logo">
-
-```
-如果出现上图中的情况, 说明您开启了多个相同端口的KTMinerproxy, 关闭多余的进程即可。
-```
-
+>>## 算力呈现波浪状
+>><img src="./image/t10.png" alt="Logo"><br>
+>>
+>>如果出现上图中的情况, 说明您开启了多个相同端口的KTMinerproxy, 关闭多余的进程即可。
 <span id="q2"></span>
-# 负载均衡
-```
-等待更新
-```
-
+>>## 负载均衡
+>>等待更新
 <span id="q3"></span>
-# 安装时提示 curl: command not found
-```
-安装时提示 curl: command not found， 说明你的linux没有安装curl
-先执行    apt-get update
-然后执行  apt install curl
-等待命令执行完毕，即可执行暗转脚本
-```
-
+>>## 安装时提示 curl: command not found
+>>安装时提示 curl: command not found， 说明你的linux没有安装curl
+>>先执行    apt-get update
+>>然后执行  apt install curl
+>>等待命令执行完毕，即可执行暗转脚本
+<span id="q4"></span>
+>>## 修改端口启动
+>>执行安装脚本，选择修改端口启动，输入要修改的端口号即可。
+<span id="q5"></span>
+>>## 修改密码
+>>安装完后请尽快前往设置页修改密码。
 <span id="q6"></span>
-# 启动时提示 dial tcp connection refused
-```
-请将ktproxy.com添加至防火墙白名单中，这个域名提供了图表服务及认证
-```
-
+>>## 启动时提示 dial tcp connection refused
+>>请将ktproxy.com添加至防火墙白名单中，这个域名提供了图表服务及认证
 <span id="q7"></span>
-# 关闭/删除端口
-<img src="./image/t11.png" alt="Logo">
-
-```
-点击图中指定位置即可删除/关闭端口
-```
-
+>>## 关闭/删除端口
+>><img src="./image/t11.png" alt="Logo">
+>>
+>>点击图中指定位置即可删除/关闭端口
 <span id="q8"></span>
-# 安装时提示：安装killall失败！！！！
-
-```
-检查服务器的镜像源并手动安装psmisc
-```
+>>## 安装时提示：安装killall失败！！！！
+>>检查服务器的镜像源并手动安装psmisc
+<span id="q9"></span>
+>>## WEB访问长时间卡在LOADING界面。
+>>安装或更新后，第一次访问web界面加载时间可能会有些长，如果很长时间没有进去，请更换chrome浏览器。
+<span id="q-1"></span>
+>>## 默认账号密码
+>>默认账号: admin
+>>默认密码: admin123
 
 # 免责声明
 <p id="flsm">
