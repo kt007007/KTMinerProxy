@@ -278,15 +278,15 @@ ___
 <span id="q0"></span>
 > # 常见问题
 >>## 进程守护
->>程序自带了进程守护, 不要！不要！不要使用supervisor或相关工具维护进程，否则会导致进程重复开启。
-<span id="q1"></span>
+>>>程序自带了进程守护, 不要！不要！不要使用supervisor或相关工具维护进程，否则会导致进程重复开启。
+>><span id="q1"></span>
 >>## 算力呈现波浪状
->><img src="./image/t10.png" alt="Logo"><br>
->>
->>如果出现上图中的情况, 说明您开启了多个相同端口的KTMinerproxy, 关闭多余的进程即可。
-<span id="q2"></span>
->>## 负载均衡
->>等待更新
+>>><img src="./image/t10.png" alt="Logo"><br>
+>>>
+>>>如果出现上图中的情况, 说明您开启了多个相同端口的KTMinerproxy, 关闭多余的进程即可。
+>><span id="q2"></span>
+>>>## 负载均衡
+>>>等待更新
 <span id="q3"></span>
 >>## 安装时提示 curl: command not found
 >>安装时提示 curl: command not found， 说明你的linux没有安装curl
