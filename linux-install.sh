@@ -2,7 +2,7 @@
 # Author: KT007007
 # github: https://github.com/kt007007
 
-VERSION="1.1.0"
+VERSION="1.1.1"
 
 DOWNLOAD_HOST="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64"
 
@@ -24,6 +24,7 @@ PATH_TURN_ON_SH="/etc/profile.d/ktm.sh"
 ISSUE() {
     echo "1.0.0"
     echo "1.1.0"
+    echo "1.1.1"
 }
 
 colorEcho(){
@@ -155,7 +156,7 @@ start() {
 }
 
 update() {
-    installapp 1.1.0
+    installapp 1.1.1
 }
 
 turn_on() {
@@ -395,7 +396,7 @@ read -p "$(echo -e "请选择[1-14]：")" choose
 
 case $choose in
 1)
-    installapp 1.1.0
+    installapp 1.1.1
     ;;
 2)
     uninstall
