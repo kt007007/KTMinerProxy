@@ -85,6 +85,9 @@
     <a href="#about">常见问题</a>
     <ul>
         <li>
+            <a href="#q0">进程守护</a>
+        </li>
+        <li>
             <a href="#q1">算力呈现波浪状</a>
         </li>
         <li>
@@ -263,6 +266,13 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 常见问题
 
 以下为常见问题解决方案
+
+<span id="q0"></span>
+# 进程守护
+
+```
+程序自带了进程守护, 不要！不要！不要使用supervisor或相关工具维护进程，否则会导致进程重复开启。
+```
 
 <span id="q1"></span>
 # 算力呈现波浪状
