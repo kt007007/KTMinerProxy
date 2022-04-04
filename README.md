@@ -285,38 +285,38 @@ ___
 >>>
 >>>如果出现上图中的情况, 说明您开启了多个相同端口的KTMinerproxy, 关闭多余的进程即可。
 >><span id="q2"></span>
->>>## 负载均衡
+>>## 负载均衡
 >>>等待更新
-<span id="q3"></span>
+>><span id="q3"></span>
 >>## 安装时提示 curl: command not found
->>安装时提示 curl: command not found， 说明你的linux没有安装curl
->>先执行    apt-get update
->>然后执行  apt install curl
->>等待命令执行完毕，即可执行暗转脚本
-<span id="q4"></span>
+>>>安装时提示 curl: command not found， 说明你的linux没有安装curl
+>>>先执行    apt-get update
+>>>然后执行  apt install curl
+>>>等待命令执行完毕，即可执行暗转脚本
+>><span id="q4"></span>
 >>## 修改端口启动
->>执行安装脚本，选择修改端口启动，输入要修改的端口号即可。
-<span id="q5"></span>
+>>>执行安装脚本，选择修改端口启动，输入要修改的端口号即可。
+>><span id="q5"></span>
 >>## 修改密码
->>安装完后请尽快前往设置页修改密码。
-<span id="q6"></span>
+>>>安装完后请尽快前往设置页修改密码。
+>><span id="q6"></span>
 >>## 启动时提示 dial tcp connection refused
->>请将ktproxy.com添加至防火墙白名单中，这个域名提供了图表服务及认证
-<span id="q7"></span>
+>>>请将ktproxy.com添加至防火墙白名单中，这个域名提供了图表服务及认证
+>><span id="q7"></span>
 >>## 关闭/删除端口
->><img src="./image/t11.png" alt="Logo">
->>
->>点击图中指定位置即可删除/关闭端口
-<span id="q8"></span>
+>>><img src="./image/t11.png" alt="Logo">
+>>>
+>>>点击图中指定位置即可删除/关闭端口
+>><span id="q8"></span>
 >>## 安装时提示：安装killall失败！！！！
->>检查服务器的镜像源并手动安装psmisc
-<span id="q9"></span>
+>>>检查服务器的镜像源并手动安装psmisc
+>><span id="q9"></span>
 >>## WEB访问长时间卡在LOADING界面。
->>安装或更新后，第一次访问web界面加载时间可能会有些长，如果很长时间没有进去，请更换chrome浏览器。
-<span id="q-1"></span>
+>>>安装或更新后，第一次访问web界面加载时间可能会有些长，如果很长时间没有进去，请更换chrome浏览器。
+>><span id="q-1"></span>
 >>## 默认账号密码
->>默认账号: admin
->>默认密码: admin123
+>>>默认账号: admin
+>>>默认密码: admin123
 
 # 免责声明
 <p id="flsm">
