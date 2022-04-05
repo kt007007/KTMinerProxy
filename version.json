@@ -1,6 +1,6 @@
 {
-    "version": "1.1.1",
-    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v1.1.1_win.exe",
-    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v1.1.1_linux",
+    "version": "inprocess",
+    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_vinprocess_win.exe",
+    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_vinprocess_linux",
     "description": "修复了本地算力浮动的问题{{SPLIT}}更加稳定持久的连接{{SPLIT}}支持了不同钱包不同比例抽水{{SPLIT}}开放了备用池{{SPLIT}}增加了端口日志{{SPLIT}}更温柔的抽水{{SPLIT}}修复了币印新的TLS地址无法连接的问题{{SPLIT}}增加了设备连接时长{{SPLIT}}增加了钱包、机器名搜索{{SPLIT}}修改了一个容易导致内存泄漏的地方, 程序更加稳固{{SPLIT}}修复了某些小币种自定义配置不生效的问题{{SPLIT}}新的安装脚本, 更方便管理, 支持了开机启动修改端口等功能"
 }
