@@ -2,7 +2,7 @@
 # Author: KT007007
 # github: https://github.com/kt007007
 
-VERSION="1.1.3"
+VERSION="1.1.4"
 
 DOWNLOAD_HOST="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64"
 
@@ -26,6 +26,8 @@ ISSUE() {
     echo "1.1.0"
     echo "1.1.1"
     echo "1.1.2"
+    echo "1.1.3"
+    echo "1.1.4"
 }
 
 colorEcho(){
@@ -157,7 +159,7 @@ start() {
 }
 
 update() {
-    installapp 1.1.3
+    installapp 1.1.4
 }
 
 turn_on() {
@@ -397,7 +399,7 @@ read -p "$(echo -e "请选择[1-14]：")" choose
 
 case $choose in
 1)
-    installapp 1.1.3
+    installapp 1.1.4
     ;;
 2)
     uninstall
