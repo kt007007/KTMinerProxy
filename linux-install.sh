@@ -28,6 +28,7 @@ ISSUE() {
     echo "1.1.2"
     echo "1.1.3"
     echo "1.1.4"
+    echo "1.1.5"
 }
 
 colorEcho(){
