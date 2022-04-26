@@ -27,6 +27,8 @@
     <a href="https://kdocs.cn/l/slPG1q488Trc"></a>
     TG：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
     <h2>联系我们，免费定制， 加入自己的钱包。</h2>
+    <h3>免费定制可加入已支持的抽水币种对应钱包, 自定义抽水池及一个备用自定义抽水池。</h3>
+    <h3>高级定制每个币种可加入多个钱包及不同比例，及页面相关修改。</h3>
   </p>
 </div>
 
