@@ -1,6 +1,6 @@
 {
-    "version": "2.0.1",
-    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v2.0.1_win.exe",
-    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v2.0.1_linux",
-    "description": "修复了本地算力浮动的问题{{SPLIT}}更加稳定持久的连接{{SPLIT}}支持了不同钱包不同比例抽水{{SPLIT}}开放了备用池{{SPLIT}}增加了端口日志{{SPLIT}}更温柔的抽水{{SPLIT}}修复了币印新的TLS地址无法连接的问题{{SPLIT}}增加了设备连接时长{{SPLIT}}增加了钱包、机器名搜索{{SPLIT}}修改了一个容易导致内存泄漏的地方, 程序更加稳固{{SPLIT}}修复了某些小币种自定义配置不生效的问题{{SPLIT}}新的安装脚本, 更方便管理, 支持了开机启动修改端口等功能"
+    "version": "2.1.0",
+    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v2.1.0_win.exe",
+    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v2.1.0_linux",
+    "description": "大大减小了特殊网络环境下的算力损耗{{SPLIT}}修复了矿池内机器合并为defualt的问题{{SPLIT}}修复了TEAMRED内核的相关问题{{SPLIT}}增加了KENC隧道协议{{SPLIT}}增加了软防CC策略{{SPLIT}}增加了IP黑名单功能{{SPLIT}}TOKEN超时切换到登录页自动保留了账号密码{{SPLIT}}修复了自定义配置中文无法保存的问题{{SPLIT}}修复了端口证书相关的问题{{SPLIT}}"
 }
