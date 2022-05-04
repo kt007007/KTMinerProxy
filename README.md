@@ -283,7 +283,7 @@ TOKEN超时切换到登录页自动保留了账号密码
 # 软件预览
 
 <p id="preview"></p>
-<img src="./image/tinified/jt1.png" alt="Logo">
+<img src="./image/jt1.png" alt="Logo">
 <img src="./image/tinified/jt3.png" alt="Logo">
 <img src="./image/tinified/jt2.png" alt="Logo">
 <!-- <img src="./image/tinified/t5.png" alt="Logo"> -->
