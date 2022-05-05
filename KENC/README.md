@@ -10,7 +10,7 @@
 
 <a href="https://github.com/kt007007/KTMinerProxy/raw/main/KENC/kenc_v_win.exe">点击下载WINDOWS客户端</a>
 
-<a href="https://github.com/kt007007/KTMinerProxy/raw/main/KENC/kenc_v_win.exe">点击下载LINUX客户端</a>
+<a href="https://github.com/kt007007/KTMinerProxy/raw/main/KENC/kenc_v_linux">点击下载LINUX客户端</a>
 
 ### 使用环境
 ```
