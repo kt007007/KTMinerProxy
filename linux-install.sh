@@ -381,6 +381,12 @@ set_port() {
     start
 }
 
+lookport() {
+    port=$(getConfig "KT_START_PORT")
+
+    colorEcho $GREEN "当前WEB访问端口${port}"
+}
+
 echo "-------------------------------------------------------"
 colorEcho ${GREEN} "欢迎使用KTMinerProxy安装工具, 请输入操作号继续。"
 
@@ -400,6 +406,7 @@ echo "12、查看程序运行状态"
 echo "13、查看程序错误日志"
 echo "14、安装指定版本（通常不需要这个选项来安装）"
 echo "15、清理日志文件"
+echo "16、查看当前WEB服务端口"
 echo ""
 colorEcho ${YELLOW} "如果在此之前是手动安装的程序，请自己手动退出程序后再执行此脚本，否则容易发生冲突，所有操作尽量通过此脚本完成。"
 echo "-------------------------------------------------------"
@@ -451,6 +458,9 @@ case $choose in
     ;;
 15)
     clearlog
+    ;;
+16)
+    lookport
     ;;
 *)
     echo "输入了错误的指令, 请重新输入。"
