@@ -35,6 +35,7 @@ ISSUE() {
     echo "2.1.1"
     echo "2.2.0"
     echo "2.2.1"
+    echo "2.2.2"
 }
 
 colorEcho(){
