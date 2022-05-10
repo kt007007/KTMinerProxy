@@ -285,8 +285,8 @@ installapp() {
         chmod 777 -R $PATH_ERR
     fi
 
-    if [[ ! -d $PATH_CONFIG ]];then
-        setConfig KT_START_PORT 16777
+    if [[ ! -f $PATH_CONFIG ]];then
+        setConfig KT_START_PORT $((RANDOM%65535+1))
     fi
 
     colorEcho $BLUE "拉取程序"
