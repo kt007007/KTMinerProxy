@@ -1,6 +1,6 @@
 {
-    "version": "2.2.1",
-    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v2.2.1_win.exe",
-    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v2.2.1_linux",
-    "description": "算力补偿设备的名称问题修改{{SPLIT}}支持了芯动矿机{{SPLIT}}修复了网页修改端口导致ip黑名单失效的问题"
+    "version": "2.2.2",
+    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v2.2.2_win.exe",
+    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v2.2.2_linux",
+    "description": "完善了算力补偿的逻辑, 给你稳稳的性福"
 }
