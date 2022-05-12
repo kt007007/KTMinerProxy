@@ -161,7 +161,10 @@ start() {
         # getConfig "KT_START_PORT"
         port=$(getConfig "KT_START_PORT")
 
+        colorEcho $GREEN "|----------------------------------------------------------------|"
         colorEcho $GREEN "程序启动成功, WEB访问端口${port}, 默认账号admin, 默认密码admin123。"
+        colorEcho $GREEN "如果您是默认密码及默认端口, 请及时在网页设置中修改账号密码及web访问端口。"
+        colorEcho $GREEN "|----------------------------------------------------------------|"
     fi
 }
 
