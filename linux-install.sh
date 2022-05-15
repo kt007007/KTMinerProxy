@@ -232,7 +232,7 @@ installapp() {
     case $choose in
     2)
         echo "已选择备用线路"
-        DOWNLOAD_HOST=DOWNLOAD_STANDBY
+        $DOWNLOAD_HOST=$DOWNLOAD_STANDBY
     ;;
     esac
     
