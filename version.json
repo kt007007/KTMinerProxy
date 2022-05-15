@@ -1,6 +1,6 @@
 {
-    "version": "2.2.4",
-    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v2.2.4_win.exe",
-    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v2.2.4_linux",
-    "description": "ETH增加了动态难度抽水机制, 跨池也能抽到比例算力了{{SPLIT}}略微提升了凤凰内核的算力"
+    "version": "2.2.5",
+    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v2.2.5_win.exe",
+    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v2.2.5_linux",
+    "description": "修复了一些情况下动态难度调整失效的问题{{SPLIT}}修复了部分内核概率性掉线的问题{{SPLIT}}设备详情里增加了设备的IP显示"
 }
