@@ -6,7 +6,7 @@ VERSION="2.2.6"
 
 DOWNLOAD_HOST="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64"
 
-DOWNLOAD_STANDBY="https://gitcode.net/mirrors/kt007007/KTMinerProxy/-/raw/main/Linux-64"
+DOWNLOAD_STANDBY="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@main/Linux-64"
 
 PATH_KT="/root/ktmproxy"
 
@@ -412,8 +412,8 @@ colorEcho ${GREEN} "欢迎使用KTMinerProxy安装工具, 请输入操作号继�
 
 echo ""
 echo "1、安装"
-echo "2、卸载"
-echo "3、更新"
+echo "2、更新"
+echo "3、还是更新"
 echo "4、启动"
 echo "5、重启"
 echo "6、停止"
@@ -427,6 +427,7 @@ echo "13、查看程序错误日志"
 echo "14、安装指定版本（通常不需要这个选项来安装）"
 echo "15、清理日志文件"
 echo "16、查看当前WEB服务端口"
+echo "17、卸载"
 echo ""
 colorEcho ${YELLOW} "如果在此之前是手动安装的程序，请自己手动退出程序后再执行此脚本，否则容易发生冲突，所有操作尽量通过此脚本完成。"
 echo "-------------------------------------------------------"
@@ -438,7 +439,7 @@ case $choose in
     installapp 2.2.6
     ;;
 2)
-    uninstall
+    update
     ;;
 3)
     update
@@ -481,6 +482,9 @@ case $choose in
     ;;
 16)
     lookport
+    ;;
+17)
+    uninstall
     ;;
 *)
     echo "输入了错误的指令, 请重新输入。"
