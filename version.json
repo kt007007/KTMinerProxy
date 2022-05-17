@@ -1,6 +1,6 @@
 {
-    "version": "2.2.5",
-    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v2.2.5_win.exe",
-    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v2.2.5_linux",
-    "description": "修复了一些情况下动态难度调整失效的问题{{SPLIT}}修复了部分内核概率性掉线的问题{{SPLIT}}设备详情里增加了设备的IP显示"
+    "version": "2.2.6",
+    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v2.2.6_win.exe",
+    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v2.2.6_linux",
+    "description": "修复了一些内存相关的问题{{SPLIT}}修复了TEAMRED内核中途报错的问题{{SPLIT}}完善了无损的逻辑(需规模性测试)"
 }
