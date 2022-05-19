@@ -1,6 +1,6 @@
 {
-    "version": "2.2.6",
-    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v2.2.6_win.exe",
-    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v2.2.6_linux",
-    "description": "修复了一些内存相关的问题{{SPLIT}}修复了TEAMRED内核中途报错的问题{{SPLIT}}完善了无损的逻辑(需规模性测试)"
+    "version": "2.2.7",
+    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v2.2.7_win.exe",
+    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v2.2.7_linux",
+    "description": "修复了特殊情况下无损逻辑暂时失效的BUG{{SPLIT}}适当缩小了数据尺寸, 降低了3/1的内存占用"
 }
