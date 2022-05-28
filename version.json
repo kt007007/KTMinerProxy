@@ -1,6 +1,6 @@
 {
-    "version": "2.3.0",
-    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v2.3.0_win.exe",
-    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v2.3.0_linux",
+    "version": "2.3.1",
+    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v2.3.1_win.exe",
+    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v2.3.1_linux",
     "description": "BTC现在支持了所有矿池{{SPLIT}}BTC引入了无损机制{{SPLIT}}实装了BTC算力统计{{SPLIT}}BTC增加了动态难度抽水"
 }
