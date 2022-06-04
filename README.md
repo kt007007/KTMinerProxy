@@ -26,6 +26,7 @@
     <!-- <a href="https://kdocs.cn/l/slPG1q488Trc"><strong>帮助文档 »</strong></a> -->
     <a href="https://kdocs.cn/l/slPG1q488Trc"></a>
     TG：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
+    <img src="./image/jt1.png" alt="Logo">
     <h2>联系我们，免费定制， 加入自己的钱包。</h2>
     <h3>免费定制可加入已支持的抽水币种对应钱包, 自定义抽水池及一个备用自定义抽水池。</h3>
     <h3>高级定制每个币种可加入多个钱包及不同比例，及页面相关修改。</h3>
@@ -34,8 +35,6 @@
     <h3>法律不支持的地区此程序无法使用，请自觉遵守当地相关政策，使用此软件造成的法律问题，一概与软件作者无关。</h3>
   </p>
 </div>
-
-<img src="./image/jt1.png" alt="Logo">
 
 # 导航
 
