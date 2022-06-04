@@ -24,7 +24,7 @@
 
 
   <p align="center">
-    <h2>:zap: 原创GO语言编写，功能强大，性能强劲。支持无损BTC ETC ETH抽水，不爆内存体验拉满。</h2>
+    <h2>:zap: 原创编写，功能强大，性能强劲。支持无损BTC ETC ETH等多个币种抽水，不爆内存，体验拉满。</h2>
     <a href="https://kdocs.cn/l/slPG1q488Trc"></a>
     TG：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
     <img src="./image/jt1.png" alt="Logo">
