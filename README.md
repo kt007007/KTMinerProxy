@@ -3,18 +3,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
 
-# KTMinerProxy
-
 <img src="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/image/logo-1.png" alt="Logo" width="200" height="200">
-
-<!-- <img src="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/image/logo.png#gh-dark-mode-only" alt="Logo" width="200" height="200"> -->
-
-<!-- <img src="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/image/slogo.png#gh-light-mode-only" alt="Logo" width="200" height="200"> -->
-
-  <!-- ![GitHub Light](https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/image/logo.png#gh-dark-mode-only)
-
-  ![GitHub Dark](https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/image/slogo.png#gh-light-mode-only) -->
-
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -22,6 +11,7 @@
 [![Issues][issues-shield]][issues-url]
 <!-- ![Github stars](https://img.shields.io/github/stars/kt007007/KTMinerProxy.svg) -->
 
+# KTMinerProxy
 
   <p align="center">
     <h2>:zap: 原创编写，功能强大，性能强劲。支持无损BTC ETC ETH等多个币种抽水，不爆内存，体验拉满。</h2>
@@ -156,6 +146,7 @@
 引入了ETC无损机制
 支持了ETC芯片机
 更新了BCH的逻辑
+端口日志内增加了断开日志
 
 2.3.3
 完美版A11
@@ -500,12 +491,12 @@ ___
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/kt007007/KTMinerProxy.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/kt007007/KTMinerProxy.svg?style=flat
 [contributors-url]: https://github.com/kt007007/KTMinerProxy/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/kt007007/KTMinerProxy.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/kt007007/KTMinerProxy.svg?style=flat
 [forks-url]: https://github.com/kt007007/KTMinerProxy/network/members
-[stars-shield]: https://img.shields.io/github/stars/kt007007/KTMinerProxy.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/kt007007/KTMinerProxy.svg?style=flat
 [stars-url]: https://github.com/kt007007/KTMinerProxy/stargazers
-[issues-shield]: https://img.shields.io/github/issues/kt007007/KTMinerProxy.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/kt007007/KTMinerProxy.svg?style=flat
 [issues-url]: https://github.com/kt007007/KTMinerProxy/issues
-[license-shield]: https://img.shields.io/github/license/kt007007/KTMinerProxy.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/kt007007/KTMinerProxy.svg?style=flat
