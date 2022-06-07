@@ -14,6 +14,8 @@ PATH_EXEC="ktproxy"
 
 PATH_CACHE="/root/ktmproxy/.cache"
 
+PATH_LICENSE="/root/ktmproxy/license"
+
 PATH_CONFIG="/root/ktmproxy/.env"
 
 PATH_NOHUP="/root/ktmproxy/nohup.out"
@@ -44,6 +46,12 @@ ISSUE() {
     echo "2.2.6"
     echo "2.2.7"
     echo "2.3.0"
+    echo "2.3.1"
+    echo "2.3.2"
+    echo "2.3.3"
+    echo "2.4.0"
+    echo "2.4.1"
+    echo "2.4.2"
 }
 
 colorEcho(){
@@ -403,6 +411,14 @@ set_port() {
     start
 }
 
+resetpass() {
+    stop
+
+    rm -rf $PATH_LICENSE
+
+    start
+}
+
 lookport() {
     port=$(getConfig "KT_START_PORT")
 
@@ -487,6 +503,9 @@ case $choose in
     ;;
 17)
     uninstall
+    ;;
+18)
+    resetpass
     ;;
 *)
     echo "输入了错误的指令, 请重新输入。"
