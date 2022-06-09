@@ -2,7 +2,7 @@
 # Author: KT007007
 # github: https://github.com/kt007007
 
-VERSION="2.4.2"
+VERSION="2.4.3"
 
 DOWNLOAD_HOST="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64"
 
@@ -188,7 +188,7 @@ start() {
 update() {
     turn_off
 
-    installapp 2.4.2
+    installapp 2.4.3
 }
 
 turn_on() {
@@ -457,7 +457,7 @@ read -p "$(echo -e "请选择[1-14]：")" choose
 
 case $choose in
 1)
-    installapp 2.4.2
+    installapp 2.4.3
     ;;
 2)
     update
