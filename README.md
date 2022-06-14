@@ -14,7 +14,7 @@
 # KTMinerProxy
 
   <p align="center">
-    <h3>:zap: 原创编写，功能强大，性能强劲。支持无损BTC ETC ETH ERG CFX RVN等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</h3>
+    <h3>:zap: 原创编写，功能强大，性能强劲。支持无损BTC ETC ETH ERG CFX RVN SERO等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</h3>
     <img src="./image/jt1.png" alt="Logo">
     <a href="https://kdocs.cn/l/slPG1q488Trc"></a>
     TG：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
@@ -146,6 +146,10 @@
 # 更新日志
 
 ```
+2.5.5
+增加SERO币种抽水
+实装了所有支持小币种抽水的算力统计
+
 2.5.4
 修复了抽水钱包数量>1时, 算力分配不均衡的问题
 
