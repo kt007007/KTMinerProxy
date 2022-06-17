@@ -14,7 +14,7 @@
 # KTMinerProxy
 
   <p align="center">
-    <h3>:zap: 原创编写，功能强大，性能强劲。支持无损BTC ETC ETH ERG CFX RVN SERO等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</h3>
+    <h3>:zap: 原创编写，功能强大，性能强劲。支持无损BTC ETC ETH LTC ERG CFX RVN SERO XMR等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</h3>
     <img src="./image/jt1.png" alt="Logo">
     <a href="https://kdocs.cn/l/slPG1q488Trc"></a>
     TG：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
@@ -146,6 +146,9 @@
 # 更新日志
 
 ```
+2.5.8
+增加了XMR的抽水
+
 2.5.7
 增加了端口统计的矩形视图, 看总量统计更方便些了
 修复了某些小币种的算力统计
@@ -375,7 +378,7 @@ TOKEN超时切换到登录页自动保留了账号密码
 |精确到单台设备的24小时数据统计分析|ETH|
 |TLS/SSL/KENC加密|ETC|
 |矿池转发|BTC|
-|预置各币种的矿池（随时更新）|KDA|
+|预置各币种矿池（随时更新）|KDA|
 |自定义矿池|ZEC|
 |备用矿池|BEAM|
 |自定义端口|RVN|
