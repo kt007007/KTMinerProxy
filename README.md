@@ -14,7 +14,7 @@
 # KTMinerProxy
 
   <p align="center">
-    <h3>:zap: 原创编写，功能强大，性能强劲。支持无损BTC ETC ETH LTC ERG CFX RVN SERO XMR等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</h3>
+    <h3>:zap: 原创编写，功能强大，性能强劲。支持无损BTC ETC ETH LTC ERG CFX RVN SERO XMR CKB等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</h3>
     <img src="./image/jt1.png" alt="Logo">
     <a href="https://kdocs.cn/l/slPG1q488Trc"></a>
     TG：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
@@ -146,6 +146,10 @@
 # 更新日志
 
 ```
+2.6.1
+修复了ERG无效率偏高的问题
+修复了RVN无效率偏高的问题
+
 2.6.0
 增加了CKB抽水
 优化了端口日志的输出
