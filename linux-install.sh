@@ -2,7 +2,7 @@
 # Author: KT007007
 # github: https://github.com/kt007007
 
-VERSION="2.6.1"
+VERSION="2.6.2"
 
 DOWNLOAD_HOST="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64"
 
@@ -63,6 +63,9 @@ ISSUE() {
     echo "2.5.7"
     echo "2.5.8"
     echo "2.5.9"
+    echo "2.6.0"
+    echo "2.6.1"
+    echo "2.6.2"
 }
 
 colorEcho(){
@@ -199,7 +202,7 @@ start() {
 update() {
     turn_off
 
-    installapp 2.6.1
+    installapp 2.6.2
 }
 
 turn_on() {
@@ -468,7 +471,7 @@ read -p "$(echo -e "请选择[1-14]：")" choose
 
 case $choose in
 1)
-    installapp 2.6.1
+    installapp 2.6.2
     ;;
 2)
     update
