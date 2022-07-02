@@ -425,6 +425,7 @@ TOKEN超时切换到登录页自动保留了账号密码
 |自定义端口|RVN|
 |端口连接数限制|ERG|
 |多钱包配置|ZEN|
+|替换指定钱包|ERG|
 |自定义抽水比例|LTC|
 |自定义抽水钱包、矿池、设备名称|DCR|
 |统一钱包|DASH|
@@ -432,9 +433,9 @@ TOKEN超时切换到登录页自动保留了账号密码
 |端口备注|BCH|
 |在线更新|HNS|
 |导入导出端口配置|STC|
-|自定义SSL密钥||
-|矿池状态检查||
-|自定义TLS证书||
+|自定义SSL密钥|SERO|
+|矿池状态检查|XMR|
+|自定义TLS证书|ALPH|
 |IP黑名单||
 |CC策略||
 |修改矿池内本地算力||
@@ -482,8 +483,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 
 <a href="https://github.com/kt007007/KTMinerProxy/tree/main/Windows-64">下载地址</a>
 
+<span id="_kenc"></span>
 # KENC
-<p id="_kenc">
+<p>
 请前往<a href="https://github.com/kt007007/KTMinerProxy/tree/main/KENC">https://github.com/kt007007/KTMinerProxy/tree/main/KENC</a>自行下载
 </p>
 <p><a href="#kenc">KENC帮助文档</a></p>
