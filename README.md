@@ -12,19 +12,20 @@
 <!-- ![Github stars](https://img.shields.io/github/stars/kt007007/KTMinerProxy.svg) -->
 
 # KTMinerProxy
-
+Telegram：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
   <p align="center">
-  Telegram：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
-    <h3>:zap: 原创编写，功能强大，性能强劲。支持无损BTC ETC ETH LTC ERG CFX RVN SERO XMR CKB BEAM ALPH等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</h3>
     <img src="./image/jt1.png" alt="Logo">
-    <!-- <h2>联系我们，免费定制， 加入自己的钱包。</h2>
-    <h3>免费定制可加入已支持的抽水币种对应钱包, 自定义抽水池及一个备用自定义抽水池。</h3>
-    <h3>高级定制每个币种可加入多个钱包及不同比例，及页面相关修改。</h3> -->
-    <h2>本地客户端KENC已上线, 请前往<a href="https://github.com/kt007007/KTMinerProxy/tree/main/KENC">https://github.com/kt007007/KTMinerProxy/tree/main/KENC</a>自行下载</h2>
-    <h2><a href="#kenc">KENC文档地址</a></h2>
-    <h3>法律不支持的地区此程序无法使用，请自觉遵守当地相关政策，使用此软件造成的法律问题，一概与软件作者无关。</h3>
   </p>
 </div>
+
+<h2>简介</h2>
+<h3>:zap: 原创编写，功能强大，性能强劲。支持无损BTC ETC ETH LTC ERG CFX RVN SERO XMR CKB BEAM ALPH等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</h3>
+<h2>本地客户端KENC已上线</h2>
+<p>
+请前往<a href="https://github.com/kt007007/KTMinerProxy/tree/main/KENC">https://github.com/kt007007/KTMinerProxy/tree/main/KENC</a>自行下载
+</p>
+<p><a href="#kenc">KENC文档地址</a></p>
+<p>法律不支持的地区此程序无法使用，请自觉遵守当地相关政策，使用此软件造成的法律问题，一概与软件作者无关。</p>
 
 # 导航
 
