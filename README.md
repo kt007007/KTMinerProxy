@@ -6,20 +6,23 @@
 
 <img src="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/image/logo-1.png" alt="Logo" width="200" height="200">
 
+<br>
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-<font size=3>Telegram：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a></font>
-<!-- <h1></h1> -->
+<h3>
+    Telegram：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
+</h3>
 
-<!-- ![Github stars](https://img.shields.io/github/stars/kt007007/KTMinerProxy.svg) -->
-  <p align="center">
+</div>
+<h1></h1>
+
+<p align="center">
     <img src="./image/jt1.png" alt="Logo">
   </p>
-</div>
 
 <h2>简介</h2>
 <p>:zap: 原创编写，功能强大，性能强劲。支持无损BTC ETC ETH LTC ERG CFX RVN SERO XMR CKB BEAM ALPH等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</p>
