@@ -20,11 +20,14 @@ Telegram：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYj
 
 <h2>简介</h2>
 <p>:zap: 原创编写，功能强大，性能强劲。支持无损BTC ETC ETH LTC ERG CFX RVN SERO XMR CKB BEAM ALPH等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</p>
-<h2>本地客户端KENC已上线</h2>
-<p>
-请前往<a href="https://github.com/kt007007/KTMinerProxy/tree/main/KENC">https://github.com/kt007007/KTMinerProxy/tree/main/KENC</a>自行下载
-</p>
-<p><a href="#kenc">KENC文档地址</a></p>
+<h2>Linux一键工具箱</h2>
+<p>root用户直接执行以下命令, 根据提示选择对应功能即可。</p>
+
+```
+bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh)
+```
+
+<h2>免责声明</h2>
 <p>法律不支持的地区此程序无法使用，请自觉遵守当地相关政策，使用此软件造成的法律问题，一概与软件作者无关。</p>
 
 # 导航
@@ -76,6 +79,9 @@ Telegram：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYj
         </li>
         <li>
             <a href="#windows">Windows</a>
+        </li>
+        <li>
+            <a href="#_kenc">本地加密客户端KENC</a>
         </li>
     </ul>
 </li>
@@ -476,6 +482,12 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 
 <a href="https://github.com/kt007007/KTMinerProxy/tree/main/Windows-64">下载地址</a>
 
+# KENC
+<p id="_kenc">
+请前往<a href="https://github.com/kt007007/KTMinerProxy/tree/main/KENC">https://github.com/kt007007/KTMinerProxy/tree/main/KENC</a>自行下载
+</p>
+<p><a href="#kenc">KENC帮助文档</a></p>
+
 
 <p id="question"></p>
 <p id="about"></p>
@@ -583,7 +595,8 @@ ___
 
 # 联系我们
 
-电报: [https://t.me/+VK7ZOlKvcLljYjQ1](https://t.me/+VK7ZOlKvcLljYjQ1)
+<p>Telegram: [https://t.me/+VK7ZOlKvcLljYjQ1](https://t.me/+VK7ZOlKvcLljYjQ1)</p>
+<p>Discord: [https://discord.gg/NCsx4y8AR9](https://discord.gg/NCsx4y8AR9)</p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
