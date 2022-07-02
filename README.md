@@ -5,16 +5,18 @@
 
 <img src="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/image/logo-1.png" alt="Logo" width="200" height="200">
 
-# KTMinerProxy
+
+<font size=6>KTMinerProxy</font>
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-<!-- ![Github stars](https://img.shields.io/github/stars/kt007007/KTMinerProxy.svg) -->
+<font size=3>Telegram：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a></font>
+<h1></h1>
 
-Telegram：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
+<!-- ![Github stars](https://img.shields.io/github/stars/kt007007/KTMinerProxy.svg) -->
   <p align="center">
     <img src="./image/jt1.png" alt="Logo">
   </p>
