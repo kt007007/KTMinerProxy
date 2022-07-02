@@ -452,7 +452,7 @@ TOKEN超时切换到登录页自动保留了账号密码
 <img src="./image/tinified/t6.png" alt="Logo">
 <img src="./image/tinified/t7.png" alt="Logo">
 <img src="./image/tinified/t8.png" alt="Logo">
-<img src="./image/tinified/t9.png" alt="Logo">
+<img src="./image/t9.png" alt="Logo">
 
 <!-- GETTING STARTED -->
 <p id="install"></p>
