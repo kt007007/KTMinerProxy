@@ -1,4 +1,5 @@
 <div id="top"></div>
+<h1>KTMinerProxy</h1>
 
 <!-- PROJECT LOGO -->
 <div align="center">
@@ -6,15 +7,13 @@
 <img src="https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/image/logo-1.png" alt="Logo" width="200" height="200">
 
 
-<font size=6>KTMinerProxy</font>
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
 <font size=3>Telegram：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a></font>
-<h1></h1>
+<!-- <h1></h1> -->
 
 <!-- ![Github stars](https://img.shields.io/github/stars/kt007007/KTMinerProxy.svg) -->
   <p align="center">
