@@ -128,7 +128,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
             <a href="#q11">IP黑名单</a>
         </li>
         <li>
-            <a href="#q12">ETH芯片机</a>
+            <a href="#q12">ETH、ETC芯片机</a>
         </li>
         <li>
             <a href="#q13">本地算力修改</a>
@@ -557,9 +557,10 @@ ___
 >>><img src="./image/jt18.png">
 >>>
 >><span id="q12"></span>
->>## ETH芯片机
+>>## ETH、ETC芯片机
 >>>
->>> 如果ETH芯片级在ETH端口无法正常工作(例如芯动系列), 可以在添加端口时币种选择ETH芯片机
+>>> 常见的如奶牛、茉莉、亚米等机型, 需要用ETH端口, 芯动系列或其他的机型请选择ETH(GetWork)端口
+>>> 如果设备无法正常接入，不同类型的端口可以交替着试一下。
 >>>
 >><span id="q13"></span>
 >>## 本地算力修改
