@@ -158,6 +158,11 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.6.8
+修复了几个币种的自定义配置在创建端口时找不到的问题
+修复了挖掘XMR时导致软件崩溃的一个问题
+提升了程序稳定性
+
 2.6.7
 增加了XMR算力统计
 增加了ERG算力统计
@@ -612,8 +617,8 @@ ___
 
 # 联系我们
 
-<p>Telegram: [https://t.me/+VK7ZOlKvcLljYjQ1](https://t.me/+VK7ZOlKvcLljYjQ1)</p>
-<p>Discord: [https://discord.gg/NCsx4y8AR9](https://discord.gg/NCsx4y8AR9)</p>
+<p>Telegram: <a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a></p>
+<p>Discord: <a href="https://discord.gg/NCsx4y8AR9">https://discord.gg/NCsx4y8AR9</a></p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
