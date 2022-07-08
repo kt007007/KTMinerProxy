@@ -20,7 +20,7 @@
 <!-- <h1></h1> -->
 <!-- <h2>简介</h2> -->
 <h1>KTMinerProxy</h1>
-<p>:zap: 原创正版，功能强大，性能强劲。支持无损BTC ETC ETH LTC ERG CFX RVN SERO XMR CKB BEAM ALPH等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</p>
+<p>:zap: 原创正版，功能强大，性能强劲。支持无损BTC ETC ETH LTC ERG CFX RVN SERO XMR CKB BEAM ALPH KASPA等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</p>
 
 <p align="center">
     <img src="./image/tiny.png" alt="Logo">
@@ -158,6 +158,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.6.9
+增加了KASPA的抽水
+
 2.6.8
 修复了几个币种的自定义配置在创建端口时找不到的问题
 修复了挖掘XMR时导致软件崩溃的一个问题
