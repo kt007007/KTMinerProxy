@@ -158,6 +158,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.7.0
+修复了KASPA无效过高的问题
+
 2.6.9
 增加了KASPA的抽水
 
