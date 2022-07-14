@@ -137,6 +137,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
             <a href="#q12">ETH、ETC芯片机</a>
         </li>
         <li>
+            <a href="#q18">芯动A11系列相关问题</a>
+        </li>
+        <li>
             <a href="#q13">本地算力修改</a>
         </li>
         <li>
@@ -602,6 +605,13 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 <p></p>
 <p> 常见的如奶牛、茉莉、亚米等机型, 需要用ETH端口, 芯动系列或其他的机型请选择ETH(GetWork)端口</p>
 <p> 如果设备无法正常接入，不同类型的端口可以交替着试一下。</p>
+<p></p>
+
+<span id="q18"></span>
+## 芯动A11系列相关问题
+<p></p>
+<p> A11抽水矿池需要和目标矿池相同。</p>
+<p> 如果同池还存在高无效的情况, 请降级或升级固件至a11_20211026_060307版本, mx需要降级或升级至 a11mx_20211220_124402版本。</p>
 <p></p>
 
 <span id="q13"></span>
