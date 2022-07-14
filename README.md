@@ -46,9 +46,6 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
     <a href="#gn">功能</a>
 </li>
 <li>
-    <a href="#preview">软件预览</a>
-</li>
-<li>
     <a href="#install">部署软件</a>
     <ul>
         <li>
@@ -476,18 +473,6 @@ TOKEN超时切换到登录页自动保留了账号密码
 |修改矿池内本地算力||
 
 </p>
-
-# 软件预览
-
-<p id="preview"></p>
-<img src="./image/jt1.png" alt="Logo">
-<img src="./image/tinified/jt3.png" alt="Logo">
-<img src="./image/tinified/jt2.png" alt="Logo">
-<!-- <img src="./image/tinified/t5.png" alt="Logo"> -->
-<img src="./image/tinified/t6.png" alt="Logo">
-<img src="./image/tinified/t7.png" alt="Logo">
-<img src="./image/tinified/t8.png" alt="Logo">
-<img src="./image/t9.png" alt="Logo">
 
 <!-- GETTING STARTED -->
 <p id="install"></p>
