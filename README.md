@@ -583,7 +583,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 
 <span id="q10"></span>
 ## 开发费用及算力损耗
-<p>开发费用恒定至千分之二</p>
+<p>开发费用恒定至千分之三</p>
 <p></p>
 <p>多种原因会造成算力损耗，检查以下项，不要什么屎盆子都往开发者头上扣</p>
 <p></p>
