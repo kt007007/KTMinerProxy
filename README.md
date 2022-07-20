@@ -202,6 +202,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.7.3
+优化了新的布局和主题
+
 2.7.2
 增加了新的布局和主题
 
