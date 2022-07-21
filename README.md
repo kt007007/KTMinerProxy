@@ -202,6 +202,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.7.4
+[重要更新] 修复了自定义证书会自动复原的BUG, 影响范围2.6.x-2.7.3
+
 2.7.3
 优化了新的布局和主题
 
