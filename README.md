@@ -202,6 +202,11 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.7.5
+增加了纯转发端口, 功能类似nginx
+增加了份额最后提交日期
+优化了页面细节及主题
+
 2.7.4
 [重要更新] 修复了自定义证书会自动复原的BUG, 影响范围2.6.x-2.7.3
 
