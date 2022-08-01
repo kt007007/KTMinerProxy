@@ -202,6 +202,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.7.6
+修复了kaspa高无效的问题
+
 2.7.5
 增加了纯转发端口, 功能类似nginx
 增加了份额最后提交日期
