@@ -202,6 +202,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.7.7
+修复了erg的一些列问题
+
 2.7.6
 修复了kaspa高无效的问题
 
