@@ -203,7 +203,8 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 
 ```
 2.7.7
-修复了erg的一些列问题
+修复了erg一些列的问题
+优化了在线/离线设备数量显示
 
 2.7.6
 修复了kaspa高无效的问题
