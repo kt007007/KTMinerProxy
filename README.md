@@ -202,6 +202,10 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.7.8
+增加了针对某一台设备的抽水比例修改
+增加了备用抽水地址
+
 2.7.7
 修复了erg一些列的问题
 优化了在线/离线设备数量显示
