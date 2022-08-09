@@ -202,6 +202,10 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.7.9
+增加了dcr抽水（兼容模式）
+优化了etc、kaspa、bch、erg里一个可能发生错误的问题
+
 2.7.8
 增加了针对某一台设备的抽水比例修改
 增加了备用抽水地址
