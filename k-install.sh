@@ -237,7 +237,7 @@ case $choose in
 6)
     turn_on
     ;;
-6)
+7)
     turn_off
     ;;
 *)
