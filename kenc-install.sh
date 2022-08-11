@@ -2,6 +2,8 @@
 # Author: KT007007
 # github: https://github.com/kt007007
 
+DOWNLOAD_HOST=""
+
 AMD64_HOST="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@main/KENC/kenc_linux_amd64"
 
 ARM64_HOST="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@main/KENC/kenc_linux_arm64"
@@ -39,7 +41,22 @@ filterResult() {
 [ $(id -u) != "0" ] && { colorEcho ${RED} "请使用root用户执行此脚本."; exit 1; }
 
 installapp() {
-    echo $1
+    colorEcho $BLUE "创建目录"
+    
+    if [[ ! -d $PATH_KENC ]];then
+        mkdir $PATH_KENC
+        chmod 777 -R $PATH_KENC
+    else
+        colorEcho $YELLOW "目录已存在, 无需重复创建, 继续执行安装。"
+    fi
+
+    colorEcho $BLUE "拉取程序"
+
+    wget -P $PATH_KENC "${DOWNLOAD_HOST}" -O "${PATH_KENC}/${PATH_EXEC}" 1>/dev/null
+
+    filterResult $? "拉取程序 ${DOWNLOAD_HOST}"
+
+    chmod 777 -R "${PATH_KENC}/${PATH_EXEC}"
 }
 
 echo "-------------------------------------------------------"
@@ -57,10 +74,12 @@ read -p "$(echo -e "请选择[1-3]：")" choose
 
 case $choose in
 1)
-    installapp {{"amd64"}}
+    $DOWNLOAD_HOST=$AMD64_HOST
+    installapp "amd64"
     ;;
 2)
-    installapp {{"arm64"}}
+    $DOWNLOAD_HOST=$ARM64_HOST
+    installapp "arm64"
     ;;
 3)
     update
