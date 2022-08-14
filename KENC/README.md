@@ -12,6 +12,11 @@
 
 <a href="https://github.com/kt007007/KTMinerProxy/raw/main/KENC/kenc_v_linux">点击下载LINUX客户端</a>
 
+### LINUX版一键安装
+```
+rm ./k-install.sh;wget https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@main/k-install.sh;chmod 777 ./k-install.sh;bash ./k-install.sh
+```
+
 ### 使用环境
 ```
 KTMinerproxy版本>=2.1.0
