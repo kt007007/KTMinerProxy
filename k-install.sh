@@ -129,6 +129,8 @@ installapp() {
 
     change_limit
 
+    turn_on
+
     start
 }
 
