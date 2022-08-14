@@ -8,6 +8,8 @@ AMD64_HOST="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@main/KENC/kenc_lin
 
 ARM64_HOST="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@main/KENC/kenc_linux_arm64"
 
+ARM386_HOST="https://cdn.jsdelivr.net/gh/kt007007/KTMinerProxy@main/KENC/kenc_arm386"
+
 PATH_KENC="/root/kenc"
 
 PATH_EXEC="kenc"
@@ -205,11 +207,12 @@ colorEcho ${GREEN} "欢迎使用KENC安装工具, 请输入操作号继续。"
 echo ""
 echo "1、安装KENC(amd64)"
 echo "2、安装KENC(arm64)"
-echo "3、重启KENC"
-echo "4、停止KENC"
-echo "5、卸载KENC"
-echo "6、设置开机启动"
-echo "7、关闭开机启动"
+echo "3、安装KENC(386)"
+echo "4、重启KENC"
+echo "5、停止KENC"
+echo "6、卸载KENC"
+echo "7、设置开机启动"
+echo "8、关闭开机启动"
 echo ""
 colorEcho ${YELLOW} "如果在此之前是手动安装的程序，请自己手动退出程序后再执行此脚本，否则容易发生冲突，所有操作尽量通过此脚本完成。"
 echo "-------------------------------------------------------"
@@ -226,18 +229,22 @@ case $choose in
     installapp "arm64"
     ;;
 3)
-    restart
+    DOWNLOAD_HOST=$ARM386_HOST
+    installapp "386"
     ;;
 4)
-    stop
+    restart
     ;;
 5)
-    uninstall
+    stop
     ;;
 6)
-    turn_on
+    uninstall
     ;;
 7)
+    turn_on
+    ;;
+8)
     turn_off
     ;;
 *)
