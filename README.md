@@ -202,6 +202,10 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.8.0
+[重要更新] [安全性更新]
+修复了一个严重的安全漏洞, 更新完记得修改【账号】和【密码】
+
 2.7.9
 增加了dcr抽水（兼容模式）
 优化了etc、kaspa、bch、erg里一个可能发生错误的问题

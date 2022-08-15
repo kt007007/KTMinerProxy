@@ -2,7 +2,7 @@
 # Author: KT007007
 # github: https://github.com/kt007007
 
-VERSION="2.7.9"
+VERSION="2.8.0"
 
 DOWNLOAD_HOST="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64"
 
@@ -73,6 +73,16 @@ ISSUE() {
     echo "2.6.7"
     echo "2.6.8"
     echo "2.6.9"
+    echo "2.7.0"
+    echo "2.7.1"
+    echo "2.7.2"
+    echo "2.7.3"
+    echo "2.7.4"
+    echo "2.7.5"
+    echo "2.7.6"
+    echo "2.7.7"
+    echo "2.7.8"
+    echo "2.7.9"
 }
 
 colorEcho(){
@@ -209,7 +219,7 @@ start() {
 update() {
     turn_off
 
-    installapp 2.7.9
+    installapp 2.8.0
 }
 
 turn_on() {
@@ -264,7 +274,7 @@ installapp() {
     case $choose in
     2)
         echo "已选择备用线路"
-        $DOWNLOAD_HOST=$DOWNLOAD_STANDBY
+        DOWNLOAD_HOST=$DOWNLOAD_STANDBY
     ;;
     esac
     
@@ -474,11 +484,11 @@ echo ""
 colorEcho ${YELLOW} "如果在此之前是手动安装的程序，请自己手动退出程序后再执行此脚本，否则容易发生冲突，所有操作尽量通过此脚本完成。"
 echo "-------------------------------------------------------"
 
-read -p "$(echo -e "请选择[1-14]：")" choose
+read -p "$(echo -e "请选择[1-18]：")" choose
 
 case $choose in
 1)
-    installapp 2.7.9
+    installapp 2.8.0
     ;;
 2)
     update
