@@ -1,6 +1,6 @@
 {
-    "version": "2.8.1",
-    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v2.8.1_win.exe",
-    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v2.8.1_linux",
+    "version": "2.8.2",
+    "win_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Windows-64/ktproxy_v2.8.2_win.exe",
+    "linux_path": "https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64/ktproxy_v2.8.2_linux",
     "description": "更新详情请前往Github"
 }

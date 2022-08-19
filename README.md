@@ -202,6 +202,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.8.2
+修复了ETC设备出现在了不该出现的钱包里的问题
+
 2.8.1
 增加硬件监控
 增加观察者地址关闭手续费选项
