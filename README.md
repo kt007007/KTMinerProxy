@@ -20,7 +20,7 @@
 <!-- <h1></h1> -->
 <!-- <h2>简介</h2> -->
 <h1>KTMinerProxy</h1>
-<p>:zap: 原创正版，功能强大，性能强劲。支持无损BTC ETC ETH LTC ERG CFX RVN SERO XMR CKB BEAM ALPH KASPA等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</p>
+<p>:zap: 原创正版，功能强大，性能强劲。支持无损BTC ETC ETH LTC ERG CFX RVN SERO XMR CKB BEAM ALPH KASPA DCR FLUX等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</p>
 
 <p align="center">
     <img src="./image/tiny.png" alt="Logo">
@@ -196,12 +196,18 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 - BEAM
 - ALPH
 - KASPA
+- DCR
+- FLUX
 - ...
 
 <span id="uplog"></span>
 # 更新日志
 
 ```
+2.8.3
+支持了FLUX（兼容模式）
+修复了某些情况下首页算力图表显示bug
+
 2.8.2
 修复了ETC设备出现在了不该出现的钱包里的问题
 
