@@ -22,6 +22,7 @@ CRONTAB_TASK="@reboot ${TASK_COMMAND}"
 
 CRONTAB_BAK_FILE="${CUR_PATH}/crontab_bak"
 
+
 #######color code########
 RED="31m"
 GREEN="32m"
