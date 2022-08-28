@@ -207,6 +207,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 2.8.3
 支持了FLUX（兼容模式）
 修复了某些情况下首页算力图表显示bug
+增加了芯片机的内核或机型的显示
 
 2.8.2
 修复了ETC设备出现在了不该出现的钱包里的问题
