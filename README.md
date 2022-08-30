@@ -204,6 +204,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.8.4
+FLUX可以无损模式了
+
 2.8.3
 支持了FLUX（兼容模式）
 修复了某些情况下首页算力图表显示bug
