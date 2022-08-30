@@ -204,6 +204,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.8.5
+增加了NEOX币种
+
 2.8.4
 FLUX可以无损模式了(建议gminer)
 
