@@ -205,7 +205,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 
 ```
 2.8.4
-FLUX可以无损模式了
+FLUX可以无损模式了(建议gminer)
 
 2.8.3
 支持了FLUX（兼容模式）
