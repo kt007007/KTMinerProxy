@@ -205,6 +205,11 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.8.6
+修复了部分小币种导致软件崩溃的BUG
+增加了LBC
+增加了HNS
+
 2.8.5
 增加了NEOX币种
 
