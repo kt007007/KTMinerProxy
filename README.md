@@ -644,8 +644,7 @@ go to<a href="https://github.com/kt007007/KTMinerProxy/tree/main/KENC">https://g
 <p>Default password: admin123</p>
 
 <span id="q10"></span>
-## Development cost and loss of computing power
-<p>Development costs are constant to three thousandths</p>
+## Computational power loss
 <p></p>
 <p>A variety of reasons can cause loss of computing power, check the following items, and don't deduct any shit from developers</p>
 <p></p>
