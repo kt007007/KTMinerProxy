@@ -41,7 +41,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 <h2>Disclaimer</h2>
 <p>This software is only for use in areas permitted by law. If you use this software, it means that you accept this license by default. If you use it in restricted areas, you will be responsible for legal problems.</p>
 
-# 导航
+# catalogue
 
 <ol>
 <li>
