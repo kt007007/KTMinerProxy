@@ -12,74 +12,76 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
+<a>English</a>｜<a>繁体中文</a>
+
+<p>
+Professional mine operation and maintenance tools, improve mine profits, detect abnormalities in mines and nodes, and become the best assistant of mines. (this software is only for use in legally licensed areas. If you use this software, it means that you accept this license by default. If you use it in a restricted area, you should bear the legal problems caused by it.)
+</p>
 <h3>
     Telegram：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
 </h3>
-<p>
-专业的矿场运维工具, 提升矿场利润、检测矿场及节点异常，矿场的最佳助手。 （此软件仅面向法律许可地区使用, 如果您使用了此软件，则默认表示您接受此许可, 如果在受限地区使用导致的法律问题, 请自行承担）
-</p>
 
 </div>
 <!-- <h1></h1> -->
 <!-- <h2>简介</h2> -->
 <h1>KTMinerProxy</h1>
-<p>:zap: 原创正版，功能强大，性能强劲。支持无损BTC ETC ETH LTC ERG CFX RVN SERO XMR CKB BEAM ALPH KASPA DCR FLUX NEOX等多个币种抽水，不爆内存，体验拉满，9000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</p>
+<p>:zap: Original and genuine, powerful and powerful. Support lossless BTC ETC ETH LTC ERG CFX RVN SERO XMR CKB BEAM ALPH KASPA DCR FLUX NEOX and other currency pumping, no memory burst, experience full, 9000 units without pressure and no collapse, accurate to 24-hour data statistics of a single device , custom tunnel push tool and other powerful functions...</p>
 
 <p align="center">
     <img src="./image/tiny.png" alt="Logo">
   </p>
 
-<h2>Linux一键工具箱</h2>
-<p>root用户直接执行以下命令, 根据提示选择对应功能即可。</p>
+<h2>One-click toolbox for Linux</h2>
+<p>The root user directly executes the following commands, and selects the corresponding function according to the prompts.</p>
 
 ```
 bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh)
 ```
 
-<h2>免责声明</h2>
-<p>法律不支持的地区此程序无法使用，请自觉遵守当地相关政策，使用此软件造成的法律问题，一概与软件作者无关。</p>
+<h2>Disclaimer</h2>
+<p>This software is only for use in areas permitted by law. If you use this software, it means that you accept this license by default. If you use it in restricted areas, you will be responsible for legal problems.</p>
 
 # 导航
 
 <ol>
 <li>
-    <a href="#uplog">更新日志</a>
+    <a href="#uplog">Changelog</a>
 </li>
 <li>
-    <a href="#gn">功能</a>
+    <a href="#gn">Function</a>
 </li>
 <li>
-    <a href="#install">部署软件</a>
+    <a href="#install">Deploy software</a>
     <ul>
         <li>
             <a href="#linux">Linux</a>
             <ul>
                 <li>
-                    <a href="#linux">安装</a>
+                    <a href="#linux">Install</a>
                 </li>
                 <li>
-                    <a href="#linux">更新</a>
+                    <a href="#linux">renew</a>
                 </li>
                 <li>
-                    <a href="#linux">卸载</a>
+                    <a href="#linux">uninstall</a>
                 </li>
                 <li>
-                    <a href="#linux">停止服务</a>
+                    <a href="#linux">Out of service</a>
                 </li>
                 <li>
-                    <a href="#linux">启动服务</a>
+                    <a href="#linux">start the service</a>
                 </li>
                 <li>
-                    <a href="#linux">重启服务</a>
+                    <a href="#linux">restart the service</a>
                 </li>
                 <li>
-                    <a href="#linux">开机启动</a>
+                    <a href="#linux">boot</a>
                 </li>
                 <li>
-                    <a href="#linux">设置最大连接数</a>
+                    <a href="#linux">Set the maximum number of connections</a>
                 </li>
                 <li>
-                    <a href="#linux">查看程序运行时日志</a>
+                    <a href="#linux">View program runtime log</a>
                 </li>
             </ul>
         </li>
@@ -87,104 +89,104 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
             <a href="#windows">Windows</a>
         </li>
         <li>
-            <a href="#_kenc">本地加密客户端KENC</a>
+            <a href="#_kenc">Local encryption client KENC</a>
         </li>
     </ul>
 </li>
 <li>
-    <a href="#about">常见问题</a>
+    <a href="#about">common problem</a>
     <ul>
         <li>
-            <a href="#q15">内存相关</a>
+            <a href="#q15">memory related</a>
         </li>
         <li>
-            <a href="#q0">进程守护</a>
+            <a href="#q0">process daemon</a>
         </li>
         <li>
-            <a href="#q1">默认账号密码</a>
+            <a href="#q1">Default account password</a>
         </li>
         <li>
-            <a href="#q1">算力呈现波浪状</a>
+            <a href="#q1">Computing power is wavy</a>
         </li>
         <li>
-            <a href="#q2">负载均衡</a>
+            <a href="#q2">load balancing</a>
         </li>
         <li>
-            <a href="#q3">安装时提示 curl: command not found</a>
+            <a href="#q3">prompt when installing curl: command not found</a>
         </li>
         <li>
-            <a href="#q4">修改端口启动</a>
+            <a href="#q4">Modify the port to start</a>
         </li>
         <li>
-            <a href="#q5">修改密码</a>
+            <a href="#q5">change Password</a>
         </li>
         <li>
-            <a href="#q6">启动时提示 dial tcp connection refused</a>
+            <a href="#q6">Prompt at startup dial tcp connection refused</a>
         </li>
         <li>
-            <a href="#q7">关闭/删除端口</a>
+            <a href="#q7">close/delete port</a>
         </li>
         <li>
-            <a href="#q8">安装时提示：安装killall失败！！！！请手动安装psmisc后再执行安装程序。</a>
+            <a href="#q8">Prompt during installation: Install killall failed! ! ! ! Please install psmisc manually before executing the installer。</a>
         </li>
         <li>
-            <a href="#q9">WEB访问长时间卡在LOADING界面。</a>
+            <a href="#q9">WEB access is stuck in the LOADING interface for a long time.</a>
         </li>
         <li>
-            <a href="#q11">IP黑名单</a>
+            <a href="#q11">IP blacklist</a>
         </li>
         <li>
-            <a href="#q12">ETH、ETC芯片机</a>
+            <a href="#q12">ETH, ETC chip machine</a>
         </li>
         <li>
-            <a href="#q18">芯动A11系列相关问题</a>
+            <a href="#q18">Innosilicon A11 series related issues</a>
         </li>
         <li>
-            <a href="#q13">本地算力修改</a>
+            <a href="#q13">Local computing power modification</a>
         </li>
         <li>
-            <a href="#q14">迁移</a>
+            <a href="#q14">migrate</a>
         </li>
         <li>
-            <a href="#q10">开发费用及算力损失问题</a>
+            <a href="#q10">Development costs and loss of computing power</a>
         </li>
         <li>
-            <a href="#q16">观察者链接</a>
+            <a href="#q16">watcher link</a>
         </li>
         <li>
-            <a href="#q17">算力跑不够的常见原因</a>
+            <a href="#q17">Common reasons for insufficient computing power</a>
         </li>
     </ul>
 </li>
-<li><a href="#about">免责声明</a></li>
-<li><a href="#about">联系我们</a></li>
+<li><a href="#about">Disclaimer</a></li>
+<li><a href="#about">contact us</a></li>
 </ol>
 
 <span id="gn"></span>
-### 核心功能
+### Core functions
 
-- 全币种无损抽水
-- 先进的内存管理机制, 单机最高8000台稳定运行至今
-- 精确到单台设备的24小时数据统计分析
-- TLS/SSL/KENC加密
-- 配套的本地端加密工具
-- 预置各币种矿池（随时更新）
-- 软防cc
-- 多钱包配置
-- 替换指定钱包
-- 统一钱包
-- 矿池模式
-- 快捷导入到出所有配置
-- 修改矿池内本地算力
-- IP黑名单
-- 自定义RSA加密密钥
-- 自定义证书
-- 自定义配置
-- 掉线提醒
-- 矿池官网一样的观察者地址
-- 超低的手续费
+- Full currency non-destructive pumping
+- Advanced memory management mechanism, up to 8,000 single machines have been running stably so far
+- 24-hour statistical analysis of data accurate to a single device
+- TLS/SSL/KENC encryption
+- Supporting local encryption tools
+- Preset various currency mining pools (update at any time)
+- Soft anti cc
+- Multi-wallet configuration
+- Replace the specified wallet
+- Unified wallet
+- Mining pool mode
+- Quickly import and export all configurations
+- Modify the local computing power in the mining pool
+- IP blacklist
+- Custom RSA encryption key
+- Custom certificates
+- custom configuration
+- Drop reminder
+- The same watcher address as the mining pool official website
+- Ultra-low handling fee
 
-### 已支持抽水的币种（如需增加新币种, 请在电报内联系管理员, 通常一天之内就可以完成）
+### Coins that already support pumping (if you need to add a new currency, please contact the administrator in the telegram, usually it can be completed within one day)
 
 - BTC
 - ETC
@@ -205,347 +207,347 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 - ...
 
 <span id="uplog"></span>
-# 更新日志
+# Changelog
 
 ```
 2.8.6
-修复了部分小币种导致软件崩溃的BUG
-增加了LBC
-增加了HNS
+Fixed a bug that caused the software to crash for some small currencies
+Added LBC
+Added HNS
 
 2.8.5
-增加了NEOX币种
+Added NEOX currency
 
 2.8.4
-FLUX可以无损模式了(建议gminer)
+FLUX can now be in lossless mode (gminer is recommended)
 
 2.8.3
-支持了FLUX（兼容模式）
-修复了某些情况下首页算力图表显示bug
-增加了芯片机的内核或机型的显示
+FLUX (compatibility mode) supported
+Fixed a bug in the display of the hashrate chart on the home page in some cases
+Added the display of the core or model of the chip machine
 
 2.8.2
-修复了ETC设备出现在了不该出现的钱包里的问题
+Fixed ETC devices appearing in wallets where they shouldn't be
 
 2.8.1
-增加硬件监控
-增加观察者地址关闭手续费选项
-增加敏感操作的日志, 日志会显示在原先公告的位置
+Add hardware monitoring
+Added watcher address to close the fee option
+Add the log of sensitive operations, the log will be displayed in the original position of the announcement
 
 2.8.0
-[重要更新] [安全性更新]
-修复了一个严重的安全漏洞, 更新完记得修改【账号】和【密码】
+[Important Update] [Security Update]
+Fixed a serious security vulnerability, remember to modify the [account] and [password] after the update
 
 2.7.9
-增加了dcr抽水（兼容模式）
-优化了etc、kaspa、bch、erg里一个可能发生错误的问题
+Added dcr pumping (compatibility mode)
+Optimized a possible error in etc, kaspa, bch, erg
 
 2.7.8
-增加了针对某一台设备的抽水比例修改
-增加了备用抽水地址
+Added the modification of the pumping ratio for a certain device
+Added alternate pumping address
 
 2.7.7
-修复了erg一些列的问题
-优化了在线/离线设备数量显示
+Fixed the problem of some columns of erg
+Optimized the display of the number of online/offline devices
 
 2.7.6
-修复了kaspa高无效的问题
+Fixed the issue that kaspa high was invalid
 
 2.7.5
-增加了纯转发端口, 功能类似nginx
-增加了份额最后提交日期
-优化了页面细节及主题
+Added pure forwarding port, similar to nginx
+Added share last commit date
+Optimized page details and themes
 
 2.7.4
-[重要更新] 修复了自定义证书会自动复原的BUG, 影响范围2.6.x-2.7.3
+[Important Update] Fixed a bug where custom certificates would be automatically restored, affecting 2.6.x-2.7.3
 
 2.7.3
-优化了新的布局和主题
+Optimized for new layouts and themes
 
 2.7.2
-增加了新的布局和主题
+Added new layouts and themes
 
 2.7.1
-不同钱包相同名称的机器现在分开展示了
-增加了KENC端口的自定义RSA密钥(此功能仅适用于自己制作客户端, 平时不要配置, 否则会导致kenc端口无法正常连接)
+Machines with the same name from different wallets are now displayed separately
+Added a custom RSA key for the KENC port (this function is only suitable for making a client by yourself, usually do not configure it, otherwise the kenc port will not be able to connect normally)
 
 2.7.0
-修复了KASPA无效过高的问题
+Fixed the problem that KASPA was invalid too high
 
 2.6.9
-增加了KASPA的抽水
+Increased KASPA's pumping
 
 2.6.8
-修复了几个币种的自定义配置在创建端口时找不到的问题
-修复了挖掘XMR时导致软件崩溃的一个问题
-提升了程序稳定性
+Fixed an issue where custom configurations for several currencies could not be found when creating ports
+Fixed an issue that caused the software to crash when mining XMR
+Improved program stability
 
 2.6.7
-增加了XMR算力统计
-增加了ERG算力统计
-增加了RVN算力统计
-增加了内核与证书不匹配的错误提示
-优化了XMR的日志
-修复了XMR多个设备合并的问题
+Added XMR computing power statistics
+Added ERG computing power statistics
+Added RVN computing power statistics
+Added error message that the kernel does not match the certificate
+Optimized XMR logs
+Fixed an issue with XMR multiple devices merging
 
 2.6.6
-修复了ALPH无效过高的问题
-修复了一个可能导致ETC产生无效的地方
-修改了添加端口时的部分币种介绍
+Fixed the problem that ALPH was invalid too high
+Fixed a place where ETC generation could be invalid
+Modified the introduction of some currencies when adding ports
 
 2.6.5
-kenc的推送地址改为加密地址，加密地址只有最新版本的kenc客户端支持, 如需此功能，需重新下载kenc客户端及2.6.5的KT客户端
-优化了设备详细信息的日志
-优化了登录界面
+The push address of kenc is changed to an encrypted address. The encrypted address is only supported by the latest version of the kenc client. If this function is required, you need to download the kenc client and the 2.6.5 KT client again.
+Optimized logging of device details
+Optimized the login interface
 
 2.6.4
-增加了ALPH的抽水
+Increased ALPH pumping
 
 2.6.3
-修复了BEAM抽水无效过高的问题
+Fixed the problem that BEAM pumping was too high
 
 2.6.2
-[重要更新] 
-略微提升了ETH在某些池子的算力
-降低了亚米设备在ETH端口的无效
-增加了BEAM抽水
+[IMPORTANT UPDATE]
+Slightly increased ETH hashrate in some pools
+Reduced the invalidation of Yami devices on the ETH port
+Added BEAM pumping
 
 2.6.1
-修复了ERG无效率偏高的问题
-修复了RVN无效率偏高的问题
+Fixed the problem of high inefficiency of ERG
+Fixed the problem of high inefficiency of RVN
 
 2.6.0
-增加了CKB抽水
-优化了端口日志的输出
+Added CKB pumping
+Optimized the output of the port log
 
 2.5.9
-修复了A11在某个池子下会断开的问题
-增加了端口证书批量替换功能, 可在设置 - 证书管理内批量替换证书
-修复了矩形图不显示同类下的子分类问题
+Fixed an issue where A11 would disconnect under a certain pool
+Added port certificate batch replacement function, you can batch replace certificates in Settings - Certificate Management
+Fixed the problem that the rectangular chart does not display subcategories under the same category
 
 2.5.8
-增加了XMR的抽水
+Increased pumping of XMR
 
 2.5.7
-增加了端口统计的矩形视图, 看总量统计更方便些了
-修复了某些小币种的算力统计
+Added a rectangular view of port statistics, making it easier to see total statistics
+Fixed hashrate statistics for some small coins
 
 2.5.6
-增加了LTC的抽水
+Increased pumping for LTC
 
 2.5.5
-增加SERO币种抽水
-实装了所有支持小币种抽水的算力统计
+Increase SERO coin margin
+Implemented all computing power statistics that support small currency pumping
 
 2.5.4
-修复了抽水钱包数量>1时, 算力分配不均衡的问题
+Fixed the problem of uneven distribution of computing power when the number of pumping wallets is greater than 1
 
 2.5.3
-增加了观察者链接, 编辑端口-高级设置即可打开此功能
+Added observer link, edit port - advanced settings to open this function
 
 2.5.2
-修复了茉莉等芯片机连接ETH端口无法登录的问题
-适当提升了一点点内存占用, 用来降低可能发生无效的概率
+Fixed the problem that chip machines such as Jasmine could not log in when connected to the ETH port
+Appropriately increased the memory usage a little bit to reduce the probability of invalidation
 
 2.5.1
-支持多个指定钱包替换至目标钱包
-修复了ETC芯片机 A11及一些小币种无损模式下可能无法正常工作的bug
+Support multiple designated wallets to replace to the target wallet
+Fixed the bug that ETC chip machine A11 and some small currencies may not work properly in lossless mode
 
 2.5.0
-修复了2.4.X版本抽水过多的问题
-增加了指定钱包地址替换功能
-增加了设备名称正则表达式过滤设置
-修复了某些情况下算力统计失效的情况
-适当调低了三倍左右内存占用, 现在单台设备占用500kB内存
+Fixed the problem of excessive pumping in version 2.4.X
+Added the function of replacing the specified wallet address
+Added device name regex filter setting
+Fixed a situation where the hashrate statistic would not work in some cases
+Appropriately lowered the memory usage by about three times, and now a single device occupies 500kB memory
 
 2.4.3
-增加了CFX抽水
-增加了ERG抽水
-增加了RVN抽水
-修复了某个可能导致ETC芯片机和ETH芯片机造成无效的地方
+Added CFX rake
+Added ERG pumping
+Added RVN pumping
+Fixed a place where ETC chip machine and ETH chip machine could be invalid
 
 2.4.2
-增加了对nicehash的支持
+Added support for nicehash
 
 2.4.1
-修复了ETC芯片机相关问题
+Fixed ETC chip machine related issues
 
 2.4.0
-更换了LOGO
-修复了BTC抽水过少的问题
-引入了ETC无损机制
-支持了ETC芯片机
-更新了BCH的逻辑
-端口日志内增加了断开日志
+Changed the logo
+Fixed the problem of too little BTC pumping
+Introduced ETC lossless mechanism
+Support ETC chip machine
+Updated the logic of BCH
+Added disconnection log to port log
 
 2.3.3
-完美版A11
+Perfect A11
 
 2.3.2
-增加了兼容模式, 一些币种或机型在工作一段时间后出现大量无效导致无法继续工作时可以尝试使用此模式
-对BTC进行了优化, 无法抽水的BTC机型和矿池, 可以使用兼容模式来进行工作
-对A11进行了优化, 如果是A11的机器, 端口请选择ETH芯片级及无损模式
-更新了KENC, 所有使用KENC客户端的用户请下载最新KENC
-开放了BTC统一钱包
+Added compatibility mode, you can try to use this mode when some currencies or models are invalid after working for a period of time and cannot continue to work
+Optimized for BTC, BTC models and mining pools that cannot be pumped can use compatibility mode to work
+Optimized for A11, if it is an A11 machine, please select ETH chip level and lossless mode for the port
+Updated KENC, all users who use KENC client please download the latest KENC
+Opened BTC unified wallet
 
 2.3.1
-设置里增加了KENC配置推送
-修复了页面上一些显示的问题
+Added KENC configuration push to settings
+Fixed some display issues on the page
 
 2.3.0
-BTC现在支持了所有矿池
-BTC引入了无损机制
-实装了BTC算力统计
-BTC增加了动态难度抽水
+BTC now supports all mining pools
+BTC introduces a lossless mechanism
+Implemented BTC computing power statistics
+BTC adds dynamic difficulty margin
 
 2.2.7
-修复了特殊情况下无损逻辑暂时失效的BUG
-适当缩小了数据尺寸, 降低了3/1的内存占用
+Fixed the bug that the lossless logic temporarily failed in special cases
+Appropriately reduced the data size, reducing the memory footprint by 3/1
 
 2.2.6
-修复了一些内存相关的问题
-修复了TEAMRED内核中途报错的问题
-完善了无损的逻辑(需规模性测试)
+Fixed some memory related issues
+Fixed the problem that the TEAMRED kernel reported an error midway through
+Improve the lossless logic (need to scale test)
 
 2.2.5
-修复了一些情况下动态难度调整失效的问题
-修复了部分内核概率性掉线的问题
-设备详情里增加了设备的IP显示
+Fixed an issue where dynamic difficulty adjustment would not work in some cases
+Fixed the problem that some kernels dropped probabilistically
+The IP display of the device has been added to the device details
 
 2.2.4
-ETH增加了动态难度抽水机制, 跨池也能抽到比例算力了
-略微提升了凤凰内核的算力
-修复了部分内核不显示名字和算力的问题
+ETH has added a dynamic difficulty pumping mechanism, and cross-pools can also draw proportional computing power
+Slightly improved the computing power of the Phoenix kernel
+Fixed the problem that some kernels did not display the name and computing power
 
 2.2.3
-增加了本地算力修改的功能
+Added the function of local computing power modification
 
 2.2.2
-极大稳定了算力补偿机制，给你稳稳的幸福
+Greatly stabilizes the computing power compensation mechanism, giving you stable happiness
 
 2.2.1
-支持了芯动矿机，创建端口时选择ETH芯片机即可
-修复了算力补偿机器的名称问题，微量的提高了双方算力
-修复了网页修改端口导致ip黑名单丢失的问题
+Innosilicon is supported, just select ETH chip machine when creating a port
+Fixed the problem with the name of the computing power compensation machine, and slightly increased the computing power of both parties
+Fixed the problem that the IP blacklist was lost due to the modification of the port on the webpage
 
 2.2.0
-大大降低了ETH的损耗
-增加了难度统计
+Greatly reduces the loss of ETH
+Added difficulty stats
 
 2.1.1
-修复因为新的机制导致的大量算力丢失问题
+Fix the problem of losing a lot of computing power due to the new mechanism
 
 2.1.0
-大大减小了特殊网络环境下的算力损耗
-干掉了幽灵设备
-修复了矿池内机器合并为defualt的问题
-修复了TEAMRED内核的相关问题
-增加了KENC隧道协议
-增加了软防CC策略
-增加了IP黑名单功能
-TOKEN超时切换到登录页自动保留了账号密码
-修复了自定义配置中文无法保存的问题
-修复了端口证书相关的问题
+Greatly reduces the loss of computing power in special network environments
+Kill the ghost device
+Fixed the problem that the machines in the mining pool were merged into defualt
+Fixed an issue with the TEAMRED kernel
+Added KENC Tunneling Protocol
+Added soft anti-CC strategy
+Added IP blacklist function
+TOKEN timed out and switched to the login page automatically retained the account password
+Fixed the problem that custom configuration Chinese could not be saved
+Fixed issues related to port certificates
 
 2.0.1
-修复BTC抽水导致目标机器算力低下的问题
+Fixed the problem that the target machine's computing power was low due to BTC pumping
 
 2.0.0
-实装了BTC和BCH的抽水
-自定义配置现在可以导入导出和跨平台保留了
+Implemented BTC and BCH rake
+Custom configurations can now be imported, exported and preserved across platforms
 
 1.1.5
-修复了一些抽水问题
+Fixed some pumping issues
 
 1.1.4
-修复了抽水导致的断连bug
+Fixed disconnection bug caused by pumping
 
 1.1.3
-实装掉线提醒
-修改了一些可能导致延迟增加的地方
-支持了网页修改web访问端口
-新的安全逻辑, 避免被扫
-支持了修改账号
-修改了部分内核导致名字乱了的问题
+Implement disconnection reminder
+Fixed some places that could cause increased latency
+Support web page to modify web access port
+New security logic to avoid being scanned
+Support account modification
+Modified the problem that some kernels caused the name to be messed up
 
 1.1.2
-大幅提升程序稳定性
+Greatly improve program stability
 
 1.1.1
-大幅提升程序稳定性
-重新开放了小币种的转发
+Greatly improve program stability
+Re-opened small currency forwarding
 
 1.1.0
-修复了本地算力浮动的问题
-更加稳定持久的连接
-支持了不同钱包不同比例抽水
-开放了备用池
-增加了端口日志
-更温柔的抽水
-修复了币印新的TLS地址无法连接的问题
-增加了设备连接时长
-增加了钱包、机器名搜索
-修改了一个容易导致内存泄漏的地方, 程序更加稳固
-修复了某些小币种自定义配置不生效的问题
-新的安装脚本, 更方便管理, 支持了开机启动修改端口等功能
+Fixed the problem of local computing power floating
+More stable and persistent connection
+Different ratios of different wallets are supported
+spare pool opened
+Added port log
+more gentle pumping
+Fixed the issue that Binyin's new TLS address could not be connected
+Increased device connection time
+Added wallet, machine name search
+Modified a place that is prone to memory leaks, and the program is more stable
+Fixed the problem that some small currency custom configurations did not take effect
+The new installation script is more convenient for management, and supports functions such as modifying the port at startup
 
 1.0.0
-完全有效的抽水份额
-新的抽水逻辑
-实装btc（待测试）
-端口内设备有时候算力为0, 不用担心，显示的问题，如果担心的话可以观察内核输出，仅仅是显示问题 稍后会优化掉
-现在增加了万分之一的开发费用
+fully effective pump share
+New pumping logic
+Install btc (to be tested)
+Sometimes the computing power of the device in the port is 0, don't worry, the display problem, if you are worried, you can observe the kernel output, just display the problem, it will be optimized later
+The development cost is now increased by 1/10,000
 
 0.9.9
-可配置多个钱包
-修改了开启抽水导致的份额丢失问题
-新的获取任务逻辑, 获取份额数量更快了一些
-增加了常用自定义配置管理
-可以单独导出某个端口的配置
-优化页面细节
-显示正常的区间内份额统计图表
-机器增加了日志,点击机器查看详情可看到（持续更新）
-增加了一键默认配置
-修改了sn冲突导致的无法登录的问题
+Multiple wallets can be configured
+Fixed the issue of share loss caused by opening the pump
+New get task logic, get the number of shares faster
+Added common custom configuration management
+The configuration of a port can be exported separately
+Optimize page details
+Displays the normal in-range share statistics chart
+The machine has added a log, click the machine to view the details to see (continuously updated)
+Added one-click default configuration
+Fixed the problem of inability to log in due to sn conflicts
 
 0.1.1
-修改了内存爆炸的问题
-修改了抽水钱包算力过多的问题
-端口关闭下可以开关SSL以及重新配置证书
-取消自动更新功能
-去掉了无效的设置
+Fixed the problem of memory explosion
+Modified the problem of excessive computing power of the pumping wallet
+When the port is closed, you can switch SSL and reconfigure the certificate
+Cancel the automatic update function
+Removed invalid settings
 
 0.0.9
-修复了导致软件崩溃的几个关键问题
-修复了粘包导致的份额丢失的问题
-修复了首次启动看不到图表的问题
-抽水算法改为随机算法，曲线更稳定
-增加了端口配置TLS证书功能
-增加矿池连接状态测试功能
-增加抽水份额统计
-增加原始钱包地址查看登录页右下键可以查看机器码
+Fixed several critical issues that caused the software to crash
+Fixed the issue of lost shares caused by sticky packages
+Fixed the problem that the chart could not be seen at the first startup
+The pumping algorithm is changed to a random algorithm, and the curve is more stable
+Added port configuration TLS certificate function
+Added mining pool connection status test function
+Increase pump share statistics
+Add the original wallet address to view the lower right key of the login page to view the machine code
 
 0.0.8
-修改了抽水统一钱包失效的问题
-修改了抽水逻辑，现在频率更高，矿池曲线更稳定
-增加列表分页及设置
-修正了某些情况下含有数据统计的币种也会提示未知设备的问题
+Modified the problem of the invalidation of the unified wallet for pumping
+Modified the pumping logic, now the frequency is higher, and the mining pool curve is more stable
+Add list paging and settings
+Fixed an issue where currencies with statistics in some cases would also display unknown devices
 
 0.0.6:
-默认端口号改为16777
-更换进程守护方式
-页面优化
-数据列表默认排序
-修正更换端口无法启动的问题
-可以正常转发但是不支持数据统计的币种，列表内现在可以显示设备了
-增加抽水设备名称的配置
-增加了矿池模式统一名称的配置
-增加语言包
+The default port number is changed to 16777
+Change the process guard mode
+page optimization
+The data list is sorted by default
+Fixed the problem that the replacement port could not be started
+Currency that can be forwarded normally but does not support statistics, the device can now be displayed in the list
+Add configuration of pumping equipment name
+Added the configuration of the unified name of the mining pool mode
+Add language pack
 
 0.0.5:
-稳定性改进
-增加了一些ETH预置矿池
-修复了目标矿池为SSL连不上的问题
+Stability improvements
+Added some ETH preset mining pools
+Fixed the problem that the target mining pool cannot be connected to SSL
 ```
 
 <!-- GETTING STARTED -->
@@ -557,15 +559,15 @@ TOKEN超时切换到登录页自动保留了账号密码
 # Linux
 
 ```
-root用户直接执行以下命令, 根据提示选择对应功能即可。
+The root user directly executes the following commands, and selects the corresponding function according to the prompts.
 
 bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/linux-install.sh)
 ```
-### 安装完成之后, 请立即修改登录账号、密码以及启动端口，防止被爆破。
+### After the installation is complete, please modify the login account, password and startup port immediately to prevent explosion.
 
 <img src="./image/t12.png" alt="Logo">
 
-支持的Linux
+Supported Linux
 
 * Ubuntu 64 18.04+
 * Centos 64 7+
@@ -573,146 +575,146 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 <p id="windows"></p>
 
 # Windows
-下载完后直接启动即可，程序自带进程守护
+After downloading, you can start it directly, the program comes with a process daemon
 
-<a href="https://github.com/kt007007/KTMinerProxy/tree/main/Windows-64">下载地址</a>
+<a href="https://github.com/kt007007/KTMinerProxy/tree/main/Windows-64">download link</a>
 
 <span id="_kenc"></span>
 # KENC
 <p>
-请前往<a href="https://github.com/kt007007/KTMinerProxy/tree/main/KENC">https://github.com/kt007007/KTMinerProxy/tree/main/KENC</a>自行下载
+go to<a href="https://github.com/kt007007/KTMinerProxy/tree/main/KENC">https://github.com/kt007007/KTMinerProxy/tree/main/KENC</a>Download it yourself
 </p>
-<p><a href="#kenc">KENC帮助文档</a></p>
+<p><a href="#kenc">KENC Help Documentation</a></p>
 
 
 <p id="question"></p>
 <p id="about"></p>
 
-# 常见问题
+# common problem
 
 <span id="q0"></span>
-## 进程守护
-<p>程序自带了进程守护, 不要！不要！不要使用supervisor或相关工具维护进程，否则会导致进程重复开启。</p>
+## Process daemon
+<p>The program comes with a process guard, don't! don't want! Do not use supervisor or related tools to maintain the process, otherwise it will cause the process to be started repeatedly. </p>
 
 <span id="q1"></span>
-## 算力呈现波浪状
+## The computing power is wavy
 <img src="./image/t10.png" alt="Logo"><br>
-<p>如果出现上图中的情况, 说明您开启了多个相同端口的KTMinerproxy, 关闭多余的进程即可。</p>
-<p>如果您进行了镜像拷贝，也会出现以上问题，先执行脚本停止程序的运行，然后删除掉/root/ktmproxy/license文件, 再执行启动即可</p>
+<p>If the situation in the above figure appears, it means that you have opened multiple KTMinerproxy with the same port, and you can close the redundant processes. </p>
+<p>If you make a mirror copy, the above problems will also occur. First execute the script to stop the program, then delete the /root/ktmproxy/license file, and then execute the startup.</p>
 
 <span id="q2"></span>
-## 负载均衡
+## load balancing
 <p>...</p>
 
 <span id="q3"></span>
-## 安装时提示 curl: command not found
-<p>安装时提示 curl: command not found， 说明你的linux没有安装curl</p>
-<p>先执行    apt-get update</p>
-<p>然后执行  apt install curl</p>
-<p>等待命令执行完毕，即可执行安装脚本</p>
+## When installing, it prompts curl: command not found
+<p>The installation prompts curl: command not found, indicating that your linux does not have curl installed</p>
+<p>Execute apt-get update first</p>
+<p>Then execute apt install curl</p>
+<p>Wait for the command to complete, then execute the installation script</p>
 
 <span id="q4"></span>
-## 修改端口启动
-<p>执行安装脚本，选择修改端口启动，输入要修改的端口号即可。</p>
+## Modify the port to start
+<p>Execute the installation script, choose to modify the port to start, and enter the port number to be modified. </p>
 
 <span id="q5"></span>
-## 修改密码
-<p>安装完后请尽快前往设置页修改密码。</p>
+## change Password
+<p>After installation, please go to the settings page as soon as possible to change the password. </p>
 
 <span id="q6"></span>
-## 启动时提示 dial tcp connection refused
-<p>请将ktproxy.com添加至防火墙白名单中，这个域名提供了图表服务及认证</p>
+## prompt dial tcp connection refused at startup
+<p>Please add ktproxy.com to the firewall whitelist, this domain provides chart service and authentication</p>
 
 <span id="q7"></span>
-## 关闭/删除端口
+## close/delete port
 <img src="./image/t11.png" alt="Logo">
-<p>点击图中指定位置即可删除/关闭端口</p>
+<p>Click the specified location in the picture to delete/close the port</p>
 
 <span id="q8"></span>
-## 安装时提示：安装killall失败！！！！
-<p>检查服务器的镜像源并手动安装psmisc</p>
+## Installation prompt: install killall failed! ! ! !
+<p>Check the server's mirror source and install psmisc manually</p>
 
 <span id="q9"></span>
-## WEB访问长时间卡在LOADING界面。
-<p>安装或更新后，第一次访问web界面加载时间可能会有些长，如果很长时间没有进去，请更换chrome浏览器。</p>
+## WEB access is stuck in the LOADING interface for a long time.
+<p>After installation or update, it may take a long time to load the web interface for the first time. If you haven't accessed it for a long time, please change the chrome browser. </p>
 
 <span id="q1"></span>
-## 默认账号密码
-<p>默认账号: admin</p>
-<p>默认密码: admin123</p>
+## Default account password
+<p>Default account: admin</p>
+<p>Default password: admin123</p>
 
 <span id="q10"></span>
-## 开发费用及算力损耗
-<p>开发费用恒定至千分之三</p>
+## Development cost and loss of computing power
+<p>Development costs are constant to three thousandths</p>
 <p></p>
-<p>多种原因会造成算力损耗，检查以下项，不要什么屎盆子都往开发者头上扣</p>
+<p>A variety of reasons can cause loss of computing power, check the following items, and don't deduct any shit from developers</p>
 <p></p>
-<p>观察矿池内延迟份额的比例，如果延迟率高于百分1请ping服务器检查延迟</p>
+<p>Observe the proportion of the delay share in the mining pool, if the delay rate is higher than 1%, please ping the server to check the delay</p>
 <p></p>
-<p>抽水的算力因池而异，如果两个池子难度不同，也会导致算力差异</p>
+<p>The computing power of pumping varies from pool to pool. If the difficulty of the two pools is different, it will also lead to differences in computing power</p>
 
 <span id="q11"></span>
-## IP黑名单
+## IP blacklist
 <p></p>
-<p> 前往设置页面, IP黑名单选项卡可主动加入IP黑名单</p>
+<p> Go to the settings page, the IP blacklist tab can actively join the IP blacklist</p>
 <p></p>
 <p><img src="./image/jt18.png"></p>
 <p></p>
 
 <span id="q12"></span>
-## ETH、ETC芯片机
+## ETH, ETC chip machine
 <p></p>
-<p> 常见的如奶牛、茉莉、亚米等机型, 需要用ETH端口, 芯动系列或其他的机型请选择ETH(GetWork)端口</p>
-<p> 如果设备无法正常接入，不同类型的端口可以交替着试一下。</p>
+<p> Common models such as Cow, Jasmine, Yami, etc. need to use the ETH port. For Innosil series or other models, please select the ETH (GetWork) port</p>
+<p> If the device cannot be connected normally, try different types of ports alternately. </p>
 <p></p>
 
 <span id="q18"></span>
-## 芯动A11系列相关问题
+## Innosilicon A11 series related issues
 <p></p>
-<p> A11抽水矿池需要和目标矿池相同。</p>
-<p> 如果同池还存在高无效的情况, 请降级或升级固件至a11_20211026_060307版本, mx需要降级或升级至 a11mx_20211220_124402版本。</p>
+<p> The A11 pumping pool needs to be the same as the target mining pool. </p>
+<p> If there is still high invalidation in the same pool, please downgrade or upgrade the firmware to a11_20211026_060307 version, mx needs to downgrade or upgrade to a11mx_20211220_124402 version. </p>
 <p></p>
 
 <span id="q13"></span>
-## 本地算力修改
+## Local computing power modification
 <p></p>
-<p> 添加或编辑端口时, 在【高级】选项卡下可进行ETH、ETC的本地算力修改</p>
+<p> When adding or editing ports, the local computing power of ETH and ETC can be modified under the [Advanced] tab</p>
 <p></p>
 
 <span id="q14"></span>
-## 服务迁移
+## service migration
 <p></p>
-<p> 无论使用任何方式迁移程序, 迁移之后请将新的目录下license文件删除, 然后重启程序</p>
+<p> No matter what method is used to migrate the program, please delete the license file in the new directory after the migration, and then restart the program</p>
 <p></p>
 
 <span id="q15"></span>
-## 内存相关
+## memory related
 <p></p>
-<p> 目前单台设备内存占用峰值控制在1.5M, 处于长期观察调整阶段, 之后会根据实际情况调低占用, 请根据接入设备数</p>量来决定硬件配置
+<p>At present, the peak memory usage of a single device is controlled at 1.5M, and it is in the long-term observation and adjustment stage. After that, the usage will be reduced according to the actual situation. Please determine the hardware configuration according to the number of connected devices</p>
 <p></p>
 
 <span id="q16"></span>
-## 观察者链接
+## Observer link
 <p></p>
-<p> 打开 端口设置-高级设置 ， 找到观察者链接，打开并保存，端口详情页内左下角找即可找到观察者链接。</p>
+<p> Open Port Settings - Advanced Settings, find the watcher link, open and save it, and find the watcher link in the lower left corner of the port details page. </p>
 
 <span id="q17"></span>
-## 算力跑不够的常见原因
-<p>如果测试下来24小时均值和设置的差距过大的话, 比如设置抽百分之1, 均值却少了很多, 有很多原因会导致这种情况发生，需要自己一步步排查。</p>
-<p>通常检查本地是否中招，或是设备出现问题，例如中转里某些设备无效率很高，这种情况通常是卡出问题了, 找到到这种情况通常比较容易排查，在KT中找到高无效的设备，点开后看下日志里是否有很多POW相关的关键字，如果有的话那么就说明这台设备的硬件出问题了，导致无效引发算力偏低。</p>
-<p>更常见的一种原因是本地中招，这个非常容易遇到但是不好排查，可以在KT里建立一个纯转发的端口，用纯转发的端口测试设备24小时均值，如果纯转发的端口24小时跑不够，那么大概率是本地中招，本地重新安装干净的系统解决。</p>
+## Common reasons for insufficient computing power
+<p>If the gap between the 24-hour average and the setting is too large after testing, for example, the setting is 1%, but the average is much less. There are many reasons for this to happen, and you need to check it step by step. </p>
+<p>Usually check whether the local is hit or not, or if there is a problem with the equipment. For example, some equipment in the transfer is inefficient and very inefficient. In this case, there is usually a problem with the card. It is usually easier to troubleshoot when it is found. In KT Find the device with high invalidity, click it to see if there are many POW-related keywords in the log, if there is, it means that the hardware of this device has a problem, resulting in the invalidity and low computing power. </p>
+<p>A more common reason is the local attack, which is very easy to encounter but difficult to troubleshoot. You can create a pure forwarding port in the KT, and use the pure forwarding port to test the 24-hour average of the device. If the port is not running enough for 24 hours, then there is a high probability that it is a local attack, and the local reinstallation of the clean system will solve the problem. </p>
 
-# 免责声明
+# Disclaimer
 <p id="flsm">
-开发者仅在技术及爱好的驱使下维护此软件，本软件仅验证技术过程。
+The developer maintains this software only under the drive of technology and hobby, and this software only verifies the technical process.
 
-用前请遵循当地法律，不允许的区域内禁止使用。
+Please follow local laws before use, and it is prohibited to use in areas where it is not allowed.
 
-使用此软件造成的法律问题, 一概与软件作者无关。
+The legal problems caused by the use of this software have nothing to do with the software author.
 </p>
 
 
-# 联系我们
+# contact us
 
 <p>Telegram: <a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a></p>
 <p>Discord: <a href="https://discord.gg/NCsx4y8AR9">https://discord.gg/NCsx4y8AR9</a></p>
