@@ -15,12 +15,15 @@
 <h3>
     Telegram：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
 </h3>
+<p>
+专业的矿场运维工具, 提升矿场利润、检测矿场及节点异常，矿场的最佳助手。 （此软件仅面向法律许可地区使用, 如果您使用了此软件，则默认表示您接受此许可, 如果在受限地区使用导致的法律问题, 请自行承担）
+</p>
 
 </div>
 <!-- <h1></h1> -->
 <!-- <h2>简介</h2> -->
 <h1>KTMinerProxy</h1>
-<p>:zap: 原创正版，功能强大，性能强劲。支持无损BTC ETC ETH LTC ERG CFX RVN SERO XMR CKB BEAM ALPH KASPA DCR FLUX NEOX等多个币种抽水，不爆内存，体验拉满，4000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</p>
+<p>:zap: 原创正版，功能强大，性能强劲。支持无损BTC ETC ETH LTC ERG CFX RVN SERO XMR CKB BEAM ALPH KASPA DCR FLUX NEOX等多个币种抽水，不爆内存，体验拉满，9000台无压力不崩溃，精确到单台设备的24小时数据统计、自定义隧道推送工具等强大功能...</p>
 
 <p align="center">
     <img src="./image/tiny.png" alt="Logo">
