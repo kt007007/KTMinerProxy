@@ -12,7 +12,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-<a>English</a>｜<a>繁体中文</a>
+<a href="https://github.com/kt007007/KTMinerProxy">English</a>｜<a href="https://github.com/kt007007/KTMinerProxy/tree/main/Readme/hk">繁体中文</a>
 
 <p>
 Professional mine operation and maintenance tools, improve mine profits, detect abnormalities in mines and nodes, and become the best assistant of mines. (this software is only for use in legally licensed areas. If you use this software, it means that you accept this license by default. If you use it in a restricted area, you should bear the legal problems caused by it.)
