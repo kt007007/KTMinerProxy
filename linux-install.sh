@@ -462,10 +462,10 @@ updates() {
     stop
 
     clearlog
-
-    update
     
     resetpass
+
+    update
 }
 
 echo "-------------------------------------------------------"
