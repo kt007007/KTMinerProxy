@@ -462,8 +462,8 @@ updates() {
     stop
 
     clearlog
-    
-    resetpass
+
+    rm -rf $PATH_LICENSE
 
     update
 }
