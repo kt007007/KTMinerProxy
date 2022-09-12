@@ -210,6 +210,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # Changelog
 
 ```
+2.8.7
+Fix the problem of excessive pumping due to anti-cheating bug
+
 2.8.6
 Fixed a bug that caused the software to crash for some small currencies
 Added LBC

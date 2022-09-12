@@ -2,7 +2,7 @@
 # Author: KT007007
 # github: https://github.com/kt007007
 
-VERSION="2.8.6"
+VERSION="2.8.7"
 
 DOWNLOAD_HOST="https://github.com/kt007007/KTMinerProxy/raw/main/Linux-64"
 
@@ -219,7 +219,7 @@ start() {
 update() {
     turn_off
 
-    installapp 2.8.6
+    installapp 2.8.7
 }
 
 turn_on() {
@@ -458,6 +458,16 @@ lookport() {
     colorEcho $GREEN "当前WEB访问端口${port}"
 }
 
+updates() {
+    stop
+
+    clearlog
+
+    update
+    
+    resetpass
+}
+
 echo "-------------------------------------------------------"
 colorEcho ${GREEN} "欢迎使用KTMinerProxy安装工具, 请输入操作号继续。"
 
@@ -480,6 +490,7 @@ echo "15、清理日志文件"
 echo "16、查看当前WEB服务端口"
 echo "17、卸载"
 echo "18、重置密码"
+echo "19、清除缓存并更新"
 echo ""
 colorEcho ${YELLOW} "如果在此之前是手动安装的程序，请自己手动退出程序后再执行此脚本，否则容易发生冲突，所有操作尽量通过此脚本完成。"
 echo "-------------------------------------------------------"
@@ -488,7 +499,7 @@ read -p "$(echo -e "请选择[1-18]：")" choose
 
 case $choose in
 1)
-    installapp 2.8.6
+    installapp 2.8.7
     ;;
 2)
     update
@@ -540,6 +551,9 @@ case $choose in
     ;;
 18)
     resetpass
+    ;;
+19)
+    updates
     ;;
 *)
     echo "输入了错误的指令, 请重新输入。"
