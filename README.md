@@ -210,6 +210,10 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # Changelog
 
 ```
+2.8.8
+Added ETF and chipset
+Add ETHW and chipset
+
 2.8.7
 Fix the problem of excessive pumping due to anti-cheating bug
 
