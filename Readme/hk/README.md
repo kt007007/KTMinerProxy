@@ -210,6 +210,10 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.8.9
+修复了ETHW算力显示问题
+修复了KASPA在bzminer下报错的问题
+
 2.8.8
 增加了ETF及芯片机
 增加ETHW及芯片机

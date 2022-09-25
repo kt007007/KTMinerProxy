@@ -210,6 +210,10 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # Changelog
 
 ```
+2.8.9
+Fixed ETHW hashrate display issue
+Fixed the problem that KASPA reported an error under bzminer
+
 2.8.8
 Added ETF and chipset
 Add ETHW and chipset
