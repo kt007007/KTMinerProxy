@@ -7,6 +7,242 @@
     <title>cu</title>
 </head>
 <body>
-    自定义配置生成器
+    <h1>自定义配置生成器</h1>
+    <p>配置时请仔细检查, 不要携带多余的空格以及中文和中文特殊字符, 否则会导致配置文件失效。</p>
+    <table border="1" style="width: 100%;">
+        <tr>
+            <td>
+                <button onclick="downloadCU()">导出配置文件</button>
+            </td>
+            <td>
+                导入配置文件<input type='file' accept='*' onchange='importCU(event)'>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                请选择要添加的币种配置:
+                <select id="addCoin">
+                </select>
+                <button onclick="addRow()">添加</button>
+            </td>
+        </tr>
+    </table>
+
+    <table border="1" style="margin-top: 10px;width: 100%;" id="context">
+    </table>
+
+    <script>
+        var config = {}
+        var support = ['ETH', 'ETHCHIP', 'ETHW', 'ETHWCHIP','ETC', 'ETCCHIP', 'BTC', 'LTC', 'BCH', 'CFX', 'RVN', 'ERG', 'SERO', 'XMR', 'CKB', 'BEAM', 'ALPH', 'KASPA', 'DCR', 'FLUX', 'NEOX', 'LBC', 'HNS', 'MEOW', 'CTXC'];
+
+        var el = {
+            addCoin: document.getElementById('addCoin'),
+            context: document.getElementById('context')
+        }
+        
+        function createList() {
+            for (var i = 0; i < support.length; i++) {
+                var coin = support[i];
+                var label = coin;
+                var option = document.createElement("option");
+
+                switch (coin) {
+                    case "ETH":
+                        label = "ETF"
+                        break;
+                    case "ETHCHIP":
+                        label = "ETF（芯片机）"
+                        break;
+                    case "ETHWCHIP":
+                        label = "ETHW（芯片机）"
+                        break;
+                    case "ETCCHIP":
+                        label = "ETC（芯片机）"
+                        break;
+                    default:
+                        break;
+                }
+
+                option.innerText = label
+                option.value = coin
+
+                el.addCoin.appendChild(option)
+            }
+        }
+
+        function render() {
+            el.context.innerHTML = '';
+            el.context.innerHTML = `
+                <tr>
+                    <th>币种</th>
+                    <th>抽水比例（最小0, 最大50）</th>
+                    <th>抽水钱包</th>
+                    <th>抽水地址（抽水地址如果想要跟随端口的目标地址一致, 此处直接填写  btc.com  ）</th>
+                    <th>抽水地址SSL</th>
+                    <th>操作</th>
+                </tr>`;
+
+            for (var key in config) {
+                var target = config[key]
+
+                var row = document.createElement('tr');
+
+                var coinTypeEl = document.createElement('td');
+                switch (key) {
+                    case "ETH":
+                        coinTypeEl.innerText = "ETF"
+                        break;
+                    case "ETHCHIP":
+                        coinTypeEl.innerText = "ETF（芯片机）"
+                        break;
+                    case "ETHWCHIP":
+                        coinTypeEl.innerText = "ETHW（芯片机）"
+                        break;
+                    case "ETCCHIP":
+                        coinTypeEl.innerText = "ETC（芯片机）"
+                        break;
+                    default:
+                        coinTypeEl.innerText = key;
+                        break;
+                }
+
+                var percentEl = document.createElement('input');
+                var percentTd = document.createElement('td');
+                percentEl.type = "number";
+                percentEl.value = target.Percent / 100;
+                percentEl.min = "0";
+                percentEl.max = "50";
+                percentEl.style.width = "100px";
+                percentTd.appendChild(percentEl);
+
+                var walletEl = document.createElement('input');
+                var walletTd = document.createElement('td');
+                walletEl.value = target.Wallet;
+                walletEl.type = "text";
+                walletEl.style.width = "400px";
+                walletTd.appendChild(walletEl);
+
+                var addrEl = document.createElement('input');
+                var addrTd = document.createElement('td');
+                addrEl.value = target.Addr;
+                addrEl.type = "text";
+                addrEl.style.width = "450px";
+                addrEl.placeholder = "直接填写地址即可, 不用加协议, 例如 btc.f2pool.com:1314";
+                addrTd.appendChild(addrEl);
+
+                var isTlsEl = document.createElement('input');
+                var isTlsTd = document.createElement('td');
+                isTlsEl.type = "checkbox"
+                isTlsEl.checked = target.IsTls
+                isTlsTd.appendChild(isTlsEl);
+
+                var deleteEl = document.createElement('button');
+                var deleteTd = document.createElement('td');
+                deleteEl.innerText = "删除"
+                deleteTd.appendChild(deleteEl);
+
+                (function (config, key, target) {
+                    percentEl.addEventListener('change', function() {
+                        var v = this.value;
+                        if (v < 0 || v > 50 || !v) {
+                            alert('请设置合理范围')
+                            this.value = 0
+                            target.Percent = 0
+                        } else {
+                            target.Percent = v * 100
+                        }
+                    })
+
+                    walletEl.addEventListener('change', function() {
+                        var v = this.value;
+                        target.Wallet = v
+
+                        render()
+                    })
+
+                    addrEl.addEventListener('change', function() {
+                        var v = this.value;
+                        target.Addr = v
+                        target.StandbyAddr = v
+
+                        render()
+                    })
+
+                    isTlsEl.addEventListener('change', function() {
+                        target.IsTls = this.checked
+                        target.StandbyIsTls = this.checked
+
+                        render()
+                    })
+
+                    deleteEl.addEventListener('click', function () {
+                        delete config[key]
+                        
+                        render()
+                    })
+                })(config, key, target)
+
+                row.appendChild(coinTypeEl);
+                row.appendChild(percentTd);
+                row.appendChild(walletTd);
+                row.appendChild(addrTd);
+                row.appendChild(isTlsTd);
+                row.appendChild(deleteTd);
+
+                el.context.appendChild(row);
+            }
+        }
+
+        function addRow() {
+            var coin = el.addCoin.value;
+            if (config[coin]) {
+                alert("已存在此币种, 请直接配置。")
+                return
+            }
+
+            config[coin] = {
+                "Addr": "",
+                "IsTls": false,
+                "StandbyAddr": "",
+                "StandbyIsTls": false,
+                "Wallet":"",
+                "Percent":0,
+                "Name":"CUSTOM"
+            }
+
+            render()
+        }
+
+        function downloadCU() {
+            var data = window.btoa(JSON.stringify(config))
+
+            var urlObject = window.URL || window.webkitURL || window;
+            var export_blob = new Blob([data]);
+            var save_link = document.createElementNS("http://www.w3.org/1999/xhtml", "a")
+
+            save_link.href = urlObject.createObjectURL(export_blob);
+            save_link.download = "cu.kt";
+            save_link.click();
+        }
+
+        function importCU(event) {
+            var input = event.target;
+            var reader = new FileReader();
+            reader.onload = function() {
+                if(reader.result) {
+                    var res = reader.result;
+                    var trans = JSON.parse(window.atob(res));
+
+                    config = trans;
+
+                    render()
+                }
+            };
+            reader.readAsText(input.files[0]);
+        }
+
+        createList()
+        render()
+    </script>
 </body>
 </html>
