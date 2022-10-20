@@ -210,6 +210,11 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # Changelog
 
 ```
+2.9.0
+Add meox currency (based on T-rex kernel test, if the certificate does not match, append --no-strict-ssl after the kernel startup command)
+Add ctxc currency (based on gminer test)
+Fix the problem that ckb, erg, flux, hns, lbc, neox, rvn may be invalid in some cases
+
 2.8.9
 Fixed ETHW hashrate display issue
 Fixed the problem that KASPA reported an error under bzminer

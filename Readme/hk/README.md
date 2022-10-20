@@ -210,6 +210,11 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.9.0
+增加meox币种（基于T-rex内核测试,  证书不匹配的话在内核启动命令后追加 --no-strict-ssl）
+增加ctxc币种  (基于gminer测试)
+修复ckb, erg, flux, hns, lbc, neox, rvn币种在某种情况下可能出现无效的问题
+
 2.8.9
 修复了ETHW算力显示问题
 修复了KASPA在bzminer下报错的问题
