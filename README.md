@@ -210,6 +210,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # Changelog
 
 ```
+2.9.2
+[Important update] Fixed the problem that the device would disconnect every time it works
+
 2.9.0
 Add meox currency (based on T-rex kernel test, if the certificate does not match, append --no-strict-ssl after the kernel startup command)
 Add ctxc currency (based on gminer test)

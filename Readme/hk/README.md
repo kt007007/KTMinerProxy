@@ -210,6 +210,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.9.2
+[重要更新] 修复了设备每工作一段时间会断开的问题
+
 2.9.0
 增加meox币种（基于T-rex内核测试,  证书不匹配的话在内核启动命令后追加 --no-strict-ssl）
 增加ctxc币种  (基于gminer测试)
