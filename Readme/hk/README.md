@@ -91,6 +91,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
         <li>
             <a href="#_kenc">本地加密客户端KENC</a>
         </li>
+        <li><a href="https://github.com/kt007007/KTMinerProxy/tree/main/GOST2KT">使用GOST接入KT</a></li>
     </ul>
 </li>
 <li>
