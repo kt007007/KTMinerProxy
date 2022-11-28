@@ -205,6 +205,11 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 - DCR
 - FLUX
 - NEOX
+- RXD
+- MEOW
+- LBC
+- CTXC
+- HNS
 - ...
 
 <span id="uplog"></span>
