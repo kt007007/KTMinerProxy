@@ -210,12 +210,16 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 - CTXC
 - HNS
 - ALEO
+- DNX
 - ...
 
 <span id="uplog"></span>
 # Changelog
 
 ```
+2.9.6
+Added DNX currency
+
 2.9.5
 Added ALEO currency
 

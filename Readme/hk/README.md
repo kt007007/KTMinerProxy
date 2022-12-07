@@ -211,12 +211,16 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 - CTXC
 - HNS
 - ALEO
+- DNX
 - ...
 
 <span id="uplog"></span>
 # 更新日志
 
 ```
+2.9.6
+增加了DNX币种
+
 2.9.5
 增加了ALEO币种
 
