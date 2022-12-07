@@ -209,12 +209,16 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 - LBC
 - CTXC
 - HNS
+- ALEO
 - ...
 
 <span id="uplog"></span>
 # Changelog
 
 ```
+2.9.5
+Added ALEO currency
+
 2.9.2
 [Important update] Fixed the problem that the device would disconnect every time it works
 

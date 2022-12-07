@@ -210,12 +210,16 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 - LBC
 - CTXC
 - HNS
+- ALEO
 - ...
 
 <span id="uplog"></span>
 # 更新日志
 
 ```
+2.9.5
+增加了ALEO币种
+
 2.9.2
 [重要更新] 修复了设备每工作一段时间会断开的问题
 
