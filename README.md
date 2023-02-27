@@ -21,8 +21,11 @@ Professional mine operation and maintenance tools, improve mine profits, detect 
     The original tg account was stolen, please add a new group
 
     原先tg账号被盗，请添加加新群组，谨防诈骗。
-    Telegram：<a href="https://t.me/+7kmdb-SRwXMxYmFl">https://t.me/+7kmdb-SRwXMxYmFl</a>
+   
 </h3>
+   <h3>
+        Telegram：<a href="https://t.me/+7kmdb-SRwXMxYmFl">https://t.me/+7kmdb-SRwXMxYmFl</a>
+    </h3>
 
 </div>
 <!-- <h1></h1> -->
