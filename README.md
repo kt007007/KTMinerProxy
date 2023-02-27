@@ -18,7 +18,10 @@
 Professional mine operation and maintenance tools, improve mine profits, detect abnormalities in mines and nodes, and become the best assistant of mines. (this software is only for use in legally licensed areas. If you use this software, it means that you accept this license by default. If you use it in a restricted area, you should bear the legal problems caused by it.)
 </p>
 <h3>
-    Telegram：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
+    The original tg account was stolen, please add a new group
+
+    原先tg账号被盗，请添加加新群组，谨防诈骗。
+    Telegram：<a href="https://t.me/+7kmdb-SRwXMxYmFl">https://t.me/+7kmdb-SRwXMxYmFl</a>
 </h3>
 
 </div>
@@ -747,7 +750,7 @@ The legal problems caused by the use of this software have nothing to do with th
 
 # contact us
 
-<p>Telegram: <a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a></p>
+<p>Telegram: <a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+7kmdb-SRwXMxYmFl</a></p>
 <p>Discord: <a href="https://discord.gg/NCsx4y8AR9">https://discord.gg/NCsx4y8AR9</a></p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
