@@ -20,7 +20,7 @@ Professional mine operation and maintenance tools, improve mine profits, detect 
 <h3>
     The original tg account was stolen, please add a new group
 
-    原先tg账号被盗，请添加加新群组，谨防诈骗。</h3>
+    原先tg账号被盗，请添加加新群组，谨防诈骗。
     
    <h3> The original account is lost and not operated by myself since February 26. Beware of fraud and new group links https://t.me/ +7kmdb-SRwXMxYmFl. Please forward it to each other in a large group. Recently, TG should have a certain vulnerability. Recently, a large number of accounts have been stolen. Pay attention to prevention. When adding strangers, do not display account information and send screenshots, otherwise they will be stolen. Be careful of new vulnerabilities
    
@@ -225,6 +225,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # Changelog
 
 ```
+2.9.7
+Added NEXA currency
+
 2.9.6
 Added DNX currency
 
