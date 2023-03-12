@@ -17,8 +17,11 @@
 <p>
 专业的矿场运维工具, 提升矿场利润、检测矿场及节点异常，矿场的最佳助手。 （此软件仅面向法律许可地区使用, 如果您使用了此软件，则默认表示您接受此许可, 如果在受限地区使用导致的法律问题, 请自行承担）
 </p>
+<p>
+原先tg账号被盗，请添加加新群组，谨防诈骗。
+</p>
 <h3>
-    Telegram：<a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a>
+    Telegram：<a href="https://t.me/+7kmdb-SRwXMxYmFl">https://t.me/+7kmdb-SRwXMxYmFl</a>
 </h3>
 
 </div>
@@ -748,7 +751,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 
 # 联系我们
 
-<p>Telegram: <a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+VK7ZOlKvcLljYjQ1</a></p>
+<p>Telegram: <a href="https://t.me/+7kmdb-SRwXMxYmFl">https://t.me/+7kmdb-SRwXMxYmFl</a></p>
 <p>Discord: <a href="https://discord.gg/NCsx4y8AR9">https://discord.gg/NCsx4y8AR9</a></p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
