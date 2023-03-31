@@ -225,6 +225,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # Changelog
 
 ```
+2.9.8
+Fixed several issues with kaspa
+
 2.9.7
 Added NEXA currency
 

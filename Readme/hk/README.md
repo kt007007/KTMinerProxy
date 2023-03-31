@@ -221,6 +221,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
 # 更新日志
 
 ```
+2.9.8
+修复了kaspa一些列的问题
+
 2.9.6
 增加了DNX币种
 
