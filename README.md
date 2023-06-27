@@ -15,11 +15,14 @@
 <a href="https://github.com/kt007007/KTMinerProxy">English</a>｜<a href="https://github.com/kt007007/KTMinerProxy/tree/main/Readme/hk">繁体中文</a>
 
 <h1>
-体验全新KT3.0, 更名为（RustMinerSystem）
+🔥🔥🔥 体验全新KT3.0, 更名为（RustMinerSystem）🔥🔥🔥
 
 项目地址
     <a href="https://github.com/EvilGenius-dot/RustMinerSystem">https://github.com/EvilGenius-dot/RustMinerSystem</a>
 </h1>
+<h2>
+KTMinerProxy已停止维护， 但依旧可用， 如需获得更强大功能及精准的BTC、LTC等抽水，请使用<a href="https://github.com/EvilGenius-dot/RustMinerSystem">RustMinerSystem</a>。 KT及RustMinerSystem出自同一团队, 请放心使用。
+</h2>
 
 <p>
 Professional mine operation and maintenance tools, improve mine profits, detect abnormalities in mines and nodes, and become the best assistant of mines. (this software is only for use in legally licensed areas. If you use this software, it means that you accept this license by default. If you use it in a restricted area, you should bear the legal problems caused by it.)
