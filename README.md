@@ -14,6 +14,13 @@
 
 <a href="https://github.com/kt007007/KTMinerProxy">English</a>｜<a href="https://github.com/kt007007/KTMinerProxy/tree/main/Readme/hk">繁体中文</a>
 
+<h1>
+体验全新KT3.0, 更名为（RustMinerSystem）
+
+项目地址
+    <a href="https://github.com/EvilGenius-dot/RustMinerSystem">https://github.com/EvilGenius-dot/RustMinerSystem</a>
+</h1>
+
 <p>
 Professional mine operation and maintenance tools, improve mine profits, detect abnormalities in mines and nodes, and become the best assistant of mines. (this software is only for use in legally licensed areas. If you use this software, it means that you accept this license by default. If you use it in a restricted area, you should bear the legal problems caused by it.)
 </p>
@@ -56,7 +63,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/kt007007/KTMinerProxy/main/l
     <a href="#uplog">Changelog</a>
 </li>
 <li>
-    <a href="#gn">Function</a>
+    <a href="#gn">Function </a>
 </li>
 <li>
     <a href="#install">Deploy software</a>
