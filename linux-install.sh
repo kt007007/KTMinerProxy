@@ -27,7 +27,8 @@ PATH_TURN_ON_SH="/etc/profile.d/ktm.sh"
 
 clear
 
-echo "KTMinerProxy已停止维护, 此后将维护功能更强大、抽水更精准的全新软件RustMinerSystem （项目地址: https://github.com/EvilGenius-dot/RustMinerSystem）, 如继续使用Kt, 输入1继续安装, 输入2取消安装。"
+echo "KTMinerProxy已停止维护, 此后将维护功能更强大、抽水更精准的全新软件RustMinerSystem （项目地址: https://github.com/EvilGenius-dot/RustMinerSystem）。"
+echo "如继续使用Kt, 输入1继续安装, 输入2取消安装。"
 
 echo ""
 
