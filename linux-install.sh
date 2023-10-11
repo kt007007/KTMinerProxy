@@ -25,6 +25,21 @@ PATH_ERR="/root/ktmproxy/err.log"
 PATH_TURN_ON="/etc/profile.d"
 PATH_TURN_ON_SH="/etc/profile.d/ktm.sh"
 
+echo "KTMinerProxy已停止维护, 此后将维护功能更强大、抽水更精准的全新软件RustMinerSystem （项目地址: https://github.com/EvilGenius-dot/RustMinerSystem）, 如继续使用Kt, 输入1继续安装, 输入2取消安装。"
+
+read -p "$(echo -e "请选择[1-2]?：")" choose
+
+case $choose in
+1)
+    echo "继续安装KTMinerProxy"
+;;
+*)
+    setConfig ENABLE_WEB_TLS 1
+    echo "输入错误, 默认不开启。"
+    return
+;;
+esac
+
 ISSUE() {
     echo "1.0.0"
     echo "1.1.0"
