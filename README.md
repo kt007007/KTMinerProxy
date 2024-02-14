@@ -36,7 +36,7 @@ Professional mine operation and maintenance tools, improve mine profits, detect 
    
 </h3>
    <h3>
-        Telegram：<a href="https://t.me/+7kmdb-SRwXMxYmFl">https://t.me/+7kmdb-SRwXMxYmFl</a>
+        Telegram：<a href="https://t.me/rustkt">https://t.me/rustkt</a>
     </h3>
 
 </div>
@@ -771,7 +771,7 @@ The legal problems caused by the use of this software have nothing to do with th
 
 # contact us
 
-<p>Telegram: <a href="https://t.me/+VK7ZOlKvcLljYjQ1">https://t.me/+7kmdb-SRwXMxYmFl</a></p>
+<p>Telegram: <a href="https://t.me/rustkt">https://t.me/rustkt</a></p>
 <p>Discord: <a href="https://discord.gg/NCsx4y8AR9">https://discord.gg/NCsx4y8AR9</a></p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
